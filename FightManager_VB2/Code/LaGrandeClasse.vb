@@ -35,7 +35,7 @@ Public Class RaceDef
 	Public Property Taille As String
 	Public Property Vision As String
 	Public Property Caracteristiques As CaracteristiqueDef()
-	Public Property Competences As CompetenceDef()
+	Public Property Competences As CompetenceDefRace()
 	Public Property Sauvegardes As SauvegardeDef()
 End Class
 
@@ -47,6 +47,10 @@ End Class
 Public Class CompetenceDef
 	Public Property Nom As String
 	Public Property Obligatoire As Boolean
+End Class
+Public Class CompetenceDefRace
+	Public Property Nom As String
+	Public Property Valeur As Int16
 End Class
 
 Public Class CaracteristiqueDef

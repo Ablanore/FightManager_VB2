@@ -172,7 +172,7 @@ Partial Class formFightManager
         lblModRacialArcanes = New Label()
         lblPenArmureAcrobaties = New Label()
         lblDiversAcrobaties = New Label()
-        lblModRacialArobaties = New Label()
+        lblModRacialAcrobaties = New Label()
         lblSoins = New Label()
         lblReligion = New Label()
         lblPerception = New Label()
@@ -535,6 +535,8 @@ Partial Class formFightManager
         txtBaseCharisme.Name = "txtBaseCharisme"
         txtBaseCharisme.Size = New Size(40, 27)
         txtBaseCharisme.TabIndex = 50
+        txtBaseCharisme.Text = "10"
+        txtBaseCharisme.TextAlign = HorizontalAlignment.Center
         ' 
         ' txtBaseSagesse
         ' 
@@ -543,6 +545,8 @@ Partial Class formFightManager
         txtBaseSagesse.Name = "txtBaseSagesse"
         txtBaseSagesse.Size = New Size(40, 27)
         txtBaseSagesse.TabIndex = 49
+        txtBaseSagesse.Text = "10"
+        txtBaseSagesse.TextAlign = HorizontalAlignment.Center
         ' 
         ' txtBaseIntelligence
         ' 
@@ -551,6 +555,8 @@ Partial Class formFightManager
         txtBaseIntelligence.Name = "txtBaseIntelligence"
         txtBaseIntelligence.Size = New Size(40, 27)
         txtBaseIntelligence.TabIndex = 48
+        txtBaseIntelligence.Text = "10"
+        txtBaseIntelligence.TextAlign = HorizontalAlignment.Center
         ' 
         ' txtBaseDexterite
         ' 
@@ -559,6 +565,8 @@ Partial Class formFightManager
         txtBaseDexterite.Name = "txtBaseDexterite"
         txtBaseDexterite.Size = New Size(40, 27)
         txtBaseDexterite.TabIndex = 47
+        txtBaseDexterite.Text = "10"
+        txtBaseDexterite.TextAlign = HorizontalAlignment.Center
         ' 
         ' txtBaseConstitution
         ' 
@@ -567,6 +575,8 @@ Partial Class formFightManager
         txtBaseConstitution.Name = "txtBaseConstitution"
         txtBaseConstitution.Size = New Size(40, 27)
         txtBaseConstitution.TabIndex = 46
+        txtBaseConstitution.Text = "10"
+        txtBaseConstitution.TextAlign = HorizontalAlignment.Center
         ' 
         ' txtBaseForce
         ' 
@@ -575,6 +585,8 @@ Partial Class formFightManager
         txtBaseForce.Name = "txtBaseForce"
         txtBaseForce.Size = New Size(40, 27)
         txtBaseForce.TabIndex = 45
+        txtBaseForce.Text = "10"
+        txtBaseForce.TextAlign = HorizontalAlignment.Center
         ' 
         ' Label1
         ' 
@@ -775,7 +787,7 @@ Partial Class formFightManager
         tabCompetences.Controls.Add(lblModRacialArcanes)
         tabCompetences.Controls.Add(lblPenArmureAcrobaties)
         tabCompetences.Controls.Add(lblDiversAcrobaties)
-        tabCompetences.Controls.Add(lblModRacialArobaties)
+        tabCompetences.Controls.Add(lblModRacialAcrobaties)
         tabCompetences.Controls.Add(lblSoins)
         tabCompetences.Controls.Add(lblReligion)
         tabCompetences.Controls.Add(lblPerception)
@@ -1783,14 +1795,14 @@ Partial Class formFightManager
         lblDiversAcrobaties.TabIndex = 118
         lblDiversAcrobaties.Text = "0"
         ' 
-        ' lblModRacialArobaties
+        ' lblModRacialAcrobaties
         ' 
-        lblModRacialArobaties.AutoSize = True
-        lblModRacialArobaties.Location = New Point(567, 50)
-        lblModRacialArobaties.Name = "lblModRacialArobaties"
-        lblModRacialArobaties.Size = New Size(17, 20)
-        lblModRacialArobaties.TabIndex = 117
-        lblModRacialArobaties.Text = "0"
+        lblModRacialAcrobaties.AutoSize = True
+        lblModRacialAcrobaties.Location = New Point(567, 50)
+        lblModRacialAcrobaties.Name = "lblModRacialAcrobaties"
+        lblModRacialAcrobaties.Size = New Size(17, 20)
+        lblModRacialAcrobaties.TabIndex = 117
+        lblModRacialAcrobaties.Text = "0"
         ' 
         ' lblSoins
         ' 
@@ -2689,7 +2701,7 @@ Partial Class formFightManager
     Friend WithEvents lblModRacialArcanes As Label
     Friend WithEvents lblPenArmureAcrobaties As Label
     Friend WithEvents lblDiversAcrobaties As Label
-    Friend WithEvents lblModRacialArobaties As Label
+    Friend WithEvents lblModRacialAcrobaties As Label
     Friend WithEvents lblTotalSoins As Label
     Friend WithEvents lblTotalReligion As Label
     Friend WithEvents lblTotalPerception As Label
