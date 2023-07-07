@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FightManager_VB2", "FightManager_VB2\FightManager_VB2.vbproj", "{B3B7F96A-D357-452D-9ECD-9EAE4F1C1DCE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3B7F96A-D357-452D-9ECD-9EAE4F1C1DCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3B7F96A-D357-452D-9ECD-9EAE4F1C1DCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3B7F96A-D357-452D-9ECD-9EAE4F1C1DCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3B7F96A-D357-452D-9ECD-9EAE4F1C1DCE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {279FE609-AA6A-436B-B3B5-EEE167DF4B40}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,532 @@
+{"Classes": [
+	{
+	"IdClasse": "Guerrier",
+	"NomClasse": "Guerrier",
+	"PointVieBase": 15,
+	"PointVieNiveau": 6,
+	"Recuperation": 9,
+	"Sauvegardes": [
+		{"Nom": "ClasseArmure", "Valeur": 0},
+		{"Nom": "Vigueur", "Valeur": 2},
+		{"Nom": "Reflexe", "Valeur": 0},
+		{"Nom": "Volonte", "Valeur": 0}
+		],
+	"NombreCompetence": 3,
+	"Competences": [
+		{"Nom": "Athletisme", "Obligatoire": false},
+		{"Nom": "ConnDeLaRue", "Obligatoire": false},
+		{"Nom": "Endurance", "Obligatoire": false},
+		{"Nom": "Intimidation", "Obligatoire": false},
+		{"Nom": "Soins", "Obligatoire": false}
+		]
+	},
+	{
+	"IdClasse": "Magicien",
+	"NomClasse": "Magicien",
+	"PointVieBase": 10,
+	"PointVieNiveau": 4,
+	"Recuperation": 6,
+	"Sauvegardes": [
+		{"Nom": "ClasseArmure", "Valeur": 0},
+		{"Nom": "Vigueur", "Valeur": 0},
+		{"Nom": "Reflexe", "Valeur": 0},
+		{"Nom": "Volonte", "Valeur": 2}
+		],
+	"NombreCompetence": 3,
+	"Competences": [
+		{"Nom": "Arcanes", "Obligatoire": true},
+		{"Nom": "Diplomatie", "Obligatoire": false},
+		{"Nom": "Exploration", "Obligatoire": false},
+		{"Nom": "Histoire", "Obligatoire": false},
+		{"Nom": "Intuition", "Obligatoire": false},
+		{"Nom": "Nature", "Obligatoire": false},
+		{"Nom": "Religion", "Obligatoire": false}
+		]
+	},
+	{
+	"IdClasse": "MaitreDeGuerre",
+	"NomClasse": "Maître de guerre",
+	"PointVieBase": 12,
+	"PointVieNiveau": 5,
+	"Recuperation": 7,
+	"Sauvegardes": [
+		{"Nom": "ClasseArmure", "Valeur": 0},
+		{"Nom": "Vigueur", "Valeur": 1},
+		{"Nom": "Reflexe", "Valeur": 0},
+		{"Nom": "Volonte", "Valeur": 1}
+		],
+	"NombreCompetence": 4,
+	"Competences": [
+		{"Nom": "Athletisme", "Obligatoire": false},
+		{"Nom": "Diplomatie", "Obligatoire": false},
+		{"Nom": "Endurance", "Obligatoire": false},
+		{"Nom": "Histoire", "Obligatoire": false},
+		{"Nom": "Intimidation", "Obligatoire": false},
+		{"Nom": "Soins", "Obligatoire": false}
+		]
+	},
+	{
+	"IdClasse": "Paladin",
+	"NomClasse": "Paladin",
+	"PointVieBase": 15,
+	"PointVieNiveau": 6,
+	"Recuperation": 10,
+	"Sauvegardes": [
+		{"Nom": "ClasseArmure", "Valeur": 0},
+		{"Nom": "Vigueur", "Valeur": 1},
+		{"Nom": "Reflexe", "Valeur": 1},
+		{"Nom": "Volonte", "Valeur": 1}
+		],
+	"NombreCompetence": 3,
+	"Competences": [
+		{"Nom": "Diplomatie", "Obligatoire": false},
+		{"Nom": "Endurance", "Obligatoire": false},
+		{"Nom": "Histoire", "Obligatoire": false},
+		{"Nom": "Intuition", "Obligatoire": false},
+		{"Nom": "Intimidation", "Obligatoire": false},
+		{"Nom": "Religion", "Obligatoire": true},
+		{"Nom": "Soins", "Obligatoire": false}
+		]
+	},
+	{
+	"IdClasse": "Pretre",
+	"NomClasse": "Prêtre",
+	"PointVieBase": 12,
+	"PointVieNiveau": 5,
+	"Recuperation": 7,
+	"Sauvegardes": [
+		{"Nom": "ClasseArmure", "Valeur": 0},
+		{"Nom": "Vigueur", "Valeur": 0},
+		{"Nom": "Reflexe", "Valeur": 0},
+		{"Nom": "Volonte", "Valeur": 2}
+		],
+	"NombreCompetence": 3,
+	"Competences": [
+		{"Nom": "Arcanes", "Obligatoire": false},
+		{"Nom": "Diplomatie", "Obligatoire": false},
+		{"Nom": "Histoire", "Obligatoire": false},
+		{"Nom": "Intuition", "Obligatoire": false},
+		{"Nom": "Religion", "Obligatoire": true},
+		{"Nom": "Soins", "Obligatoire": false}
+		]
+	},
+	{
+	"IdClasse": "Rodeur",
+	"NomClasse": "Rôdeur",
+	"PointVieBase": 12,
+	"PointVieNiveau": 5,
+	"Recuperation": 6,
+	"Sauvegardes": [
+		{"Nom": "ClasseArmure", "Valeur": 0},
+		{"Nom": "Vigueur", "Valeur": 1},
+		{"Nom": "Reflexe", "Valeur": 1},
+		{"Nom": "Volonte", "Valeur": 0}
+		],
+	"NombreCompetence": 4,
+	"Competences": [
+		{"Nom": "Acrobaties", "Obligatoire": false},
+		{"Nom": "Athletisme", "Obligatoire": false},
+		{"Nom": "Discretion", "Obligatoire": false},
+		{"Nom": "Endurance", "Obligatoire": false},
+		{"Nom": "Perception", "Obligatoire": false},
+		{"Nom": "Soins", "Obligatoire": false}
+		]
+	},
+	{
+	"IdClasse": "Sorcier",
+	"NomClasse": "Sorcier",
+	"PointVieBase": 12,
+	"PointVieNiveau": 5,
+	"Recuperation": 6,
+	"Sauvegardes": [
+		{"Nom": "ClasseArmure", "Valeur": 0},
+		{"Nom": "Vigueur", "Valeur": 0},
+		{"Nom": "Reflexe", "Valeur": 1},
+		{"Nom": "Volonte", "Valeur": 1}
+		],
+	"NombreCompetence": 4,
+	"Competences": [
+		{"Nom": "Arcanes", "Obligatoire": false},
+		{"Nom": "Bluff", "Obligatoire": false},
+		{"Nom": "ConnDeLaRue", "Obligatoire": false},
+		{"Nom": "Histoire", "Obligatoire": false},
+		{"Nom": "Intuition", "Obligatoire": false},
+		{"Nom": "Intimidation", "Obligatoire": false},
+		{"Nom": "Larcin", "Obligatoire": false},
+		{"Nom": "Religion", "Obligatoire": false}
+		]
+	},
+	{
+	"IdClasse": "Voleur",
+	"NomClasse": "Voleur",
+	"PointVieBase": 12,
+	"PointVieNiveau": 5,
+	"Recuperation": 6,
+	"Sauvegardes": [
+		{"Nom": "ClasseArmure", "Valeur": 0},
+		{"Nom": "Vigueur", "Valeur": 0},
+		{"Nom": "Reflexe", "Valeur": 2},
+		{"Nom": "Volonte", "Valeur": 0}
+		],
+	"NombreCompetence": 4,
+	"Competences": [
+		{"Nom": "Acrobaties", "Obligatoire": false},
+		{"Nom": "Athletisme", "Obligatoire": false},
+		{"Nom": "Bluff", "Obligatoire": false},
+		{"Nom": "ConnDeLaRue", "Obligatoire": false},
+		{"Nom": "Discretion", "Obligatoire": true},
+		{"Nom": "Exploration", "Obligatoire": false},
+		{"Nom": "Intuition", "Obligatoire": false},
+		{"Nom": "Intimidation", "Obligatoire": false},
+		{"Nom": "Larcin", "Obligatoire": true},
+		{"Nom": "Perception", "Obligatoire": false}
+		]
+	},
+	{
+	"IdClasse": "Barbare",
+	"NomClasse": "Barbare",
+	"PointVieBase": 15,
+	"PointVieNiveau": 6,
+	"Recuperation": 8,
+	"Sauvegardes": [
+		{"Nom": "ClasseArmure", "Valeur": 0},
+		{"Nom": "Vigueur", "Valeur": 2},
+		{"Nom": "Reflexe", "Valeur": 0},
+		{"Nom": "Volonte", "Valeur": 0}
+		],
+	"NombreCompetence": 3,
+	"Competences": [
+		{"Nom": "Acrobaties", "Obligatoire": false},
+		{"Nom": "Athletisme", "Obligatoire": false},
+		{"Nom": "Endurance", "Obligatoire": false},
+		{"Nom": "Intimidation", "Obligatoire": false},
+		{"Nom": "Nature", "Obligatoire": false},
+		{"Nom": "Perception", "Obligatoire": false},
+		{"Nom": "Soins", "Obligatoire": false}
+		]
+	},
+	{
+	"IdClasse": "Barde",
+	"NomClasse": "Barde",
+	"PointVieBase": 12,
+	"PointVieNiveau": 5,
+	"Recuperation": 7,
+	"Sauvegardes": [
+		{"Nom": "ClasseArmure", "Valeur": 0},
+		{"Nom": "Vigueur", "Valeur": 0},
+		{"Nom": "Reflexe", "Valeur": 1},
+		{"Nom": "Volonte", "Valeur": 1}
+		],
+	"NombreCompetence": 4,
+	"Competences": [
+		{"Nom": "Acrobaties", "Obligatoire": false},
+		{"Nom": "Arcanes", "Obligatoire": true},
+		{"Nom": "Athletisme", "Obligatoire": false},
+		{"Nom": "Bluff", "Obligatoire": false},
+		{"Nom": "ConnDeLaRue", "Obligatoire": false},
+		{"Nom": "Diplomatie", "Obligatoire": false},
+		{"Nom": "Exploration", "Obligatoire": false},
+		{"Nom": "Histoire", "Obligatoire": false},
+		{"Nom": "Intuition", "Obligatoire": false},
+		{"Nom": "Intimidation", "Obligatoire": false},
+		{"Nom": "Nature", "Obligatoire": false},
+		{"Nom": "Perception", "Obligatoire": false},
+		{"Nom": "Religion", "Obligatoire": false},
+		{"Nom": "Soins", "Obligatoire": false}
+		]
+	},
+	{
+	"IdClasse": "Druide",
+	"NomClasse": "Druide",
+	"PointVieBase": 12,
+	"PointVieNiveau": 5,
+	"Recuperation": 7,
+	"Sauvegardes": [
+		{"Nom": "ClasseArmure", "Valeur": 0},
+		{"Nom": "Vigueur", "Valeur": 0},
+		{"Nom": "Reflexe", "Valeur": 1},
+		{"Nom": "Volonte", "Valeur": 1}
+		],
+	"NombreCompetence": 3,
+	"Competences": [
+		{"Nom": "Arcanes", "Obligatoire": false},
+		{"Nom": "Athletisme", "Obligatoire": false},
+		{"Nom": "Diplomatie", "Obligatoire": false},
+		{"Nom": "Endurance", "Obligatoire": false},
+		{"Nom": "Histoire", "Obligatoire": false},
+		{"Nom": "Intuition", "Obligatoire": false},
+		{"Nom": "Nature", "Obligatoire": true},
+		{"Nom": "Perception", "Obligatoire": false},
+		{"Nom": "Soins", "Obligatoire": false}
+		]
+	},
+	{
+	"IdClasse": "Ensorceleur",
+	"NomClasse": "Ensorceleur",
+	"PointVieBase": 12,
+	"PointVieNiveau": 5,
+	"Recuperation": 6,
+	"Sauvegardes": [
+		{"Nom": "ClasseArmure", "Valeur": 0},
+		{"Nom": "Vigueur", "Valeur": 0},
+		{"Nom": "Reflexe", "Valeur": 0},
+		{"Nom": "Volonte", "Valeur": 2}
+		],
+	"NombreCompetence": 3,
+	"Competences": [
+		{"Nom": "Arcanes", "Obligatoire": true},
+		{"Nom": "Athletisme", "Obligatoire": false},
+		{"Nom": "Bluff", "Obligatoire": false},
+		{"Nom": "Diplomatie", "Obligatoire": false},
+		{"Nom": "Endurance", "Obligatoire": false},
+		{"Nom": "Exploration", "Obligatoire": false},
+		{"Nom": "Histoire", "Obligatoire": false},
+		{"Nom": "Intuition", "Obligatoire": false},
+		{"Nom": "Intimidation", "Obligatoire": false},
+		{"Nom": "Nature", "Obligatoire": false}
+		]
+	},
+	{
+	"IdClasse": "Gardien",
+	"NomClasse": "Gardien",
+	"PointVieBase": 17,
+	"PointVieNiveau": 7,
+	"Recuperation": 9,
+	"Sauvegardes": [
+		{"Nom": "ClasseArmure", "Valeur": 0},
+		{"Nom": "Vigueur", "Valeur": 1},
+		{"Nom": "Reflexe", "Valeur": 0},
+		{"Nom": "Volonte", "Valeur": 1}
+		],
+	"NombreCompetence": 3,
+	"Competences": [
+		{"Nom": "Athletisme", "Obligatoire": false},
+		{"Nom": "Endurance", "Obligatoire": false},
+		{"Nom": "Exploration", "Obligatoire": false},
+		{"Nom": "Intimidation", "Obligatoire": false},
+		{"Nom": "Nature", "Obligatoire": true},
+		{"Nom": "Perception", "Obligatoire": false},
+		{"Nom": "Soins", "Obligatoire": false}
+		]
+	},
+	{
+	"IdClasse": "Invocateur",
+	"NomClasse": "Invocateur",
+	"PointVieBase": 10,
+	"PointVieNiveau": 4,
+	"Recuperation": 6,
+	"Sauvegardes": [
+		{"Nom": "ClasseArmure", "Valeur": 0},
+		{"Nom": "Vigueur", "Valeur": 1},
+		{"Nom": "Reflexe", "Valeur": 1},
+		{"Nom": "Volonte", "Valeur": 1}
+		],
+	"NombreCompetence": 3,
+	"Competences": [
+		{"Nom": "Arcanes", "Obligatoire": false},
+		{"Nom": "Diplomatie", "Obligatoire": false},
+		{"Nom": "Endurance", "Obligatoire": false},
+		{"Nom": "Histoire", "Obligatoire": false},
+		{"Nom": "Intuition", "Obligatoire": false},
+		{"Nom": "Intimidation", "Obligatoire": false},
+		{"Nom": "Religion", "Obligatoire": true}
+		]
+	},
+	{
+	"IdClasse": "Shaman",
+	"NomClasse": "Shaman",
+	"PointVieBase": 12,
+	"PointVieNiveau": 5,
+	"Recuperation": 7,
+	"Sauvegardes": [
+		{"Nom": "ClasseArmure", "Valeur": 0},
+		{"Nom": "Vigueur", "Valeur": 1},
+		{"Nom": "Reflexe", "Valeur": 0},
+		{"Nom": "Volonte", "Valeur": 1}
+		],
+	"NombreCompetence": 3,
+	"Competences": [
+		{"Nom": "Arcanes", "Obligatoire": false},
+		{"Nom": "Athletisme", "Obligatoire": false},
+		{"Nom": "Endurance", "Obligatoire": false},
+		{"Nom": "Histoire", "Obligatoire": false},
+		{"Nom": "Intuition", "Obligatoire": false},
+		{"Nom": "Nature", "Obligatoire": true},
+		{"Nom": "Perception", "Obligatoire": false},
+		{"Nom": "Religion", "Obligatoire": false},
+		{"Nom": "Soins", "Obligatoire": false}
+		]
+	},
+	{
+	"IdClasse": "Vengeur",
+	"NomClasse": "Vengeur",
+	"PointVieBase": 14,
+	"PointVieNiveau": 6,
+	"Recuperation": 7,
+	"Sauvegardes": [
+		{"Nom": "ClasseArmure", "Valeur": 0},
+		{"Nom": "Vigueur", "Valeur": 1},
+		{"Nom": "Reflexe", "Valeur": 1},
+		{"Nom": "Volonte", "Valeur": 1}
+		],
+	"NombreCompetence": 3,
+	"Competences": [
+		{"Nom": "Acrobaties", "Obligatoire": false},
+		{"Nom": "Athletisme", "Obligatoire": false},
+		{"Nom": "ConnDeLaRue", "Obligatoire": false},
+		{"Nom": "Discretion", "Obligatoire": false},
+		{"Nom": "Endurance", "Obligatoire": false},
+		{"Nom": "Intimidation", "Obligatoire": false},
+		{"Nom": "Perception", "Obligatoire": false},
+		{"Nom": "Religion", "Obligatoire": true}
+		]
+	},
+	{
+	"IdClasse": "Batailleur",
+	"NomClasse": "Batailleur",
+	"PointVieBase": 15,
+	"PointVieNiveau": 6,
+	"Recuperation": 9,
+	"Sauvegardes": [
+		{"Nom": "ClasseArmure", "Valeur": 0},
+		{"Nom": "Vigueur", "Valeur": 0},
+		{"Nom": "Reflexe", "Valeur": 0},
+		{"Nom": "Volonte", "Valeur": 2}
+		],
+	"NombreCompetence": 3,
+	"Competences": [
+		{"Nom": "Arcanes", "Obligatoire": false},
+		{"Nom": "Athletisme", "Obligatoire": false},
+		{"Nom": "Bluff", "Obligatoire": false},
+		{"Nom": "Diplomatie", "Obligatoire": false},
+		{"Nom": "Endurance", "Obligatoire": false},
+		{"Nom": "Intuition", "Obligatoire": false},
+		{"Nom": "Intimidation", "Obligatoire": false},
+		{"Nom": "Soins", "Obligatoire": false}
+		]
+	},
+	{
+	"IdClasse": "Flamboyant",
+	"NomClasse": "Flamboyant",
+	"PointVieBase": 12,
+	"PointVieNiveau": 5,
+	"Recuperation": 7,
+	"Sauvegardes": [
+		{"Nom": "ClasseArmure", "Valeur": 0},
+		{"Nom": "Vigueur", "Valeur": 1},
+		{"Nom": "Reflexe", "Valeur": 0},
+		{"Nom": "Volonte", "Valeur": 1}
+		],
+	"NombreCompetence": 4,
+	"Competences": [
+		{"Nom": "Arcanes", "Obligatoire": false},
+		{"Nom": "Athletisme", "Obligatoire": false},
+		{"Nom": "Bluff", "Obligatoire": false},
+		{"Nom": "ConnDeLaRue", "Obligatoire": false},
+		{"Nom": "Diplomatie", "Obligatoire": false},
+		{"Nom": "Endurance", "Obligatoire": false},
+		{"Nom": "Intuition", "Obligatoire": false},
+		{"Nom": "Intimidation", "Obligatoire": false},
+		{"Nom": "Soins", "Obligatoire": false}
+		]
+	},
+	{
+	"IdClasse": "Limier",
+	"NomClasse": "Limier",
+	"PointVieBase": 12,
+	"PointVieNiveau": 5,
+	"Recuperation": 7,
+	"Sauvegardes": [
+		{"Nom": "ClasseArmure", "Valeur": 0},
+		{"Nom": "Vigueur", "Valeur": 0},
+		{"Nom": "Reflexe", "Valeur": 1},
+		{"Nom": "Volonte", "Valeur": 1}
+		],
+	"NombreCompetence": 3,
+	"Competences": [
+		{"Nom": "Acrobaties", "Obligatoire": false},
+		{"Nom": "Athletisme", "Obligatoire": false},
+		{"Nom": "Discretion", "Obligatoire": false},
+		{"Nom": "Endurance", "Obligatoire": false},
+		{"Nom": "Intuition", "Obligatoire": false},
+		{"Nom": "Intimidation", "Obligatoire": false},
+		{"Nom": "Nature", "Obligatoire": false},
+		{"Nom": "Perception", "Obligatoire": false},
+		{"Nom": "Soins", "Obligatoire": false}
+		]
+	},
+	{
+	"IdClasse": "Moine",
+	"NomClasse": "Moine",
+	"PointVieBase": 12,
+	"PointVieNiveau": 5,
+	"Recuperation": 7,
+	"Sauvegardes": [
+		{"Nom": "ClasseArmure", "Valeur": 0},
+		{"Nom": "Vigueur", "Valeur": 1},
+		{"Nom": "Reflexe", "Valeur": 1},
+		{"Nom": "Volonte", "Valeur": 1}
+		],
+	"NombreCompetence": 4,
+	"Competences": [
+		{"Nom": "Acrobaties", "Obligatoire": false},
+		{"Nom": "Athletisme", "Obligatoire": false},
+		{"Nom": "Diplomatie", "Obligatoire": false},
+		{"Nom": "Discretion", "Obligatoire": false},
+		{"Nom": "Endurance", "Obligatoire": false},
+		{"Nom": "Intuition", "Obligatoire": false},
+		{"Nom": "Larcin", "Obligatoire": false},
+		{"Nom": "Perception", "Obligatoire": false},
+		{"Nom": "Religion", "Obligatoire": false},
+		{"Nom": "Soins", "Obligatoire": false}
+		]
+	},
+	{
+	"IdClasse": "PretreDesRunes",
+	"NomClasse": "Prêtre des runes",
+	"PointVieBase": 12,
+	"PointVieNiveau": 5,
+	"Recuperation": 7,
+	"Sauvegardes": [
+		{"Nom": "ClasseArmure", "Valeur": 0},
+		{"Nom": "Vigueur", "Valeur": 0},
+		{"Nom": "Reflexe", "Valeur": 0},
+		{"Nom": "Volonte", "Valeur": 2}
+		],
+	"NombreCompetence": 3,
+	"Competences": [
+		{"Nom": "Arcanes", "Obligatoire": false},
+		{"Nom": "Athletisme", "Obligatoire": false},
+		{"Nom": "Endurance", "Obligatoire": false},
+		{"Nom": "Histoire", "Obligatoire": false},
+		{"Nom": "Intuition", "Obligatoire": false},
+		{"Nom": "Larcin", "Obligatoire": false},
+		{"Nom": "Religion", "Obligatoire": false},
+		{"Nom": "Soins", "Obligatoire": false}
+		]
+	},
+	{
+	"IdClasse": "Psion",
+	"NomClasse": "Psion",
+	"PointVieBase": 12,
+	"PointVieNiveau": 4,
+	"Recuperation": 6,
+	"Sauvegardes": [
+		{"Nom": "ClasseArmure", "Valeur": 0},
+		{"Nom": "Vigueur", "Valeur": 0},
+		{"Nom": "Reflexe", "Valeur": 0},
+		{"Nom": "Volonte", "Valeur": 2}
+		],
+	"NombreCompetence": 4,
+	"Competences": [
+		{"Nom": "Arcanes", "Obligatoire": false},
+		{"Nom": "Bluff", "Obligatoire": false},
+		{"Nom": "Diplomatie", "Obligatoire": false},
+		{"Nom": "Exploration", "Obligatoire": false},
+		{"Nom": "Histoire", "Obligatoire": false},
+		{"Nom": "Intuition", "Obligatoire": false},
+		{"Nom": "Intimidation", "Obligatoire": false},
+		{"Nom": "Perception", "Obligatoire": false}
+		]
+	}
+]}
