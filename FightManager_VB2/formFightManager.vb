@@ -3,7 +3,7 @@ Imports System.IO
 Imports System.Linq
 'Imports System.Configuration
 
-Public Class FormFightManager
+Public Class formCreatePerso
     Private RaceData As LesRaces = JsonSerializer.Deserialize(Of LesRaces)(File.ReadAllText(LaGrandeClasse.RaceDataAdresse))
     Private ClasseData As LesClasses = JsonSerializer.Deserialize(Of LesClasses)(File.ReadAllText(LaGrandeClasse.ClasseDataAdresse))
     Private jaifini As Boolean = False
@@ -139,5 +139,10 @@ Public Class FormFightManager
         If jaifini Then
 
         End If
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+
     End Sub
 End Class

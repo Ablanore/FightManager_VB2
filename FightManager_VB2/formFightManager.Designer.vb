@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class formFightManager
+Partial Class formCreatePerso
     Inherits System.Windows.Forms.Form
 
     'Form remplace la méthode Dispose pour nettoyer la liste des composants.
@@ -247,7 +247,7 @@ Partial Class formFightManager
         txtPointExperience = New TextBox()
         lblNiveau = New Label()
         lblNiveauCalcul = New Label()
-        lblTitre = New Label()
+        Button1 = New Button()
         tabGlobal.SuspendLayout()
         tabCaracteristique.SuspendLayout()
         tabCompetences.SuspendLayout()
@@ -256,36 +256,35 @@ Partial Class formFightManager
         ' 
         ' txtNomPersonnage
         ' 
-        txtNomPersonnage.Location = New Point(186, 68)
-        txtNomPersonnage.Margin = New Padding(3, 4, 3, 4)
+        txtNomPersonnage.Location = New Point(163, 51)
         txtNomPersonnage.Name = "txtNomPersonnage"
-        txtNomPersonnage.Size = New Size(178, 27)
+        txtNomPersonnage.Size = New Size(156, 23)
         txtNomPersonnage.TabIndex = 0
         ' 
         ' lblNomPersonnage
         ' 
         lblNomPersonnage.AutoSize = True
-        lblNomPersonnage.Location = New Point(17, 75)
+        lblNomPersonnage.Location = New Point(15, 56)
         lblNomPersonnage.Name = "lblNomPersonnage"
-        lblNomPersonnage.Size = New Size(143, 20)
+        lblNomPersonnage.Size = New Size(116, 15)
         lblNomPersonnage.TabIndex = 1
         lblNomPersonnage.Text = "Nom du Personnage"
         ' 
         ' lblClassePersonnage
         ' 
         lblClassePersonnage.AutoSize = True
-        lblClassePersonnage.Location = New Point(17, 110)
+        lblClassePersonnage.Location = New Point(15, 82)
         lblClassePersonnage.Name = "lblClassePersonnage"
-        lblClassePersonnage.Size = New Size(151, 20)
+        lblClassePersonnage.Size = New Size(122, 15)
         lblClassePersonnage.TabIndex = 2
         lblClassePersonnage.Text = "Classe du Personnage"
         ' 
         ' lblRacePersonnage
         ' 
         lblRacePersonnage.AutoSize = True
-        lblRacePersonnage.Location = New Point(399, 110)
+        lblRacePersonnage.Location = New Point(349, 82)
         lblRacePersonnage.Name = "lblRacePersonnage"
-        lblRacePersonnage.Size = New Size(142, 20)
+        lblRacePersonnage.Size = New Size(114, 15)
         lblRacePersonnage.TabIndex = 3
         lblRacePersonnage.Text = "Race du Personnage"
         ' 
@@ -293,20 +292,18 @@ Partial Class formFightManager
         ' 
         ddlClassePersonnage.DropDownStyle = ComboBoxStyle.DropDownList
         ddlClassePersonnage.FormattingEnabled = True
-        ddlClassePersonnage.Location = New Point(186, 103)
-        ddlClassePersonnage.Margin = New Padding(3, 4, 3, 4)
+        ddlClassePersonnage.Location = New Point(163, 77)
         ddlClassePersonnage.Name = "ddlClassePersonnage"
-        ddlClassePersonnage.Size = New Size(178, 28)
+        ddlClassePersonnage.Size = New Size(156, 23)
         ddlClassePersonnage.TabIndex = 6
         ' 
         ' ddlRacePersonnage
         ' 
         ddlRacePersonnage.DropDownStyle = ComboBoxStyle.DropDownList
         ddlRacePersonnage.FormattingEnabled = True
-        ddlRacePersonnage.Location = New Point(578, 102)
-        ddlRacePersonnage.Margin = New Padding(3, 4, 3, 4)
+        ddlRacePersonnage.Location = New Point(506, 76)
         ddlRacePersonnage.Name = "ddlRacePersonnage"
-        ddlRacePersonnage.Size = New Size(173, 28)
+        ddlRacePersonnage.Size = New Size(152, 23)
         ddlRacePersonnage.TabIndex = 7
         ' 
         ' tabGlobal
@@ -314,11 +311,10 @@ Partial Class formFightManager
         tabGlobal.Controls.Add(tabCaracteristique)
         tabGlobal.Controls.Add(tabCompetences)
         tabGlobal.Controls.Add(tabSauvegardes)
-        tabGlobal.Location = New Point(15, 150)
-        tabGlobal.Margin = New Padding(3, 4, 3, 4)
+        tabGlobal.Location = New Point(13, 112)
         tabGlobal.Name = "tabGlobal"
         tabGlobal.SelectedIndex = 0
-        tabGlobal.Size = New Size(921, 698)
+        tabGlobal.Size = New Size(806, 524)
         tabGlobal.TabIndex = 9
         ' 
         ' tabCaracteristique
@@ -357,11 +353,10 @@ Partial Class formFightManager
         tabCaracteristique.Controls.Add(lblDexterite)
         tabCaracteristique.Controls.Add(lblConstitution)
         tabCaracteristique.Controls.Add(lblForce)
-        tabCaracteristique.Location = New Point(4, 29)
-        tabCaracteristique.Margin = New Padding(3, 4, 3, 4)
+        tabCaracteristique.Location = New Point(4, 24)
         tabCaracteristique.Name = "tabCaracteristique"
-        tabCaracteristique.Padding = New Padding(3, 4, 3, 4)
-        tabCaracteristique.Size = New Size(913, 665)
+        tabCaracteristique.Padding = New Padding(3, 3, 3, 3)
+        tabCaracteristique.Size = New Size(798, 496)
         tabCaracteristique.TabIndex = 0
         tabCaracteristique.Text = "Caratéristiques"
         tabCaracteristique.UseVisualStyleBackColor = True
@@ -369,221 +364,215 @@ Partial Class formFightManager
         ' lblModCalculCharisme
         ' 
         lblModCalculCharisme.AutoSize = True
-        lblModCalculCharisme.Location = New Point(412, 242)
+        lblModCalculCharisme.Location = New Point(360, 182)
         lblModCalculCharisme.Name = "lblModCalculCharisme"
-        lblModCalculCharisme.Size = New Size(17, 20)
+        lblModCalculCharisme.Size = New Size(13, 15)
         lblModCalculCharisme.TabIndex = 68
         lblModCalculCharisme.Text = "0"
         ' 
         ' lblModCalculSagesse
         ' 
         lblModCalculSagesse.AutoSize = True
-        lblModCalculSagesse.Location = New Point(412, 205)
+        lblModCalculSagesse.Location = New Point(360, 154)
         lblModCalculSagesse.Name = "lblModCalculSagesse"
-        lblModCalculSagesse.Size = New Size(17, 20)
+        lblModCalculSagesse.Size = New Size(13, 15)
         lblModCalculSagesse.TabIndex = 67
         lblModCalculSagesse.Text = "0"
         ' 
         ' lblModCalculIntelligence
         ' 
         lblModCalculIntelligence.AutoSize = True
-        lblModCalculIntelligence.Location = New Point(412, 168)
+        lblModCalculIntelligence.Location = New Point(360, 126)
         lblModCalculIntelligence.Name = "lblModCalculIntelligence"
-        lblModCalculIntelligence.Size = New Size(17, 20)
+        lblModCalculIntelligence.Size = New Size(13, 15)
         lblModCalculIntelligence.TabIndex = 66
         lblModCalculIntelligence.Text = "0"
         ' 
         ' lblModCalculDexterite
         ' 
         lblModCalculDexterite.AutoSize = True
-        lblModCalculDexterite.Location = New Point(412, 130)
+        lblModCalculDexterite.Location = New Point(360, 98)
         lblModCalculDexterite.Name = "lblModCalculDexterite"
-        lblModCalculDexterite.Size = New Size(17, 20)
+        lblModCalculDexterite.Size = New Size(13, 15)
         lblModCalculDexterite.TabIndex = 65
         lblModCalculDexterite.Text = "0"
         ' 
         ' lblModCalculForce
         ' 
         lblModCalculForce.AutoSize = True
-        lblModCalculForce.Location = New Point(412, 55)
+        lblModCalculForce.Location = New Point(360, 41)
         lblModCalculForce.Name = "lblModCalculForce"
-        lblModCalculForce.Size = New Size(17, 20)
+        lblModCalculForce.Size = New Size(13, 15)
         lblModCalculForce.TabIndex = 64
         lblModCalculForce.Text = "0"
         ' 
         ' lblModCalculConstitution
         ' 
         lblModCalculConstitution.AutoSize = True
-        lblModCalculConstitution.Location = New Point(412, 92)
+        lblModCalculConstitution.Location = New Point(360, 69)
         lblModCalculConstitution.Name = "lblModCalculConstitution"
-        lblModCalculConstitution.Size = New Size(17, 20)
+        lblModCalculConstitution.Size = New Size(13, 15)
         lblModCalculConstitution.TabIndex = 63
         lblModCalculConstitution.Text = "0"
         ' 
         ' lblValCalculCharisme
         ' 
         lblValCalculCharisme.AutoSize = True
-        lblValCalculCharisme.Location = New Point(310, 242)
+        lblValCalculCharisme.Location = New Point(271, 182)
         lblValCalculCharisme.Name = "lblValCalculCharisme"
-        lblValCalculCharisme.Size = New Size(17, 20)
+        lblValCalculCharisme.Size = New Size(13, 15)
         lblValCalculCharisme.TabIndex = 62
         lblValCalculCharisme.Text = "0"
         ' 
         ' lblValCalculSagesse
         ' 
         lblValCalculSagesse.AutoSize = True
-        lblValCalculSagesse.Location = New Point(310, 205)
+        lblValCalculSagesse.Location = New Point(271, 154)
         lblValCalculSagesse.Name = "lblValCalculSagesse"
-        lblValCalculSagesse.Size = New Size(17, 20)
+        lblValCalculSagesse.Size = New Size(13, 15)
         lblValCalculSagesse.TabIndex = 61
         lblValCalculSagesse.Text = "0"
         ' 
         ' lblValCalculIntelligence
         ' 
         lblValCalculIntelligence.AutoSize = True
-        lblValCalculIntelligence.Location = New Point(310, 168)
+        lblValCalculIntelligence.Location = New Point(271, 126)
         lblValCalculIntelligence.Name = "lblValCalculIntelligence"
-        lblValCalculIntelligence.Size = New Size(17, 20)
+        lblValCalculIntelligence.Size = New Size(13, 15)
         lblValCalculIntelligence.TabIndex = 60
         lblValCalculIntelligence.Text = "0"
         ' 
         ' lblValCalculDexterite
         ' 
         lblValCalculDexterite.AutoSize = True
-        lblValCalculDexterite.Location = New Point(310, 130)
+        lblValCalculDexterite.Location = New Point(271, 98)
         lblValCalculDexterite.Name = "lblValCalculDexterite"
-        lblValCalculDexterite.Size = New Size(17, 20)
+        lblValCalculDexterite.Size = New Size(13, 15)
         lblValCalculDexterite.TabIndex = 59
         lblValCalculDexterite.Text = "0"
         ' 
         ' lblValCalculForce
         ' 
         lblValCalculForce.AutoSize = True
-        lblValCalculForce.Location = New Point(310, 55)
+        lblValCalculForce.Location = New Point(271, 41)
         lblValCalculForce.Name = "lblValCalculForce"
-        lblValCalculForce.Size = New Size(17, 20)
+        lblValCalculForce.Size = New Size(13, 15)
         lblValCalculForce.TabIndex = 58
         lblValCalculForce.Text = "0"
         ' 
         ' lblValCalculConstitution
         ' 
         lblValCalculConstitution.AutoSize = True
-        lblValCalculConstitution.Location = New Point(310, 92)
+        lblValCalculConstitution.Location = New Point(271, 69)
         lblValCalculConstitution.Name = "lblValCalculConstitution"
-        lblValCalculConstitution.Size = New Size(17, 20)
+        lblValCalculConstitution.Size = New Size(13, 15)
         lblValCalculConstitution.TabIndex = 57
         lblValCalculConstitution.Text = "0"
         ' 
         ' lblModRaceCharisme
         ' 
         lblModRaceCharisme.AutoSize = True
-        lblModRaceCharisme.Location = New Point(226, 242)
+        lblModRaceCharisme.Location = New Point(198, 182)
         lblModRaceCharisme.Name = "lblModRaceCharisme"
-        lblModRaceCharisme.Size = New Size(17, 20)
+        lblModRaceCharisme.Size = New Size(13, 15)
         lblModRaceCharisme.TabIndex = 56
         lblModRaceCharisme.Text = "0"
         ' 
         ' lblModRaceSagesse
         ' 
         lblModRaceSagesse.AutoSize = True
-        lblModRaceSagesse.Location = New Point(226, 205)
+        lblModRaceSagesse.Location = New Point(198, 154)
         lblModRaceSagesse.Name = "lblModRaceSagesse"
-        lblModRaceSagesse.Size = New Size(17, 20)
+        lblModRaceSagesse.Size = New Size(13, 15)
         lblModRaceSagesse.TabIndex = 55
         lblModRaceSagesse.Text = "0"
         ' 
         ' lblModRaceIntelligence
         ' 
         lblModRaceIntelligence.AutoSize = True
-        lblModRaceIntelligence.Location = New Point(226, 168)
+        lblModRaceIntelligence.Location = New Point(198, 126)
         lblModRaceIntelligence.Name = "lblModRaceIntelligence"
-        lblModRaceIntelligence.Size = New Size(17, 20)
+        lblModRaceIntelligence.Size = New Size(13, 15)
         lblModRaceIntelligence.TabIndex = 54
         lblModRaceIntelligence.Text = "0"
         ' 
         ' lblModRaceDexterite
         ' 
         lblModRaceDexterite.AutoSize = True
-        lblModRaceDexterite.Location = New Point(226, 130)
+        lblModRaceDexterite.Location = New Point(198, 98)
         lblModRaceDexterite.Name = "lblModRaceDexterite"
-        lblModRaceDexterite.Size = New Size(17, 20)
+        lblModRaceDexterite.Size = New Size(13, 15)
         lblModRaceDexterite.TabIndex = 53
         lblModRaceDexterite.Text = "0"
         ' 
         ' lblModRaceForce
         ' 
         lblModRaceForce.AutoSize = True
-        lblModRaceForce.Location = New Point(226, 55)
+        lblModRaceForce.Location = New Point(198, 41)
         lblModRaceForce.Name = "lblModRaceForce"
-        lblModRaceForce.Size = New Size(17, 20)
+        lblModRaceForce.Size = New Size(13, 15)
         lblModRaceForce.TabIndex = 52
         lblModRaceForce.Text = "0"
         ' 
         ' lblModRaceConstitution
         ' 
         lblModRaceConstitution.AutoSize = True
-        lblModRaceConstitution.Location = New Point(226, 92)
+        lblModRaceConstitution.Location = New Point(198, 69)
         lblModRaceConstitution.Name = "lblModRaceConstitution"
-        lblModRaceConstitution.Size = New Size(17, 20)
+        lblModRaceConstitution.Size = New Size(13, 15)
         lblModRaceConstitution.TabIndex = 51
         lblModRaceConstitution.Text = "0"
         ' 
         ' txtBaseCharisme
         ' 
-        txtBaseCharisme.Location = New Point(140, 242)
-        txtBaseCharisme.Margin = New Padding(3, 4, 3, 4)
+        txtBaseCharisme.Location = New Point(122, 182)
         txtBaseCharisme.Name = "txtBaseCharisme"
-        txtBaseCharisme.Size = New Size(40, 27)
+        txtBaseCharisme.Size = New Size(36, 23)
         txtBaseCharisme.TabIndex = 50
         txtBaseCharisme.Text = "10"
         txtBaseCharisme.TextAlign = HorizontalAlignment.Center
         ' 
         ' txtBaseSagesse
         ' 
-        txtBaseSagesse.Location = New Point(140, 205)
-        txtBaseSagesse.Margin = New Padding(3, 4, 3, 4)
+        txtBaseSagesse.Location = New Point(122, 154)
         txtBaseSagesse.Name = "txtBaseSagesse"
-        txtBaseSagesse.Size = New Size(40, 27)
+        txtBaseSagesse.Size = New Size(36, 23)
         txtBaseSagesse.TabIndex = 49
         txtBaseSagesse.Text = "10"
         txtBaseSagesse.TextAlign = HorizontalAlignment.Center
         ' 
         ' txtBaseIntelligence
         ' 
-        txtBaseIntelligence.Location = New Point(140, 168)
-        txtBaseIntelligence.Margin = New Padding(3, 4, 3, 4)
+        txtBaseIntelligence.Location = New Point(122, 126)
         txtBaseIntelligence.Name = "txtBaseIntelligence"
-        txtBaseIntelligence.Size = New Size(40, 27)
+        txtBaseIntelligence.Size = New Size(36, 23)
         txtBaseIntelligence.TabIndex = 48
         txtBaseIntelligence.Text = "10"
         txtBaseIntelligence.TextAlign = HorizontalAlignment.Center
         ' 
         ' txtBaseDexterite
         ' 
-        txtBaseDexterite.Location = New Point(140, 130)
-        txtBaseDexterite.Margin = New Padding(3, 4, 3, 4)
+        txtBaseDexterite.Location = New Point(122, 98)
         txtBaseDexterite.Name = "txtBaseDexterite"
-        txtBaseDexterite.Size = New Size(40, 27)
+        txtBaseDexterite.Size = New Size(36, 23)
         txtBaseDexterite.TabIndex = 47
         txtBaseDexterite.Text = "10"
         txtBaseDexterite.TextAlign = HorizontalAlignment.Center
         ' 
         ' txtBaseConstitution
         ' 
-        txtBaseConstitution.Location = New Point(140, 92)
-        txtBaseConstitution.Margin = New Padding(3, 4, 3, 4)
+        txtBaseConstitution.Location = New Point(122, 69)
         txtBaseConstitution.Name = "txtBaseConstitution"
-        txtBaseConstitution.Size = New Size(40, 27)
+        txtBaseConstitution.Size = New Size(36, 23)
         txtBaseConstitution.TabIndex = 46
         txtBaseConstitution.Text = "10"
         txtBaseConstitution.TextAlign = HorizontalAlignment.Center
         ' 
         ' txtBaseForce
         ' 
-        txtBaseForce.Location = New Point(140, 55)
-        txtBaseForce.Margin = New Padding(3, 4, 3, 4)
+        txtBaseForce.Location = New Point(122, 41)
         txtBaseForce.Name = "txtBaseForce"
-        txtBaseForce.Size = New Size(40, 27)
+        txtBaseForce.Size = New Size(36, 23)
         txtBaseForce.TabIndex = 45
         txtBaseForce.Text = "10"
         txtBaseForce.TextAlign = HorizontalAlignment.Center
@@ -591,90 +580,90 @@ Partial Class formFightManager
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(380, 18)
+        Label1.Location = New Point(332, 14)
         Label1.Name = "Label1"
-        Label1.Size = New Size(84, 20)
+        Label1.Size = New Size(68, 15)
         Label1.TabIndex = 44
         Label1.Text = "Mod Calcul"
         ' 
         ' lblValeurCalcul
         ' 
         lblValeurCalcul.AutoSize = True
-        lblValeurCalcul.Location = New Point(280, 18)
+        lblValeurCalcul.Location = New Point(245, 14)
         lblValeurCalcul.Name = "lblValeurCalcul"
-        lblValeurCalcul.Size = New Size(94, 20)
+        lblValeurCalcul.Size = New Size(75, 15)
         lblValeurCalcul.TabIndex = 43
         lblValeurCalcul.Text = "Valeur Calcul"
         ' 
         ' lblModRace
         ' 
         lblModRace.AutoSize = True
-        lblModRace.Location = New Point(200, 18)
+        lblModRace.Location = New Point(175, 14)
         lblModRace.Name = "lblModRace"
-        lblModRace.Size = New Size(76, 20)
+        lblModRace.Size = New Size(60, 15)
         lblModRace.TabIndex = 42
         lblModRace.Text = "Mod Race"
         ' 
         ' lblBase
         ' 
         lblBase.AutoSize = True
-        lblBase.Location = New Point(140, 18)
+        lblBase.Location = New Point(122, 14)
         lblBase.Name = "lblBase"
-        lblBase.Size = New Size(40, 20)
+        lblBase.Size = New Size(31, 15)
         lblBase.TabIndex = 41
         lblBase.Text = "Base"
         ' 
         ' lblCharisme
         ' 
         lblCharisme.AutoSize = True
-        lblCharisme.Location = New Point(6, 242)
+        lblCharisme.Location = New Point(5, 182)
         lblCharisme.Name = "lblCharisme"
-        lblCharisme.Size = New Size(70, 20)
+        lblCharisme.Size = New Size(57, 15)
         lblCharisme.TabIndex = 40
         lblCharisme.Text = "Charisme"
         ' 
         ' lblSagesse
         ' 
         lblSagesse.AutoSize = True
-        lblSagesse.Location = New Point(6, 205)
+        lblSagesse.Location = New Point(5, 154)
         lblSagesse.Name = "lblSagesse"
-        lblSagesse.Size = New Size(62, 20)
+        lblSagesse.Size = New Size(48, 15)
         lblSagesse.TabIndex = 39
         lblSagesse.Text = "Sagesse"
         ' 
         ' lblIntelligence
         ' 
         lblIntelligence.AutoSize = True
-        lblIntelligence.Location = New Point(6, 168)
+        lblIntelligence.Location = New Point(5, 126)
         lblIntelligence.Name = "lblIntelligence"
-        lblIntelligence.Size = New Size(86, 20)
+        lblIntelligence.Size = New Size(68, 15)
         lblIntelligence.TabIndex = 38
         lblIntelligence.Text = "Intelligence"
         ' 
         ' lblDexterite
         ' 
         lblDexterite.AutoSize = True
-        lblDexterite.Location = New Point(6, 130)
+        lblDexterite.Location = New Point(5, 98)
         lblDexterite.Name = "lblDexterite"
-        lblDexterite.Size = New Size(74, 20)
+        lblDexterite.Size = New Size(57, 15)
         lblDexterite.TabIndex = 37
         lblDexterite.Text = "Dextéritié"
         ' 
         ' lblConstitution
         ' 
         lblConstitution.AutoSize = True
-        lblConstitution.Location = New Point(6, 92)
+        lblConstitution.Location = New Point(5, 69)
         lblConstitution.Name = "lblConstitution"
-        lblConstitution.Size = New Size(89, 20)
+        lblConstitution.Size = New Size(73, 15)
         lblConstitution.TabIndex = 36
         lblConstitution.Text = "Constitution"
         ' 
         ' lblForce
         ' 
         lblForce.AutoSize = True
-        lblForce.Location = New Point(6, 55)
+        lblForce.Location = New Point(5, 41)
         lblForce.Name = "lblForce"
-        lblForce.Size = New Size(45, 20)
+        lblForce.Size = New Size(36, 15)
         lblForce.TabIndex = 35
         lblForce.Text = "Force"
         ' 
@@ -823,11 +812,10 @@ Partial Class formFightManager
         tabCompetences.Controls.Add(lblAthletisme)
         tabCompetences.Controls.Add(lblArcanes)
         tabCompetences.Controls.Add(lblAcrobaties)
-        tabCompetences.Location = New Point(4, 29)
-        tabCompetences.Margin = New Padding(3, 4, 3, 4)
+        tabCompetences.Location = New Point(4, 24)
         tabCompetences.Name = "tabCompetences"
-        tabCompetences.Padding = New Padding(3, 4, 3, 4)
-        tabCompetences.Size = New Size(913, 665)
+        tabCompetences.Padding = New Padding(3, 3, 3, 3)
+        tabCompetences.Size = New Size(798, 496)
         tabCompetences.TabIndex = 1
         tabCompetences.Text = "Compétences"
         tabCompetences.UseVisualStyleBackColor = True
@@ -835,1287 +823,1304 @@ Partial Class formFightManager
         ' chkFormAcrobaties
         ' 
         chkFormAcrobaties.AutoSize = True
-        chkFormAcrobaties.Location = New Point(483, 50)
+        chkFormAcrobaties.Location = New Point(423, 38)
+        chkFormAcrobaties.Margin = New Padding(3, 2, 3, 2)
         chkFormAcrobaties.Name = "chkFormAcrobaties"
-        chkFormAcrobaties.Size = New Size(18, 17)
+        chkFormAcrobaties.Size = New Size(15, 14)
         chkFormAcrobaties.TabIndex = 219
         chkFormAcrobaties.UseVisualStyleBackColor = True
         ' 
         ' chkFormArcanes
         ' 
         chkFormArcanes.AutoSize = True
-        chkFormArcanes.Location = New Point(483, 87)
+        chkFormArcanes.Location = New Point(423, 65)
+        chkFormArcanes.Margin = New Padding(3, 2, 3, 2)
         chkFormArcanes.Name = "chkFormArcanes"
-        chkFormArcanes.Size = New Size(18, 17)
+        chkFormArcanes.Size = New Size(15, 14)
         chkFormArcanes.TabIndex = 220
         chkFormArcanes.UseVisualStyleBackColor = True
         ' 
         ' chkFormAthletisme
         ' 
         chkFormAthletisme.AutoSize = True
-        chkFormAthletisme.Location = New Point(483, 125)
+        chkFormAthletisme.Location = New Point(423, 94)
+        chkFormAthletisme.Margin = New Padding(3, 2, 3, 2)
         chkFormAthletisme.Name = "chkFormAthletisme"
-        chkFormAthletisme.Size = New Size(18, 17)
+        chkFormAthletisme.Size = New Size(15, 14)
         chkFormAthletisme.TabIndex = 221
         chkFormAthletisme.UseVisualStyleBackColor = True
         ' 
         ' chkFormBluff
         ' 
         chkFormBluff.AutoSize = True
-        chkFormBluff.Location = New Point(483, 163)
+        chkFormBluff.Location = New Point(423, 122)
+        chkFormBluff.Margin = New Padding(3, 2, 3, 2)
         chkFormBluff.Name = "chkFormBluff"
-        chkFormBluff.Size = New Size(18, 17)
+        chkFormBluff.Size = New Size(15, 14)
         chkFormBluff.TabIndex = 222
         chkFormBluff.UseVisualStyleBackColor = True
         ' 
         ' chkFormConnDeLaRue
         ' 
         chkFormConnDeLaRue.AutoSize = True
-        chkFormConnDeLaRue.Location = New Point(483, 200)
+        chkFormConnDeLaRue.Location = New Point(423, 150)
+        chkFormConnDeLaRue.Margin = New Padding(3, 2, 3, 2)
         chkFormConnDeLaRue.Name = "chkFormConnDeLaRue"
-        chkFormConnDeLaRue.Size = New Size(18, 17)
+        chkFormConnDeLaRue.Size = New Size(15, 14)
         chkFormConnDeLaRue.TabIndex = 222
         chkFormConnDeLaRue.UseVisualStyleBackColor = True
         ' 
         ' chkFormDiplomatie
         ' 
         chkFormDiplomatie.AutoSize = True
-        chkFormDiplomatie.Location = New Point(483, 237)
+        chkFormDiplomatie.Location = New Point(423, 178)
+        chkFormDiplomatie.Margin = New Padding(3, 2, 3, 2)
         chkFormDiplomatie.Name = "chkFormDiplomatie"
-        chkFormDiplomatie.Size = New Size(18, 17)
+        chkFormDiplomatie.Size = New Size(15, 14)
         chkFormDiplomatie.TabIndex = 222
         chkFormDiplomatie.UseVisualStyleBackColor = True
         ' 
         ' chkFormDiscretion
         ' 
         chkFormDiscretion.AutoSize = True
-        chkFormDiscretion.Location = New Point(483, 272)
+        chkFormDiscretion.Location = New Point(423, 204)
+        chkFormDiscretion.Margin = New Padding(3, 2, 3, 2)
         chkFormDiscretion.Name = "chkFormDiscretion"
-        chkFormDiscretion.Size = New Size(18, 17)
+        chkFormDiscretion.Size = New Size(15, 14)
         chkFormDiscretion.TabIndex = 222
         chkFormDiscretion.UseVisualStyleBackColor = True
         ' 
         ' chkFormEndurance
         ' 
         chkFormEndurance.AutoSize = True
-        chkFormEndurance.Location = New Point(483, 308)
+        chkFormEndurance.Location = New Point(423, 231)
+        chkFormEndurance.Margin = New Padding(3, 2, 3, 2)
         chkFormEndurance.Name = "chkFormEndurance"
-        chkFormEndurance.Size = New Size(18, 17)
+        chkFormEndurance.Size = New Size(15, 14)
         chkFormEndurance.TabIndex = 222
         chkFormEndurance.UseVisualStyleBackColor = True
         ' 
         ' chkFormExploration
         ' 
         chkFormExploration.AutoSize = True
-        chkFormExploration.Location = New Point(483, 344)
+        chkFormExploration.Location = New Point(423, 258)
+        chkFormExploration.Margin = New Padding(3, 2, 3, 2)
         chkFormExploration.Name = "chkFormExploration"
-        chkFormExploration.Size = New Size(18, 17)
+        chkFormExploration.Size = New Size(15, 14)
         chkFormExploration.TabIndex = 222
         chkFormExploration.UseVisualStyleBackColor = True
         ' 
         ' chkFormHistoire
         ' 
         chkFormHistoire.AutoSize = True
-        chkFormHistoire.Location = New Point(483, 377)
+        chkFormHistoire.Location = New Point(423, 283)
+        chkFormHistoire.Margin = New Padding(3, 2, 3, 2)
         chkFormHistoire.Name = "chkFormHistoire"
-        chkFormHistoire.Size = New Size(18, 17)
+        chkFormHistoire.Size = New Size(15, 14)
         chkFormHistoire.TabIndex = 222
         chkFormHistoire.UseVisualStyleBackColor = True
         ' 
         ' chkFormIntimidation
         ' 
         chkFormIntimidation.AutoSize = True
-        chkFormIntimidation.Location = New Point(483, 409)
+        chkFormIntimidation.Location = New Point(423, 307)
+        chkFormIntimidation.Margin = New Padding(3, 2, 3, 2)
         chkFormIntimidation.Name = "chkFormIntimidation"
-        chkFormIntimidation.Size = New Size(18, 17)
+        chkFormIntimidation.Size = New Size(15, 14)
         chkFormIntimidation.TabIndex = 222
         chkFormIntimidation.UseVisualStyleBackColor = True
         ' 
         ' chkFormIntuition
         ' 
         chkFormIntuition.AutoSize = True
-        chkFormIntuition.Location = New Point(483, 443)
+        chkFormIntuition.Location = New Point(423, 332)
+        chkFormIntuition.Margin = New Padding(3, 2, 3, 2)
         chkFormIntuition.Name = "chkFormIntuition"
-        chkFormIntuition.Size = New Size(18, 17)
+        chkFormIntuition.Size = New Size(15, 14)
         chkFormIntuition.TabIndex = 222
         chkFormIntuition.UseVisualStyleBackColor = True
         ' 
         ' chkFormLarcin
         ' 
         chkFormLarcin.AutoSize = True
-        chkFormLarcin.Location = New Point(483, 479)
+        chkFormLarcin.Location = New Point(423, 359)
+        chkFormLarcin.Margin = New Padding(3, 2, 3, 2)
         chkFormLarcin.Name = "chkFormLarcin"
-        chkFormLarcin.Size = New Size(18, 17)
+        chkFormLarcin.Size = New Size(15, 14)
         chkFormLarcin.TabIndex = 222
         chkFormLarcin.UseVisualStyleBackColor = True
         ' 
         ' chkFormNature
         ' 
         chkFormNature.AutoSize = True
-        chkFormNature.Location = New Point(483, 510)
+        chkFormNature.Location = New Point(423, 382)
+        chkFormNature.Margin = New Padding(3, 2, 3, 2)
         chkFormNature.Name = "chkFormNature"
-        chkFormNature.Size = New Size(18, 17)
+        chkFormNature.Size = New Size(15, 14)
         chkFormNature.TabIndex = 222
         chkFormNature.UseVisualStyleBackColor = True
         ' 
         ' chkFormPerception
         ' 
         chkFormPerception.AutoSize = True
-        chkFormPerception.Location = New Point(483, 545)
+        chkFormPerception.Location = New Point(423, 409)
+        chkFormPerception.Margin = New Padding(3, 2, 3, 2)
         chkFormPerception.Name = "chkFormPerception"
-        chkFormPerception.Size = New Size(18, 17)
+        chkFormPerception.Size = New Size(15, 14)
         chkFormPerception.TabIndex = 222
         chkFormPerception.UseVisualStyleBackColor = True
         ' 
         ' chkFormReligion
         ' 
         chkFormReligion.AutoSize = True
-        chkFormReligion.Location = New Point(483, 575)
+        chkFormReligion.Location = New Point(423, 431)
+        chkFormReligion.Margin = New Padding(3, 2, 3, 2)
         chkFormReligion.Name = "chkFormReligion"
-        chkFormReligion.Size = New Size(18, 17)
+        chkFormReligion.Size = New Size(15, 14)
         chkFormReligion.TabIndex = 222
         chkFormReligion.UseVisualStyleBackColor = True
         ' 
         ' chkFormSoins
         ' 
         chkFormSoins.AutoSize = True
-        chkFormSoins.Location = New Point(483, 612)
+        chkFormSoins.Location = New Point(423, 459)
+        chkFormSoins.Margin = New Padding(3, 2, 3, 2)
         chkFormSoins.Name = "chkFormSoins"
-        chkFormSoins.Size = New Size(18, 17)
+        chkFormSoins.Size = New Size(15, 14)
         chkFormSoins.TabIndex = 222
         chkFormSoins.UseVisualStyleBackColor = True
         ' 
         ' lblTotalSoins
         ' 
         lblTotalSoins.AutoSize = True
-        lblTotalSoins.Location = New Point(207, 612)
+        lblTotalSoins.Location = New Point(181, 459)
         lblTotalSoins.Name = "lblTotalSoins"
-        lblTotalSoins.Size = New Size(17, 20)
+        lblTotalSoins.Size = New Size(13, 15)
         lblTotalSoins.TabIndex = 218
         lblTotalSoins.Text = "0"
         ' 
         ' lblTotalReligion
         ' 
         lblTotalReligion.AutoSize = True
-        lblTotalReligion.Location = New Point(207, 575)
+        lblTotalReligion.Location = New Point(181, 431)
         lblTotalReligion.Name = "lblTotalReligion"
-        lblTotalReligion.Size = New Size(17, 20)
+        lblTotalReligion.Size = New Size(13, 15)
         lblTotalReligion.TabIndex = 217
         lblTotalReligion.Text = "0"
         ' 
         ' lblTotalPerception
         ' 
         lblTotalPerception.AutoSize = True
-        lblTotalPerception.Location = New Point(207, 545)
+        lblTotalPerception.Location = New Point(181, 409)
         lblTotalPerception.Name = "lblTotalPerception"
-        lblTotalPerception.Size = New Size(17, 20)
+        lblTotalPerception.Size = New Size(13, 15)
         lblTotalPerception.TabIndex = 216
         lblTotalPerception.Text = "0"
         ' 
         ' lblTotalNature
         ' 
         lblTotalNature.AutoSize = True
-        lblTotalNature.Location = New Point(207, 510)
+        lblTotalNature.Location = New Point(181, 382)
         lblTotalNature.Name = "lblTotalNature"
-        lblTotalNature.Size = New Size(17, 20)
+        lblTotalNature.Size = New Size(13, 15)
         lblTotalNature.TabIndex = 215
         lblTotalNature.Text = "0"
         ' 
         ' lblTotalLarcin
         ' 
         lblTotalLarcin.AutoSize = True
-        lblTotalLarcin.Location = New Point(207, 479)
+        lblTotalLarcin.Location = New Point(181, 359)
         lblTotalLarcin.Name = "lblTotalLarcin"
-        lblTotalLarcin.Size = New Size(17, 20)
+        lblTotalLarcin.Size = New Size(13, 15)
         lblTotalLarcin.TabIndex = 214
         lblTotalLarcin.Text = "0"
         ' 
         ' lblTotalIntuition
         ' 
         lblTotalIntuition.AutoSize = True
-        lblTotalIntuition.Location = New Point(207, 443)
+        lblTotalIntuition.Location = New Point(181, 332)
         lblTotalIntuition.Name = "lblTotalIntuition"
-        lblTotalIntuition.Size = New Size(17, 20)
+        lblTotalIntuition.Size = New Size(13, 15)
         lblTotalIntuition.TabIndex = 213
         lblTotalIntuition.Text = "0"
         ' 
         ' lblTotalIntimidation
         ' 
         lblTotalIntimidation.AutoSize = True
-        lblTotalIntimidation.Location = New Point(207, 409)
+        lblTotalIntimidation.Location = New Point(181, 307)
         lblTotalIntimidation.Name = "lblTotalIntimidation"
-        lblTotalIntimidation.Size = New Size(17, 20)
+        lblTotalIntimidation.Size = New Size(13, 15)
         lblTotalIntimidation.TabIndex = 212
         lblTotalIntimidation.Text = "0"
         ' 
         ' lblTotalHistoire
         ' 
         lblTotalHistoire.AutoSize = True
-        lblTotalHistoire.Location = New Point(207, 377)
+        lblTotalHistoire.Location = New Point(181, 283)
         lblTotalHistoire.Name = "lblTotalHistoire"
-        lblTotalHistoire.Size = New Size(17, 20)
+        lblTotalHistoire.Size = New Size(13, 15)
         lblTotalHistoire.TabIndex = 211
         lblTotalHistoire.Text = "0"
         ' 
         ' lblTotalExploration
         ' 
         lblTotalExploration.AutoSize = True
-        lblTotalExploration.Location = New Point(207, 344)
+        lblTotalExploration.Location = New Point(181, 258)
         lblTotalExploration.Name = "lblTotalExploration"
-        lblTotalExploration.Size = New Size(17, 20)
+        lblTotalExploration.Size = New Size(13, 15)
         lblTotalExploration.TabIndex = 210
         lblTotalExploration.Text = "0"
         ' 
         ' lblTotalEndurance
         ' 
         lblTotalEndurance.AutoSize = True
-        lblTotalEndurance.Location = New Point(207, 308)
+        lblTotalEndurance.Location = New Point(181, 231)
         lblTotalEndurance.Name = "lblTotalEndurance"
-        lblTotalEndurance.Size = New Size(17, 20)
+        lblTotalEndurance.Size = New Size(13, 15)
         lblTotalEndurance.TabIndex = 209
         lblTotalEndurance.Text = "0"
         ' 
         ' lblTotalDiscretion
         ' 
         lblTotalDiscretion.AutoSize = True
-        lblTotalDiscretion.Location = New Point(207, 272)
+        lblTotalDiscretion.Location = New Point(181, 204)
         lblTotalDiscretion.Name = "lblTotalDiscretion"
-        lblTotalDiscretion.Size = New Size(17, 20)
+        lblTotalDiscretion.Size = New Size(13, 15)
         lblTotalDiscretion.TabIndex = 208
         lblTotalDiscretion.Text = "0"
         ' 
         ' lblTotalDiplomatie
         ' 
         lblTotalDiplomatie.AutoSize = True
-        lblTotalDiplomatie.Location = New Point(207, 237)
+        lblTotalDiplomatie.Location = New Point(181, 178)
         lblTotalDiplomatie.Name = "lblTotalDiplomatie"
-        lblTotalDiplomatie.Size = New Size(17, 20)
+        lblTotalDiplomatie.Size = New Size(13, 15)
         lblTotalDiplomatie.TabIndex = 207
         lblTotalDiplomatie.Text = "0"
         ' 
         ' lblTotalConnDeLaRue
         ' 
         lblTotalConnDeLaRue.AutoSize = True
-        lblTotalConnDeLaRue.Location = New Point(207, 200)
+        lblTotalConnDeLaRue.Location = New Point(181, 150)
         lblTotalConnDeLaRue.Name = "lblTotalConnDeLaRue"
-        lblTotalConnDeLaRue.Size = New Size(17, 20)
+        lblTotalConnDeLaRue.Size = New Size(13, 15)
         lblTotalConnDeLaRue.TabIndex = 206
         lblTotalConnDeLaRue.Text = "0"
         ' 
         ' lblTotalBluff
         ' 
         lblTotalBluff.AutoSize = True
-        lblTotalBluff.Location = New Point(207, 163)
+        lblTotalBluff.Location = New Point(181, 122)
         lblTotalBluff.Name = "lblTotalBluff"
-        lblTotalBluff.Size = New Size(17, 20)
+        lblTotalBluff.Size = New Size(13, 15)
         lblTotalBluff.TabIndex = 205
         lblTotalBluff.Text = "0"
         ' 
         ' lblTotalAthletisme
         ' 
         lblTotalAthletisme.AutoSize = True
-        lblTotalAthletisme.Location = New Point(207, 125)
+        lblTotalAthletisme.Location = New Point(181, 94)
         lblTotalAthletisme.Name = "lblTotalAthletisme"
-        lblTotalAthletisme.Size = New Size(17, 20)
+        lblTotalAthletisme.Size = New Size(13, 15)
         lblTotalAthletisme.TabIndex = 204
         lblTotalAthletisme.Text = "0"
         ' 
         ' lblTotalAcrobaties
         ' 
         lblTotalAcrobaties.AutoSize = True
-        lblTotalAcrobaties.Location = New Point(207, 50)
+        lblTotalAcrobaties.Location = New Point(181, 38)
         lblTotalAcrobaties.Name = "lblTotalAcrobaties"
-        lblTotalAcrobaties.Size = New Size(17, 20)
+        lblTotalAcrobaties.Size = New Size(13, 15)
         lblTotalAcrobaties.TabIndex = 203
         lblTotalAcrobaties.Text = "0"
         ' 
         ' lblTotalArcanes
         ' 
         lblTotalArcanes.AutoSize = True
-        lblTotalArcanes.Location = New Point(207, 87)
+        lblTotalArcanes.Location = New Point(181, 65)
         lblTotalArcanes.Name = "lblTotalArcanes"
-        lblTotalArcanes.Size = New Size(17, 20)
+        lblTotalArcanes.Size = New Size(13, 15)
         lblTotalArcanes.TabIndex = 202
         lblTotalArcanes.Text = "0"
         ' 
         ' lblTotal
         ' 
         lblTotal.AutoSize = True
-        lblTotal.Location = New Point(181, 13)
+        lblTotal.Location = New Point(158, 10)
         lblTotal.Name = "lblTotal"
-        lblTotal.Size = New Size(42, 20)
+        lblTotal.Size = New Size(32, 15)
         lblTotal.TabIndex = 201
         lblTotal.Text = "Total"
         ' 
         ' lblPenArmureSoins
         ' 
         lblPenArmureSoins.AutoSize = True
-        lblPenArmureSoins.Location = New Point(733, 612)
+        lblPenArmureSoins.Location = New Point(641, 459)
         lblPenArmureSoins.Name = "lblPenArmureSoins"
-        lblPenArmureSoins.Size = New Size(17, 20)
+        lblPenArmureSoins.Size = New Size(13, 15)
         lblPenArmureSoins.TabIndex = 200
         lblPenArmureSoins.Text = "0"
         ' 
         ' lblDiversSoins
         ' 
         lblDiversSoins.AutoSize = True
-        lblDiversSoins.Location = New Point(649, 612)
+        lblDiversSoins.Location = New Point(568, 459)
         lblDiversSoins.Name = "lblDiversSoins"
-        lblDiversSoins.Size = New Size(17, 20)
+        lblDiversSoins.Size = New Size(13, 15)
         lblDiversSoins.TabIndex = 199
         lblDiversSoins.Text = "0"
         ' 
         ' lblModRacialSoins
         ' 
         lblModRacialSoins.AutoSize = True
-        lblModRacialSoins.Location = New Point(567, 612)
+        lblModRacialSoins.Location = New Point(496, 459)
         lblModRacialSoins.Name = "lblModRacialSoins"
-        lblModRacialSoins.Size = New Size(17, 20)
+        lblModRacialSoins.Size = New Size(13, 15)
         lblModRacialSoins.TabIndex = 198
         lblModRacialSoins.Text = "0"
         ' 
         ' lblModCaracSoins
         ' 
         lblModCaracSoins.AutoSize = True
-        lblModCaracSoins.Location = New Point(391, 612)
+        lblModCaracSoins.Location = New Point(342, 459)
         lblModCaracSoins.Name = "lblModCaracSoins"
-        lblModCaracSoins.Size = New Size(17, 20)
+        lblModCaracSoins.Size = New Size(13, 15)
         lblModCaracSoins.TabIndex = 196
         lblModCaracSoins.Text = "0"
         ' 
         ' lblDemiNiveauSoins
         ' 
         lblDemiNiveauSoins.AutoSize = True
-        lblDemiNiveauSoins.Location = New Point(299, 612)
+        lblDemiNiveauSoins.Location = New Point(262, 459)
         lblDemiNiveauSoins.Name = "lblDemiNiveauSoins"
-        lblDemiNiveauSoins.Size = New Size(17, 20)
+        lblDemiNiveauSoins.Size = New Size(13, 15)
         lblDemiNiveauSoins.TabIndex = 195
         lblDemiNiveauSoins.Text = "0"
         ' 
         ' lblPenArmureReligion
         ' 
         lblPenArmureReligion.AutoSize = True
-        lblPenArmureReligion.Location = New Point(733, 575)
+        lblPenArmureReligion.Location = New Point(641, 431)
         lblPenArmureReligion.Name = "lblPenArmureReligion"
-        lblPenArmureReligion.Size = New Size(17, 20)
+        lblPenArmureReligion.Size = New Size(13, 15)
         lblPenArmureReligion.TabIndex = 194
         lblPenArmureReligion.Text = "0"
         ' 
         ' lblDiversReligion
         ' 
         lblDiversReligion.AutoSize = True
-        lblDiversReligion.Location = New Point(649, 575)
+        lblDiversReligion.Location = New Point(568, 431)
         lblDiversReligion.Name = "lblDiversReligion"
-        lblDiversReligion.Size = New Size(17, 20)
+        lblDiversReligion.Size = New Size(13, 15)
         lblDiversReligion.TabIndex = 193
         lblDiversReligion.Text = "0"
         ' 
         ' lblModRacialReligion
         ' 
         lblModRacialReligion.AutoSize = True
-        lblModRacialReligion.Location = New Point(567, 575)
+        lblModRacialReligion.Location = New Point(496, 431)
         lblModRacialReligion.Name = "lblModRacialReligion"
-        lblModRacialReligion.Size = New Size(17, 20)
+        lblModRacialReligion.Size = New Size(13, 15)
         lblModRacialReligion.TabIndex = 192
         lblModRacialReligion.Text = "0"
         ' 
         ' lblModCaracReligion
         ' 
         lblModCaracReligion.AutoSize = True
-        lblModCaracReligion.Location = New Point(391, 575)
+        lblModCaracReligion.Location = New Point(342, 431)
         lblModCaracReligion.Name = "lblModCaracReligion"
-        lblModCaracReligion.Size = New Size(17, 20)
+        lblModCaracReligion.Size = New Size(13, 15)
         lblModCaracReligion.TabIndex = 190
         lblModCaracReligion.Text = "0"
         ' 
         ' lblDemiNiveauReligion
         ' 
         lblDemiNiveauReligion.AutoSize = True
-        lblDemiNiveauReligion.Location = New Point(299, 575)
+        lblDemiNiveauReligion.Location = New Point(262, 431)
         lblDemiNiveauReligion.Name = "lblDemiNiveauReligion"
-        lblDemiNiveauReligion.Size = New Size(17, 20)
+        lblDemiNiveauReligion.Size = New Size(13, 15)
         lblDemiNiveauReligion.TabIndex = 189
         lblDemiNiveauReligion.Text = "0"
         ' 
         ' lblPenArmurePerception
         ' 
         lblPenArmurePerception.AutoSize = True
-        lblPenArmurePerception.Location = New Point(733, 545)
+        lblPenArmurePerception.Location = New Point(641, 409)
         lblPenArmurePerception.Name = "lblPenArmurePerception"
-        lblPenArmurePerception.Size = New Size(17, 20)
+        lblPenArmurePerception.Size = New Size(13, 15)
         lblPenArmurePerception.TabIndex = 188
         lblPenArmurePerception.Text = "0"
         ' 
         ' lblDiversPerception
         ' 
         lblDiversPerception.AutoSize = True
-        lblDiversPerception.Location = New Point(649, 545)
+        lblDiversPerception.Location = New Point(568, 409)
         lblDiversPerception.Name = "lblDiversPerception"
-        lblDiversPerception.Size = New Size(17, 20)
+        lblDiversPerception.Size = New Size(13, 15)
         lblDiversPerception.TabIndex = 187
         lblDiversPerception.Text = "0"
         ' 
         ' lblModRacialPerception
         ' 
         lblModRacialPerception.AutoSize = True
-        lblModRacialPerception.Location = New Point(567, 545)
+        lblModRacialPerception.Location = New Point(496, 409)
         lblModRacialPerception.Name = "lblModRacialPerception"
-        lblModRacialPerception.Size = New Size(17, 20)
+        lblModRacialPerception.Size = New Size(13, 15)
         lblModRacialPerception.TabIndex = 186
         lblModRacialPerception.Text = "0"
         ' 
         ' lblModCaracPerception
         ' 
         lblModCaracPerception.AutoSize = True
-        lblModCaracPerception.Location = New Point(391, 545)
+        lblModCaracPerception.Location = New Point(342, 409)
         lblModCaracPerception.Name = "lblModCaracPerception"
-        lblModCaracPerception.Size = New Size(17, 20)
+        lblModCaracPerception.Size = New Size(13, 15)
         lblModCaracPerception.TabIndex = 184
         lblModCaracPerception.Text = "0"
         ' 
         ' lblDemiNiveauPerception
         ' 
         lblDemiNiveauPerception.AutoSize = True
-        lblDemiNiveauPerception.Location = New Point(299, 545)
+        lblDemiNiveauPerception.Location = New Point(262, 409)
         lblDemiNiveauPerception.Name = "lblDemiNiveauPerception"
-        lblDemiNiveauPerception.Size = New Size(17, 20)
+        lblDemiNiveauPerception.Size = New Size(13, 15)
         lblDemiNiveauPerception.TabIndex = 183
         lblDemiNiveauPerception.Text = "0"
         ' 
         ' lblPenArmureNature
         ' 
         lblPenArmureNature.AutoSize = True
-        lblPenArmureNature.Location = New Point(733, 510)
+        lblPenArmureNature.Location = New Point(641, 382)
         lblPenArmureNature.Name = "lblPenArmureNature"
-        lblPenArmureNature.Size = New Size(17, 20)
+        lblPenArmureNature.Size = New Size(13, 15)
         lblPenArmureNature.TabIndex = 182
         lblPenArmureNature.Text = "0"
         ' 
         ' lblDiversNature
         ' 
         lblDiversNature.AutoSize = True
-        lblDiversNature.Location = New Point(649, 510)
+        lblDiversNature.Location = New Point(568, 382)
         lblDiversNature.Name = "lblDiversNature"
-        lblDiversNature.Size = New Size(17, 20)
+        lblDiversNature.Size = New Size(13, 15)
         lblDiversNature.TabIndex = 181
         lblDiversNature.Text = "0"
         ' 
         ' lblModRacialNature
         ' 
         lblModRacialNature.AutoSize = True
-        lblModRacialNature.Location = New Point(567, 510)
+        lblModRacialNature.Location = New Point(496, 382)
         lblModRacialNature.Name = "lblModRacialNature"
-        lblModRacialNature.Size = New Size(17, 20)
+        lblModRacialNature.Size = New Size(13, 15)
         lblModRacialNature.TabIndex = 180
         lblModRacialNature.Text = "0"
         ' 
         ' lblModCaracNature
         ' 
         lblModCaracNature.AutoSize = True
-        lblModCaracNature.Location = New Point(391, 510)
+        lblModCaracNature.Location = New Point(342, 382)
         lblModCaracNature.Name = "lblModCaracNature"
-        lblModCaracNature.Size = New Size(17, 20)
+        lblModCaracNature.Size = New Size(13, 15)
         lblModCaracNature.TabIndex = 178
         lblModCaracNature.Text = "0"
         ' 
         ' lblDemiNiveauNature
         ' 
         lblDemiNiveauNature.AutoSize = True
-        lblDemiNiveauNature.Location = New Point(299, 510)
+        lblDemiNiveauNature.Location = New Point(262, 382)
         lblDemiNiveauNature.Name = "lblDemiNiveauNature"
-        lblDemiNiveauNature.Size = New Size(17, 20)
+        lblDemiNiveauNature.Size = New Size(13, 15)
         lblDemiNiveauNature.TabIndex = 177
         lblDemiNiveauNature.Text = "0"
         ' 
         ' lblPenArmureLarcin
         ' 
         lblPenArmureLarcin.AutoSize = True
-        lblPenArmureLarcin.Location = New Point(733, 479)
+        lblPenArmureLarcin.Location = New Point(641, 359)
         lblPenArmureLarcin.Name = "lblPenArmureLarcin"
-        lblPenArmureLarcin.Size = New Size(17, 20)
+        lblPenArmureLarcin.Size = New Size(13, 15)
         lblPenArmureLarcin.TabIndex = 176
         lblPenArmureLarcin.Text = "0"
         ' 
         ' lblDiversLarcin
         ' 
         lblDiversLarcin.AutoSize = True
-        lblDiversLarcin.Location = New Point(649, 479)
+        lblDiversLarcin.Location = New Point(568, 359)
         lblDiversLarcin.Name = "lblDiversLarcin"
-        lblDiversLarcin.Size = New Size(17, 20)
+        lblDiversLarcin.Size = New Size(13, 15)
         lblDiversLarcin.TabIndex = 175
         lblDiversLarcin.Text = "0"
         ' 
         ' lblModRacialLarcin
         ' 
         lblModRacialLarcin.AutoSize = True
-        lblModRacialLarcin.Location = New Point(567, 479)
+        lblModRacialLarcin.Location = New Point(496, 359)
         lblModRacialLarcin.Name = "lblModRacialLarcin"
-        lblModRacialLarcin.Size = New Size(17, 20)
+        lblModRacialLarcin.Size = New Size(13, 15)
         lblModRacialLarcin.TabIndex = 174
         lblModRacialLarcin.Text = "0"
         ' 
         ' lblModCaracLarcin
         ' 
         lblModCaracLarcin.AutoSize = True
-        lblModCaracLarcin.Location = New Point(391, 479)
+        lblModCaracLarcin.Location = New Point(342, 359)
         lblModCaracLarcin.Name = "lblModCaracLarcin"
-        lblModCaracLarcin.Size = New Size(17, 20)
+        lblModCaracLarcin.Size = New Size(13, 15)
         lblModCaracLarcin.TabIndex = 172
         lblModCaracLarcin.Text = "0"
         ' 
         ' lblDemiNiveauLarcin
         ' 
         lblDemiNiveauLarcin.AutoSize = True
-        lblDemiNiveauLarcin.Location = New Point(299, 479)
+        lblDemiNiveauLarcin.Location = New Point(262, 359)
         lblDemiNiveauLarcin.Name = "lblDemiNiveauLarcin"
-        lblDemiNiveauLarcin.Size = New Size(17, 20)
+        lblDemiNiveauLarcin.Size = New Size(13, 15)
         lblDemiNiveauLarcin.TabIndex = 171
         lblDemiNiveauLarcin.Text = "0"
         ' 
         ' lblPenArmureIntuition
         ' 
         lblPenArmureIntuition.AutoSize = True
-        lblPenArmureIntuition.Location = New Point(733, 443)
+        lblPenArmureIntuition.Location = New Point(641, 332)
         lblPenArmureIntuition.Name = "lblPenArmureIntuition"
-        lblPenArmureIntuition.Size = New Size(17, 20)
+        lblPenArmureIntuition.Size = New Size(13, 15)
         lblPenArmureIntuition.TabIndex = 170
         lblPenArmureIntuition.Text = "0"
         ' 
         ' lblDiversIntuition
         ' 
         lblDiversIntuition.AutoSize = True
-        lblDiversIntuition.Location = New Point(649, 443)
+        lblDiversIntuition.Location = New Point(568, 332)
         lblDiversIntuition.Name = "lblDiversIntuition"
-        lblDiversIntuition.Size = New Size(17, 20)
+        lblDiversIntuition.Size = New Size(13, 15)
         lblDiversIntuition.TabIndex = 169
         lblDiversIntuition.Text = "0"
         ' 
         ' lblModRacialIntuition
         ' 
         lblModRacialIntuition.AutoSize = True
-        lblModRacialIntuition.Location = New Point(567, 443)
+        lblModRacialIntuition.Location = New Point(496, 332)
         lblModRacialIntuition.Name = "lblModRacialIntuition"
-        lblModRacialIntuition.Size = New Size(17, 20)
+        lblModRacialIntuition.Size = New Size(13, 15)
         lblModRacialIntuition.TabIndex = 168
         lblModRacialIntuition.Text = "0"
         ' 
         ' lblModCaracIntuition
         ' 
         lblModCaracIntuition.AutoSize = True
-        lblModCaracIntuition.Location = New Point(391, 443)
+        lblModCaracIntuition.Location = New Point(342, 332)
         lblModCaracIntuition.Name = "lblModCaracIntuition"
-        lblModCaracIntuition.Size = New Size(17, 20)
+        lblModCaracIntuition.Size = New Size(13, 15)
         lblModCaracIntuition.TabIndex = 166
         lblModCaracIntuition.Text = "0"
         ' 
         ' lblDemiNiveauIntuition
         ' 
         lblDemiNiveauIntuition.AutoSize = True
-        lblDemiNiveauIntuition.Location = New Point(299, 443)
+        lblDemiNiveauIntuition.Location = New Point(262, 332)
         lblDemiNiveauIntuition.Name = "lblDemiNiveauIntuition"
-        lblDemiNiveauIntuition.Size = New Size(17, 20)
+        lblDemiNiveauIntuition.Size = New Size(13, 15)
         lblDemiNiveauIntuition.TabIndex = 165
         lblDemiNiveauIntuition.Text = "0"
         ' 
         ' lblPenArmureIntimidation
         ' 
         lblPenArmureIntimidation.AutoSize = True
-        lblPenArmureIntimidation.Location = New Point(733, 409)
+        lblPenArmureIntimidation.Location = New Point(641, 307)
         lblPenArmureIntimidation.Name = "lblPenArmureIntimidation"
-        lblPenArmureIntimidation.Size = New Size(17, 20)
+        lblPenArmureIntimidation.Size = New Size(13, 15)
         lblPenArmureIntimidation.TabIndex = 164
         lblPenArmureIntimidation.Text = "0"
         ' 
         ' lblDiversIntimidation
         ' 
         lblDiversIntimidation.AutoSize = True
-        lblDiversIntimidation.Location = New Point(649, 409)
+        lblDiversIntimidation.Location = New Point(568, 307)
         lblDiversIntimidation.Name = "lblDiversIntimidation"
-        lblDiversIntimidation.Size = New Size(17, 20)
+        lblDiversIntimidation.Size = New Size(13, 15)
         lblDiversIntimidation.TabIndex = 163
         lblDiversIntimidation.Text = "0"
         ' 
         ' lblModRacialIntimidation
         ' 
         lblModRacialIntimidation.AutoSize = True
-        lblModRacialIntimidation.Location = New Point(567, 409)
+        lblModRacialIntimidation.Location = New Point(496, 307)
         lblModRacialIntimidation.Name = "lblModRacialIntimidation"
-        lblModRacialIntimidation.Size = New Size(17, 20)
+        lblModRacialIntimidation.Size = New Size(13, 15)
         lblModRacialIntimidation.TabIndex = 162
         lblModRacialIntimidation.Text = "0"
         ' 
         ' lblModCaracIntimidation
         ' 
         lblModCaracIntimidation.AutoSize = True
-        lblModCaracIntimidation.Location = New Point(391, 409)
+        lblModCaracIntimidation.Location = New Point(342, 307)
         lblModCaracIntimidation.Name = "lblModCaracIntimidation"
-        lblModCaracIntimidation.Size = New Size(17, 20)
+        lblModCaracIntimidation.Size = New Size(13, 15)
         lblModCaracIntimidation.TabIndex = 160
         lblModCaracIntimidation.Text = "0"
         ' 
         ' lblDemiNiveauIntimidation
         ' 
         lblDemiNiveauIntimidation.AutoSize = True
-        lblDemiNiveauIntimidation.Location = New Point(299, 409)
+        lblDemiNiveauIntimidation.Location = New Point(262, 307)
         lblDemiNiveauIntimidation.Name = "lblDemiNiveauIntimidation"
-        lblDemiNiveauIntimidation.Size = New Size(17, 20)
+        lblDemiNiveauIntimidation.Size = New Size(13, 15)
         lblDemiNiveauIntimidation.TabIndex = 159
         lblDemiNiveauIntimidation.Text = "0"
         ' 
         ' lblPenArmureHistoire
         ' 
         lblPenArmureHistoire.AutoSize = True
-        lblPenArmureHistoire.Location = New Point(733, 377)
+        lblPenArmureHistoire.Location = New Point(641, 283)
         lblPenArmureHistoire.Name = "lblPenArmureHistoire"
-        lblPenArmureHistoire.Size = New Size(17, 20)
+        lblPenArmureHistoire.Size = New Size(13, 15)
         lblPenArmureHistoire.TabIndex = 158
         lblPenArmureHistoire.Text = "0"
         ' 
         ' lblDiversHistoire
         ' 
         lblDiversHistoire.AutoSize = True
-        lblDiversHistoire.Location = New Point(649, 377)
+        lblDiversHistoire.Location = New Point(568, 283)
         lblDiversHistoire.Name = "lblDiversHistoire"
-        lblDiversHistoire.Size = New Size(17, 20)
+        lblDiversHistoire.Size = New Size(13, 15)
         lblDiversHistoire.TabIndex = 157
         lblDiversHistoire.Text = "0"
         ' 
         ' lblModRacialHistoire
         ' 
         lblModRacialHistoire.AutoSize = True
-        lblModRacialHistoire.Location = New Point(567, 377)
+        lblModRacialHistoire.Location = New Point(496, 283)
         lblModRacialHistoire.Name = "lblModRacialHistoire"
-        lblModRacialHistoire.Size = New Size(17, 20)
+        lblModRacialHistoire.Size = New Size(13, 15)
         lblModRacialHistoire.TabIndex = 156
         lblModRacialHistoire.Text = "0"
         ' 
         ' lblModCaracHistoire
         ' 
         lblModCaracHistoire.AutoSize = True
-        lblModCaracHistoire.Location = New Point(391, 377)
+        lblModCaracHistoire.Location = New Point(342, 283)
         lblModCaracHistoire.Name = "lblModCaracHistoire"
-        lblModCaracHistoire.Size = New Size(17, 20)
+        lblModCaracHistoire.Size = New Size(13, 15)
         lblModCaracHistoire.TabIndex = 154
         lblModCaracHistoire.Text = "0"
         ' 
         ' lblDemiNiveauHistoire
         ' 
         lblDemiNiveauHistoire.AutoSize = True
-        lblDemiNiveauHistoire.Location = New Point(299, 377)
+        lblDemiNiveauHistoire.Location = New Point(262, 283)
         lblDemiNiveauHistoire.Name = "lblDemiNiveauHistoire"
-        lblDemiNiveauHistoire.Size = New Size(17, 20)
+        lblDemiNiveauHistoire.Size = New Size(13, 15)
         lblDemiNiveauHistoire.TabIndex = 153
         lblDemiNiveauHistoire.Text = "0"
         ' 
         ' lblPenArmureExploration
         ' 
         lblPenArmureExploration.AutoSize = True
-        lblPenArmureExploration.Location = New Point(733, 344)
+        lblPenArmureExploration.Location = New Point(641, 258)
         lblPenArmureExploration.Name = "lblPenArmureExploration"
-        lblPenArmureExploration.Size = New Size(17, 20)
+        lblPenArmureExploration.Size = New Size(13, 15)
         lblPenArmureExploration.TabIndex = 152
         lblPenArmureExploration.Text = "0"
         ' 
         ' lblDiversExploration
         ' 
         lblDiversExploration.AutoSize = True
-        lblDiversExploration.Location = New Point(649, 344)
+        lblDiversExploration.Location = New Point(568, 258)
         lblDiversExploration.Name = "lblDiversExploration"
-        lblDiversExploration.Size = New Size(17, 20)
+        lblDiversExploration.Size = New Size(13, 15)
         lblDiversExploration.TabIndex = 151
         lblDiversExploration.Text = "0"
         ' 
         ' lblModRacialExploration
         ' 
         lblModRacialExploration.AutoSize = True
-        lblModRacialExploration.Location = New Point(567, 344)
+        lblModRacialExploration.Location = New Point(496, 258)
         lblModRacialExploration.Name = "lblModRacialExploration"
-        lblModRacialExploration.Size = New Size(17, 20)
+        lblModRacialExploration.Size = New Size(13, 15)
         lblModRacialExploration.TabIndex = 150
         lblModRacialExploration.Text = "0"
         ' 
         ' lblModCaracExploration
         ' 
         lblModCaracExploration.AutoSize = True
-        lblModCaracExploration.Location = New Point(391, 344)
+        lblModCaracExploration.Location = New Point(342, 258)
         lblModCaracExploration.Name = "lblModCaracExploration"
-        lblModCaracExploration.Size = New Size(17, 20)
+        lblModCaracExploration.Size = New Size(13, 15)
         lblModCaracExploration.TabIndex = 148
         lblModCaracExploration.Text = "0"
         ' 
         ' lblDemiNiveauExploration
         ' 
         lblDemiNiveauExploration.AutoSize = True
-        lblDemiNiveauExploration.Location = New Point(299, 344)
+        lblDemiNiveauExploration.Location = New Point(262, 258)
         lblDemiNiveauExploration.Name = "lblDemiNiveauExploration"
-        lblDemiNiveauExploration.Size = New Size(17, 20)
+        lblDemiNiveauExploration.Size = New Size(13, 15)
         lblDemiNiveauExploration.TabIndex = 147
         lblDemiNiveauExploration.Text = "0"
         ' 
         ' lblPenArmureEndurance
         ' 
         lblPenArmureEndurance.AutoSize = True
-        lblPenArmureEndurance.Location = New Point(733, 308)
+        lblPenArmureEndurance.Location = New Point(641, 231)
         lblPenArmureEndurance.Name = "lblPenArmureEndurance"
-        lblPenArmureEndurance.Size = New Size(17, 20)
+        lblPenArmureEndurance.Size = New Size(13, 15)
         lblPenArmureEndurance.TabIndex = 146
         lblPenArmureEndurance.Text = "0"
         ' 
         ' lblDiversEndurance
         ' 
         lblDiversEndurance.AutoSize = True
-        lblDiversEndurance.Location = New Point(649, 308)
+        lblDiversEndurance.Location = New Point(568, 231)
         lblDiversEndurance.Name = "lblDiversEndurance"
-        lblDiversEndurance.Size = New Size(17, 20)
+        lblDiversEndurance.Size = New Size(13, 15)
         lblDiversEndurance.TabIndex = 145
         lblDiversEndurance.Text = "0"
         ' 
         ' lblModRacialEndurance
         ' 
         lblModRacialEndurance.AutoSize = True
-        lblModRacialEndurance.Location = New Point(567, 308)
+        lblModRacialEndurance.Location = New Point(496, 231)
         lblModRacialEndurance.Name = "lblModRacialEndurance"
-        lblModRacialEndurance.Size = New Size(17, 20)
+        lblModRacialEndurance.Size = New Size(13, 15)
         lblModRacialEndurance.TabIndex = 144
         lblModRacialEndurance.Text = "0"
         ' 
         ' lblModCaracEndurance
         ' 
         lblModCaracEndurance.AutoSize = True
-        lblModCaracEndurance.Location = New Point(391, 308)
+        lblModCaracEndurance.Location = New Point(342, 231)
         lblModCaracEndurance.Name = "lblModCaracEndurance"
-        lblModCaracEndurance.Size = New Size(17, 20)
+        lblModCaracEndurance.Size = New Size(13, 15)
         lblModCaracEndurance.TabIndex = 142
         lblModCaracEndurance.Text = "0"
         ' 
         ' lblDemiNiveauEndurance
         ' 
         lblDemiNiveauEndurance.AutoSize = True
-        lblDemiNiveauEndurance.Location = New Point(299, 308)
+        lblDemiNiveauEndurance.Location = New Point(262, 231)
         lblDemiNiveauEndurance.Name = "lblDemiNiveauEndurance"
-        lblDemiNiveauEndurance.Size = New Size(17, 20)
+        lblDemiNiveauEndurance.Size = New Size(13, 15)
         lblDemiNiveauEndurance.TabIndex = 141
         lblDemiNiveauEndurance.Text = "0"
         ' 
         ' lblPenArmureDiscretion
         ' 
         lblPenArmureDiscretion.AutoSize = True
-        lblPenArmureDiscretion.Location = New Point(733, 272)
+        lblPenArmureDiscretion.Location = New Point(641, 204)
         lblPenArmureDiscretion.Name = "lblPenArmureDiscretion"
-        lblPenArmureDiscretion.Size = New Size(17, 20)
+        lblPenArmureDiscretion.Size = New Size(13, 15)
         lblPenArmureDiscretion.TabIndex = 140
         lblPenArmureDiscretion.Text = "0"
         ' 
         ' lblDiversDiscretion
         ' 
         lblDiversDiscretion.AutoSize = True
-        lblDiversDiscretion.Location = New Point(649, 272)
+        lblDiversDiscretion.Location = New Point(568, 204)
         lblDiversDiscretion.Name = "lblDiversDiscretion"
-        lblDiversDiscretion.Size = New Size(17, 20)
+        lblDiversDiscretion.Size = New Size(13, 15)
         lblDiversDiscretion.TabIndex = 139
         lblDiversDiscretion.Text = "0"
         ' 
         ' lblModRacialDiscretion
         ' 
         lblModRacialDiscretion.AutoSize = True
-        lblModRacialDiscretion.Location = New Point(567, 272)
+        lblModRacialDiscretion.Location = New Point(496, 204)
         lblModRacialDiscretion.Name = "lblModRacialDiscretion"
-        lblModRacialDiscretion.Size = New Size(17, 20)
+        lblModRacialDiscretion.Size = New Size(13, 15)
         lblModRacialDiscretion.TabIndex = 138
         lblModRacialDiscretion.Text = "0"
         ' 
         ' lblModCaracDiscretion
         ' 
         lblModCaracDiscretion.AutoSize = True
-        lblModCaracDiscretion.Location = New Point(391, 272)
+        lblModCaracDiscretion.Location = New Point(342, 204)
         lblModCaracDiscretion.Name = "lblModCaracDiscretion"
-        lblModCaracDiscretion.Size = New Size(17, 20)
+        lblModCaracDiscretion.Size = New Size(13, 15)
         lblModCaracDiscretion.TabIndex = 136
         lblModCaracDiscretion.Text = "0"
         ' 
         ' lblDemiNiveauDiscretion
         ' 
         lblDemiNiveauDiscretion.AutoSize = True
-        lblDemiNiveauDiscretion.Location = New Point(299, 272)
+        lblDemiNiveauDiscretion.Location = New Point(262, 204)
         lblDemiNiveauDiscretion.Name = "lblDemiNiveauDiscretion"
-        lblDemiNiveauDiscretion.Size = New Size(17, 20)
+        lblDemiNiveauDiscretion.Size = New Size(13, 15)
         lblDemiNiveauDiscretion.TabIndex = 135
         lblDemiNiveauDiscretion.Text = "0"
         ' 
         ' lblPenArmureDiplomatie
         ' 
         lblPenArmureDiplomatie.AutoSize = True
-        lblPenArmureDiplomatie.Location = New Point(733, 237)
+        lblPenArmureDiplomatie.Location = New Point(641, 178)
         lblPenArmureDiplomatie.Name = "lblPenArmureDiplomatie"
-        lblPenArmureDiplomatie.Size = New Size(17, 20)
+        lblPenArmureDiplomatie.Size = New Size(13, 15)
         lblPenArmureDiplomatie.TabIndex = 134
         lblPenArmureDiplomatie.Text = "0"
         ' 
         ' lblDiversDiplomatie
         ' 
         lblDiversDiplomatie.AutoSize = True
-        lblDiversDiplomatie.Location = New Point(649, 237)
+        lblDiversDiplomatie.Location = New Point(568, 178)
         lblDiversDiplomatie.Name = "lblDiversDiplomatie"
-        lblDiversDiplomatie.Size = New Size(17, 20)
+        lblDiversDiplomatie.Size = New Size(13, 15)
         lblDiversDiplomatie.TabIndex = 133
         lblDiversDiplomatie.Text = "0"
         ' 
         ' lblModRacialDiplomatie
         ' 
         lblModRacialDiplomatie.AutoSize = True
-        lblModRacialDiplomatie.Location = New Point(567, 237)
+        lblModRacialDiplomatie.Location = New Point(496, 178)
         lblModRacialDiplomatie.Name = "lblModRacialDiplomatie"
-        lblModRacialDiplomatie.Size = New Size(17, 20)
+        lblModRacialDiplomatie.Size = New Size(13, 15)
         lblModRacialDiplomatie.TabIndex = 132
         lblModRacialDiplomatie.Text = "0"
         ' 
         ' lblPenArmureConnDeLaRue
         ' 
         lblPenArmureConnDeLaRue.AutoSize = True
-        lblPenArmureConnDeLaRue.Location = New Point(733, 200)
+        lblPenArmureConnDeLaRue.Location = New Point(641, 150)
         lblPenArmureConnDeLaRue.Name = "lblPenArmureConnDeLaRue"
-        lblPenArmureConnDeLaRue.Size = New Size(17, 20)
+        lblPenArmureConnDeLaRue.Size = New Size(13, 15)
         lblPenArmureConnDeLaRue.TabIndex = 131
         lblPenArmureConnDeLaRue.Text = "0"
         ' 
         ' lblDiversConnDeLaRue
         ' 
         lblDiversConnDeLaRue.AutoSize = True
-        lblDiversConnDeLaRue.Location = New Point(649, 200)
+        lblDiversConnDeLaRue.Location = New Point(568, 150)
         lblDiversConnDeLaRue.Name = "lblDiversConnDeLaRue"
-        lblDiversConnDeLaRue.Size = New Size(17, 20)
+        lblDiversConnDeLaRue.Size = New Size(13, 15)
         lblDiversConnDeLaRue.TabIndex = 130
         lblDiversConnDeLaRue.Text = "0"
         ' 
         ' lblModRacialConnDeLarue
         ' 
         lblModRacialConnDeLarue.AutoSize = True
-        lblModRacialConnDeLarue.Location = New Point(567, 200)
+        lblModRacialConnDeLarue.Location = New Point(496, 150)
         lblModRacialConnDeLarue.Name = "lblModRacialConnDeLarue"
-        lblModRacialConnDeLarue.Size = New Size(17, 20)
+        lblModRacialConnDeLarue.Size = New Size(13, 15)
         lblModRacialConnDeLarue.TabIndex = 129
         lblModRacialConnDeLarue.Text = "0"
         ' 
         ' lblPenArmureBluff
         ' 
         lblPenArmureBluff.AutoSize = True
-        lblPenArmureBluff.Location = New Point(733, 163)
+        lblPenArmureBluff.Location = New Point(641, 122)
         lblPenArmureBluff.Name = "lblPenArmureBluff"
-        lblPenArmureBluff.Size = New Size(17, 20)
+        lblPenArmureBluff.Size = New Size(13, 15)
         lblPenArmureBluff.TabIndex = 128
         lblPenArmureBluff.Text = "0"
         ' 
         ' lblDiversBluff
         ' 
         lblDiversBluff.AutoSize = True
-        lblDiversBluff.Location = New Point(649, 163)
+        lblDiversBluff.Location = New Point(568, 122)
         lblDiversBluff.Name = "lblDiversBluff"
-        lblDiversBluff.Size = New Size(17, 20)
+        lblDiversBluff.Size = New Size(13, 15)
         lblDiversBluff.TabIndex = 127
         lblDiversBluff.Text = "0"
         ' 
         ' lblModRacialBluff
         ' 
         lblModRacialBluff.AutoSize = True
-        lblModRacialBluff.Location = New Point(567, 163)
+        lblModRacialBluff.Location = New Point(496, 122)
         lblModRacialBluff.Name = "lblModRacialBluff"
-        lblModRacialBluff.Size = New Size(17, 20)
+        lblModRacialBluff.Size = New Size(13, 15)
         lblModRacialBluff.TabIndex = 126
         lblModRacialBluff.Text = "0"
         ' 
         ' lblPenArmureAthletisme
         ' 
         lblPenArmureAthletisme.AutoSize = True
-        lblPenArmureAthletisme.Location = New Point(733, 125)
+        lblPenArmureAthletisme.Location = New Point(641, 94)
         lblPenArmureAthletisme.Name = "lblPenArmureAthletisme"
-        lblPenArmureAthletisme.Size = New Size(17, 20)
+        lblPenArmureAthletisme.Size = New Size(13, 15)
         lblPenArmureAthletisme.TabIndex = 125
         lblPenArmureAthletisme.Text = "0"
         ' 
         ' lblDiversAthletisme
         ' 
         lblDiversAthletisme.AutoSize = True
-        lblDiversAthletisme.Location = New Point(649, 125)
+        lblDiversAthletisme.Location = New Point(568, 94)
         lblDiversAthletisme.Name = "lblDiversAthletisme"
-        lblDiversAthletisme.Size = New Size(17, 20)
+        lblDiversAthletisme.Size = New Size(13, 15)
         lblDiversAthletisme.TabIndex = 124
         lblDiversAthletisme.Text = "0"
         ' 
         ' lblModRacialAthletisme
         ' 
         lblModRacialAthletisme.AutoSize = True
-        lblModRacialAthletisme.Location = New Point(567, 125)
+        lblModRacialAthletisme.Location = New Point(496, 94)
         lblModRacialAthletisme.Name = "lblModRacialAthletisme"
-        lblModRacialAthletisme.Size = New Size(17, 20)
+        lblModRacialAthletisme.Size = New Size(13, 15)
         lblModRacialAthletisme.TabIndex = 123
         lblModRacialAthletisme.Text = "0"
         ' 
         ' lblPenArmureArcanes
         ' 
         lblPenArmureArcanes.AutoSize = True
-        lblPenArmureArcanes.Location = New Point(733, 87)
+        lblPenArmureArcanes.Location = New Point(641, 65)
         lblPenArmureArcanes.Name = "lblPenArmureArcanes"
-        lblPenArmureArcanes.Size = New Size(17, 20)
+        lblPenArmureArcanes.Size = New Size(13, 15)
         lblPenArmureArcanes.TabIndex = 122
         lblPenArmureArcanes.Text = "0"
         ' 
         ' lblDiversArcanes
         ' 
         lblDiversArcanes.AutoSize = True
-        lblDiversArcanes.Location = New Point(649, 87)
+        lblDiversArcanes.Location = New Point(568, 65)
         lblDiversArcanes.Name = "lblDiversArcanes"
-        lblDiversArcanes.Size = New Size(17, 20)
+        lblDiversArcanes.Size = New Size(13, 15)
         lblDiversArcanes.TabIndex = 121
         lblDiversArcanes.Text = "0"
         ' 
         ' lblModRacialArcanes
         ' 
         lblModRacialArcanes.AutoSize = True
-        lblModRacialArcanes.Location = New Point(567, 87)
+        lblModRacialArcanes.Location = New Point(496, 65)
         lblModRacialArcanes.Name = "lblModRacialArcanes"
-        lblModRacialArcanes.Size = New Size(17, 20)
+        lblModRacialArcanes.Size = New Size(13, 15)
         lblModRacialArcanes.TabIndex = 120
         lblModRacialArcanes.Text = "0"
         ' 
         ' lblPenArmureAcrobaties
         ' 
         lblPenArmureAcrobaties.AutoSize = True
-        lblPenArmureAcrobaties.Location = New Point(733, 50)
+        lblPenArmureAcrobaties.Location = New Point(641, 38)
         lblPenArmureAcrobaties.Name = "lblPenArmureAcrobaties"
-        lblPenArmureAcrobaties.Size = New Size(17, 20)
+        lblPenArmureAcrobaties.Size = New Size(13, 15)
         lblPenArmureAcrobaties.TabIndex = 119
         lblPenArmureAcrobaties.Text = "0"
         ' 
         ' lblDiversAcrobaties
         ' 
         lblDiversAcrobaties.AutoSize = True
-        lblDiversAcrobaties.Location = New Point(649, 50)
+        lblDiversAcrobaties.Location = New Point(568, 38)
         lblDiversAcrobaties.Name = "lblDiversAcrobaties"
-        lblDiversAcrobaties.Size = New Size(17, 20)
+        lblDiversAcrobaties.Size = New Size(13, 15)
         lblDiversAcrobaties.TabIndex = 118
         lblDiversAcrobaties.Text = "0"
         ' 
         ' lblModRacialAcrobaties
         ' 
         lblModRacialAcrobaties.AutoSize = True
-        lblModRacialAcrobaties.Location = New Point(567, 50)
+        lblModRacialAcrobaties.Location = New Point(496, 38)
         lblModRacialAcrobaties.Name = "lblModRacialAcrobaties"
-        lblModRacialAcrobaties.Size = New Size(17, 20)
+        lblModRacialAcrobaties.Size = New Size(13, 15)
         lblModRacialAcrobaties.TabIndex = 117
         lblModRacialAcrobaties.Text = "0"
         ' 
         ' lblSoins
         ' 
         lblSoins.AutoSize = True
-        lblSoins.Location = New Point(17, 612)
+        lblSoins.Location = New Point(15, 459)
         lblSoins.Name = "lblSoins"
-        lblSoins.Size = New Size(44, 20)
+        lblSoins.Size = New Size(35, 15)
         lblSoins.TabIndex = 116
         lblSoins.Text = "Soins"
         ' 
         ' lblReligion
         ' 
         lblReligion.AutoSize = True
-        lblReligion.Location = New Point(17, 575)
+        lblReligion.Location = New Point(15, 431)
         lblReligion.Name = "lblReligion"
-        lblReligion.Size = New Size(64, 20)
+        lblReligion.Size = New Size(50, 15)
         lblReligion.TabIndex = 115
         lblReligion.Text = "Religion"
         ' 
         ' lblPerception
         ' 
         lblPerception.AutoSize = True
-        lblPerception.Location = New Point(17, 545)
+        lblPerception.Location = New Point(15, 409)
         lblPerception.Name = "lblPerception"
-        lblPerception.Size = New Size(79, 20)
+        lblPerception.Size = New Size(64, 15)
         lblPerception.TabIndex = 114
         lblPerception.Text = "Perception"
         ' 
         ' lblNature
         ' 
         lblNature.AutoSize = True
-        lblNature.Location = New Point(17, 510)
+        lblNature.Location = New Point(15, 382)
         lblNature.Name = "lblNature"
-        lblNature.Size = New Size(54, 20)
+        lblNature.Size = New Size(43, 15)
         lblNature.TabIndex = 113
         lblNature.Text = "Nature"
         ' 
         ' lblLarcin
         ' 
         lblLarcin.AutoSize = True
-        lblLarcin.Location = New Point(17, 479)
+        lblLarcin.Location = New Point(15, 359)
         lblLarcin.Name = "lblLarcin"
-        lblLarcin.Size = New Size(48, 20)
+        lblLarcin.Size = New Size(39, 15)
         lblLarcin.TabIndex = 112
         lblLarcin.Text = "Larcin"
         ' 
         ' lblIntuition
         ' 
         lblIntuition.AutoSize = True
-        lblIntuition.Location = New Point(17, 443)
+        lblIntuition.Location = New Point(15, 332)
         lblIntuition.Name = "lblIntuition"
-        lblIntuition.Size = New Size(64, 20)
+        lblIntuition.Size = New Size(52, 15)
         lblIntuition.TabIndex = 111
         lblIntuition.Text = "Intuition"
         ' 
         ' lblIntimidation
         ' 
         lblIntimidation.AutoSize = True
-        lblIntimidation.Location = New Point(17, 409)
+        lblIntimidation.Location = New Point(15, 307)
         lblIntimidation.Name = "lblIntimidation"
-        lblIntimidation.Size = New Size(90, 20)
+        lblIntimidation.Size = New Size(72, 15)
         lblIntimidation.TabIndex = 110
         lblIntimidation.Text = "Intimidation"
         ' 
         ' lblHistoire
         ' 
         lblHistoire.AutoSize = True
-        lblHistoire.Location = New Point(17, 377)
+        lblHistoire.Location = New Point(15, 283)
         lblHistoire.Name = "lblHistoire"
-        lblHistoire.Size = New Size(61, 20)
+        lblHistoire.Size = New Size(48, 15)
         lblHistoire.TabIndex = 109
         lblHistoire.Text = "Histoire"
         ' 
         ' lblExploration
         ' 
         lblExploration.AutoSize = True
-        lblExploration.Location = New Point(17, 344)
+        lblExploration.Location = New Point(15, 258)
         lblExploration.Name = "lblExploration"
-        lblExploration.Size = New Size(85, 20)
+        lblExploration.Size = New Size(67, 15)
         lblExploration.TabIndex = 108
         lblExploration.Text = "Exploration"
         ' 
         ' lblEndurance
         ' 
         lblEndurance.AutoSize = True
-        lblEndurance.Location = New Point(17, 308)
+        lblEndurance.Location = New Point(15, 231)
         lblEndurance.Name = "lblEndurance"
-        lblEndurance.Size = New Size(78, 20)
+        lblEndurance.Size = New Size(63, 15)
         lblEndurance.TabIndex = 107
         lblEndurance.Text = "Endurance"
         ' 
         ' lblDiscretion
         ' 
         lblDiscretion.AutoSize = True
-        lblDiscretion.Location = New Point(17, 272)
+        lblDiscretion.Location = New Point(15, 204)
         lblDiscretion.Name = "lblDiscretion"
-        lblDiscretion.Size = New Size(76, 20)
+        lblDiscretion.Size = New Size(60, 15)
         lblDiscretion.TabIndex = 106
         lblDiscretion.Text = "Discrétion"
         ' 
         ' lblPenArmure
         ' 
         lblPenArmure.AutoSize = True
-        lblPenArmure.Location = New Point(689, 13)
+        lblPenArmure.Location = New Point(603, 10)
         lblPenArmure.Name = "lblPenArmure"
-        lblPenArmure.Size = New Size(114, 20)
+        lblPenArmure.Size = New Size(92, 15)
         lblPenArmure.TabIndex = 105
         lblPenArmure.Text = "Pénalité Armure"
         ' 
         ' lblDivers
         ' 
         lblDivers.AutoSize = True
-        lblDivers.Location = New Point(632, 13)
+        lblDivers.Location = New Point(553, 10)
         lblDivers.Name = "lblDivers"
-        lblDivers.Size = New Size(50, 20)
+        lblDivers.Size = New Size(39, 15)
         lblDivers.TabIndex = 104
         lblDivers.Text = "Divers"
         ' 
         ' lblModRacial
         ' 
         lblModRacial.AutoSize = True
-        lblModRacial.Location = New Point(539, 13)
+        lblModRacial.Location = New Point(472, 10)
         lblModRacial.Name = "lblModRacial"
-        lblModRacial.Size = New Size(84, 20)
+        lblModRacial.Size = New Size(66, 15)
         lblModRacial.TabIndex = 103
         lblModRacial.Text = "Mod Racial"
         ' 
         ' lblModCaracDiplomatie
         ' 
         lblModCaracDiplomatie.AutoSize = True
-        lblModCaracDiplomatie.Location = New Point(391, 237)
+        lblModCaracDiplomatie.Location = New Point(342, 178)
         lblModCaracDiplomatie.Name = "lblModCaracDiplomatie"
-        lblModCaracDiplomatie.Size = New Size(17, 20)
+        lblModCaracDiplomatie.Size = New Size(13, 15)
         lblModCaracDiplomatie.TabIndex = 96
         lblModCaracDiplomatie.Text = "0"
         ' 
         ' lblModCaracConnDeLaRue
         ' 
         lblModCaracConnDeLaRue.AutoSize = True
-        lblModCaracConnDeLaRue.Location = New Point(391, 200)
+        lblModCaracConnDeLaRue.Location = New Point(342, 150)
         lblModCaracConnDeLaRue.Name = "lblModCaracConnDeLaRue"
-        lblModCaracConnDeLaRue.Size = New Size(17, 20)
+        lblModCaracConnDeLaRue.Size = New Size(13, 15)
         lblModCaracConnDeLaRue.TabIndex = 95
         lblModCaracConnDeLaRue.Text = "0"
         ' 
         ' lblModCaracBluff
         ' 
         lblModCaracBluff.AutoSize = True
-        lblModCaracBluff.Location = New Point(391, 163)
+        lblModCaracBluff.Location = New Point(342, 122)
         lblModCaracBluff.Name = "lblModCaracBluff"
-        lblModCaracBluff.Size = New Size(17, 20)
+        lblModCaracBluff.Size = New Size(13, 15)
         lblModCaracBluff.TabIndex = 94
         lblModCaracBluff.Text = "0"
         ' 
         ' lblModCaracAthletisme
         ' 
         lblModCaracAthletisme.AutoSize = True
-        lblModCaracAthletisme.Location = New Point(391, 125)
+        lblModCaracAthletisme.Location = New Point(342, 94)
         lblModCaracAthletisme.Name = "lblModCaracAthletisme"
-        lblModCaracAthletisme.Size = New Size(17, 20)
+        lblModCaracAthletisme.Size = New Size(13, 15)
         lblModCaracAthletisme.TabIndex = 93
         lblModCaracAthletisme.Text = "0"
         ' 
         ' lblModCaracAcrobaties
         ' 
         lblModCaracAcrobaties.AutoSize = True
-        lblModCaracAcrobaties.Location = New Point(391, 50)
+        lblModCaracAcrobaties.Location = New Point(342, 38)
         lblModCaracAcrobaties.Name = "lblModCaracAcrobaties"
-        lblModCaracAcrobaties.Size = New Size(17, 20)
+        lblModCaracAcrobaties.Size = New Size(13, 15)
         lblModCaracAcrobaties.TabIndex = 92
         lblModCaracAcrobaties.Text = "0"
         ' 
         ' lblModCaracArcanes
         ' 
         lblModCaracArcanes.AutoSize = True
-        lblModCaracArcanes.Location = New Point(391, 87)
+        lblModCaracArcanes.Location = New Point(342, 65)
         lblModCaracArcanes.Name = "lblModCaracArcanes"
-        lblModCaracArcanes.Size = New Size(17, 20)
+        lblModCaracArcanes.Size = New Size(13, 15)
         lblModCaracArcanes.TabIndex = 91
         lblModCaracArcanes.Text = "0"
         ' 
         ' lblDemiNiveauDiplomatie
         ' 
         lblDemiNiveauDiplomatie.AutoSize = True
-        lblDemiNiveauDiplomatie.Location = New Point(299, 237)
+        lblDemiNiveauDiplomatie.Location = New Point(262, 178)
         lblDemiNiveauDiplomatie.Name = "lblDemiNiveauDiplomatie"
-        lblDemiNiveauDiplomatie.Size = New Size(17, 20)
+        lblDemiNiveauDiplomatie.Size = New Size(13, 15)
         lblDemiNiveauDiplomatie.TabIndex = 90
         lblDemiNiveauDiplomatie.Text = "0"
         ' 
         ' lblDemiNiveauConnDeLaRue
         ' 
         lblDemiNiveauConnDeLaRue.AutoSize = True
-        lblDemiNiveauConnDeLaRue.Location = New Point(299, 200)
+        lblDemiNiveauConnDeLaRue.Location = New Point(262, 150)
         lblDemiNiveauConnDeLaRue.Name = "lblDemiNiveauConnDeLaRue"
-        lblDemiNiveauConnDeLaRue.Size = New Size(17, 20)
+        lblDemiNiveauConnDeLaRue.Size = New Size(13, 15)
         lblDemiNiveauConnDeLaRue.TabIndex = 89
         lblDemiNiveauConnDeLaRue.Text = "0"
         ' 
         ' lblDemiNiveauBluff
         ' 
         lblDemiNiveauBluff.AutoSize = True
-        lblDemiNiveauBluff.Location = New Point(299, 163)
+        lblDemiNiveauBluff.Location = New Point(262, 122)
         lblDemiNiveauBluff.Name = "lblDemiNiveauBluff"
-        lblDemiNiveauBluff.Size = New Size(17, 20)
+        lblDemiNiveauBluff.Size = New Size(13, 15)
         lblDemiNiveauBluff.TabIndex = 88
         lblDemiNiveauBluff.Text = "0"
         ' 
         ' lblDemiNiveauAthletisme
         ' 
         lblDemiNiveauAthletisme.AutoSize = True
-        lblDemiNiveauAthletisme.Location = New Point(299, 125)
+        lblDemiNiveauAthletisme.Location = New Point(262, 94)
         lblDemiNiveauAthletisme.Name = "lblDemiNiveauAthletisme"
-        lblDemiNiveauAthletisme.Size = New Size(17, 20)
+        lblDemiNiveauAthletisme.Size = New Size(13, 15)
         lblDemiNiveauAthletisme.TabIndex = 87
         lblDemiNiveauAthletisme.Text = "0"
         ' 
         ' lblDemiNiveauAcrobaties
         ' 
         lblDemiNiveauAcrobaties.AutoSize = True
-        lblDemiNiveauAcrobaties.Location = New Point(299, 50)
+        lblDemiNiveauAcrobaties.Location = New Point(262, 38)
         lblDemiNiveauAcrobaties.Name = "lblDemiNiveauAcrobaties"
-        lblDemiNiveauAcrobaties.Size = New Size(17, 20)
+        lblDemiNiveauAcrobaties.Size = New Size(13, 15)
         lblDemiNiveauAcrobaties.TabIndex = 86
         lblDemiNiveauAcrobaties.Text = "0"
         ' 
         ' lblDemiNiveauArcanes
         ' 
         lblDemiNiveauArcanes.AutoSize = True
-        lblDemiNiveauArcanes.Location = New Point(299, 87)
+        lblDemiNiveauArcanes.Location = New Point(262, 65)
         lblDemiNiveauArcanes.Name = "lblDemiNiveauArcanes"
-        lblDemiNiveauArcanes.Size = New Size(17, 20)
+        lblDemiNiveauArcanes.Size = New Size(13, 15)
         lblDemiNiveauArcanes.TabIndex = 85
         lblDemiNiveauArcanes.Text = "0"
         ' 
         ' lblFormation
         ' 
         lblFormation.AutoSize = True
-        lblFormation.Location = New Point(453, 13)
+        lblFormation.Location = New Point(396, 10)
         lblFormation.Name = "lblFormation"
-        lblFormation.Size = New Size(77, 20)
+        lblFormation.Size = New Size(62, 15)
         lblFormation.TabIndex = 78
         lblFormation.Text = "Formation"
         ' 
         ' Label21
         ' 
         Label21.AutoSize = True
-        Label21.Location = New Point(361, 13)
+        Label21.Location = New Point(316, 10)
         Label21.Name = "Label21"
-        Label21.Size = New Size(81, 20)
+        Label21.Size = New Size(65, 15)
         Label21.TabIndex = 77
         Label21.Text = "Mod Carac"
         ' 
         ' lblDemiNiveau
         ' 
         lblDemiNiveau.AutoSize = True
-        lblDemiNiveau.Location = New Point(273, 13)
+        lblDemiNiveau.Location = New Point(239, 10)
         lblDemiNiveau.Name = "lblDemiNiveau"
-        lblDemiNiveau.Size = New Size(81, 20)
+        lblDemiNiveau.Size = New Size(64, 15)
         lblDemiNiveau.TabIndex = 76
         lblDemiNiveau.Text = "1/2 Niveau"
         ' 
         ' lblDiplomatie
         ' 
         lblDiplomatie.AutoSize = True
-        lblDiplomatie.Location = New Point(17, 237)
+        lblDiplomatie.Location = New Point(15, 178)
         lblDiplomatie.Name = "lblDiplomatie"
-        lblDiplomatie.Size = New Size(84, 20)
+        lblDiplomatie.Size = New Size(65, 15)
         lblDiplomatie.TabIndex = 74
         lblDiplomatie.Text = "Diplomatie"
         ' 
         ' lblConnDeLaRue
         ' 
         lblConnDeLaRue.AutoSize = True
-        lblConnDeLaRue.Location = New Point(17, 200)
+        lblConnDeLaRue.Location = New Point(15, 150)
         lblConnDeLaRue.Name = "lblConnDeLaRue"
-        lblConnDeLaRue.Size = New Size(160, 20)
+        lblConnDeLaRue.Size = New Size(128, 15)
         lblConnDeLaRue.TabIndex = 73
         lblConnDeLaRue.Text = "Connaissance de la rue"
         ' 
         ' lblBluff
         ' 
         lblBluff.AutoSize = True
-        lblBluff.Location = New Point(17, 163)
+        lblBluff.Location = New Point(15, 122)
         lblBluff.Name = "lblBluff"
-        lblBluff.Size = New Size(40, 20)
+        lblBluff.Size = New Size(32, 15)
         lblBluff.TabIndex = 72
         lblBluff.Text = "Bluff"
         ' 
         ' lblAthletisme
         ' 
         lblAthletisme.AutoSize = True
-        lblAthletisme.Location = New Point(17, 125)
+        lblAthletisme.Location = New Point(15, 94)
         lblAthletisme.Name = "lblAthletisme"
-        lblAthletisme.Size = New Size(80, 20)
+        lblAthletisme.Size = New Size(64, 15)
         lblAthletisme.TabIndex = 71
         lblAthletisme.Text = "Athlétisme"
         ' 
         ' lblArcanes
         ' 
         lblArcanes.AutoSize = True
-        lblArcanes.Location = New Point(17, 87)
+        lblArcanes.Location = New Point(15, 65)
         lblArcanes.Name = "lblArcanes"
-        lblArcanes.Size = New Size(61, 20)
+        lblArcanes.Size = New Size(49, 15)
         lblArcanes.TabIndex = 70
         lblArcanes.Text = "Arcanes"
         ' 
         ' lblAcrobaties
         ' 
         lblAcrobaties.AutoSize = True
-        lblAcrobaties.Location = New Point(17, 50)
+        lblAcrobaties.Location = New Point(15, 38)
         lblAcrobaties.Name = "lblAcrobaties"
-        lblAcrobaties.Size = New Size(80, 20)
+        lblAcrobaties.Size = New Size(63, 15)
         lblAcrobaties.TabIndex = 69
         lblAcrobaties.Text = "Acrobaties"
         ' 
@@ -2155,10 +2160,11 @@ Partial Class formFightManager
         tabSauvegardes.Controls.Add(lblVigueur)
         tabSauvegardes.Controls.Add(lblReflexes)
         tabSauvegardes.Controls.Add(lblClasseArmure)
-        tabSauvegardes.Location = New Point(4, 29)
+        tabSauvegardes.Location = New Point(4, 24)
+        tabSauvegardes.Margin = New Padding(3, 2, 3, 2)
         tabSauvegardes.Name = "tabSauvegardes"
-        tabSauvegardes.Padding = New Padding(3)
-        tabSauvegardes.Size = New Size(913, 665)
+        tabSauvegardes.Padding = New Padding(3, 2, 3, 2)
+        tabSauvegardes.Size = New Size(798, 496)
         tabSauvegardes.TabIndex = 2
         tabSauvegardes.Text = "Sauvegardes"
         tabSauvegardes.UseVisualStyleBackColor = True
@@ -2166,360 +2172,359 @@ Partial Class formFightManager
         ' lblTotalVolonte
         ' 
         lblTotalVolonte.AutoSize = True
-        lblTotalVolonte.Location = New Point(209, 167)
+        lblTotalVolonte.Location = New Point(183, 125)
         lblTotalVolonte.Name = "lblTotalVolonte"
-        lblTotalVolonte.Size = New Size(17, 20)
+        lblTotalVolonte.Size = New Size(13, 15)
         lblTotalVolonte.TabIndex = 257
         lblTotalVolonte.Text = "0"
         ' 
         ' lblTotalVigueur
         ' 
         lblTotalVigueur.AutoSize = True
-        lblTotalVigueur.Location = New Point(209, 129)
+        lblTotalVigueur.Location = New Point(183, 97)
         lblTotalVigueur.Name = "lblTotalVigueur"
-        lblTotalVigueur.Size = New Size(17, 20)
+        lblTotalVigueur.Size = New Size(13, 15)
         lblTotalVigueur.TabIndex = 256
         lblTotalVigueur.Text = "0"
         ' 
         ' lblTotalCA
         ' 
         lblTotalCA.AutoSize = True
-        lblTotalCA.Location = New Point(209, 54)
+        lblTotalCA.Location = New Point(183, 40)
         lblTotalCA.Name = "lblTotalCA"
-        lblTotalCA.Size = New Size(17, 20)
+        lblTotalCA.Size = New Size(13, 15)
         lblTotalCA.TabIndex = 255
         lblTotalCA.Text = "0"
         ' 
         ' lblTotalReflexes
         ' 
         lblTotalReflexes.AutoSize = True
-        lblTotalReflexes.Location = New Point(209, 91)
+        lblTotalReflexes.Location = New Point(183, 68)
         lblTotalReflexes.Name = "lblTotalReflexes"
-        lblTotalReflexes.Size = New Size(17, 20)
+        lblTotalReflexes.Size = New Size(13, 15)
         lblTotalReflexes.TabIndex = 254
         lblTotalReflexes.Text = "0"
         ' 
         ' lblTotalSauvegardes
         ' 
         lblTotalSauvegardes.AutoSize = True
-        lblTotalSauvegardes.Location = New Point(183, 17)
+        lblTotalSauvegardes.Location = New Point(160, 13)
         lblTotalSauvegardes.Name = "lblTotalSauvegardes"
-        lblTotalSauvegardes.Size = New Size(42, 20)
+        lblTotalSauvegardes.Size = New Size(32, 15)
         lblTotalSauvegardes.TabIndex = 253
         lblTotalSauvegardes.Text = "Total"
         ' 
         ' lblPenArmureVolonte
         ' 
         lblPenArmureVolonte.AutoSize = True
-        lblPenArmureVolonte.Location = New Point(735, 167)
+        lblPenArmureVolonte.Location = New Point(643, 125)
         lblPenArmureVolonte.Name = "lblPenArmureVolonte"
-        lblPenArmureVolonte.Size = New Size(17, 20)
+        lblPenArmureVolonte.Size = New Size(13, 15)
         lblPenArmureVolonte.TabIndex = 252
         lblPenArmureVolonte.Text = "0"
         ' 
         ' lblDiversVolonte
         ' 
         lblDiversVolonte.AutoSize = True
-        lblDiversVolonte.Location = New Point(651, 167)
+        lblDiversVolonte.Location = New Point(570, 125)
         lblDiversVolonte.Name = "lblDiversVolonte"
-        lblDiversVolonte.Size = New Size(17, 20)
+        lblDiversVolonte.Size = New Size(13, 15)
         lblDiversVolonte.TabIndex = 251
         lblDiversVolonte.Text = "0"
         ' 
         ' lblModRacialVolonte
         ' 
         lblModRacialVolonte.AutoSize = True
-        lblModRacialVolonte.Location = New Point(569, 167)
+        lblModRacialVolonte.Location = New Point(498, 125)
         lblModRacialVolonte.Name = "lblModRacialVolonte"
-        lblModRacialVolonte.Size = New Size(17, 20)
+        lblModRacialVolonte.Size = New Size(13, 15)
         lblModRacialVolonte.TabIndex = 250
         lblModRacialVolonte.Text = "0"
         ' 
         ' lblPenArmureVigueur
         ' 
         lblPenArmureVigueur.AutoSize = True
-        lblPenArmureVigueur.Location = New Point(735, 129)
+        lblPenArmureVigueur.Location = New Point(643, 97)
         lblPenArmureVigueur.Name = "lblPenArmureVigueur"
-        lblPenArmureVigueur.Size = New Size(17, 20)
+        lblPenArmureVigueur.Size = New Size(13, 15)
         lblPenArmureVigueur.TabIndex = 249
         lblPenArmureVigueur.Text = "0"
         ' 
         ' lblDiversVigueur
         ' 
         lblDiversVigueur.AutoSize = True
-        lblDiversVigueur.Location = New Point(651, 129)
+        lblDiversVigueur.Location = New Point(570, 97)
         lblDiversVigueur.Name = "lblDiversVigueur"
-        lblDiversVigueur.Size = New Size(17, 20)
+        lblDiversVigueur.Size = New Size(13, 15)
         lblDiversVigueur.TabIndex = 248
         lblDiversVigueur.Text = "0"
         ' 
         ' lblModRacialVigueur
         ' 
         lblModRacialVigueur.AutoSize = True
-        lblModRacialVigueur.Location = New Point(569, 129)
+        lblModRacialVigueur.Location = New Point(498, 97)
         lblModRacialVigueur.Name = "lblModRacialVigueur"
-        lblModRacialVigueur.Size = New Size(17, 20)
+        lblModRacialVigueur.Size = New Size(13, 15)
         lblModRacialVigueur.TabIndex = 247
         lblModRacialVigueur.Text = "0"
         ' 
         ' lblPenArmureReflexes
         ' 
         lblPenArmureReflexes.AutoSize = True
-        lblPenArmureReflexes.Location = New Point(735, 91)
+        lblPenArmureReflexes.Location = New Point(643, 68)
         lblPenArmureReflexes.Name = "lblPenArmureReflexes"
-        lblPenArmureReflexes.Size = New Size(17, 20)
+        lblPenArmureReflexes.Size = New Size(13, 15)
         lblPenArmureReflexes.TabIndex = 246
         lblPenArmureReflexes.Text = "0"
         ' 
         ' lblDiversReflexes
         ' 
         lblDiversReflexes.AutoSize = True
-        lblDiversReflexes.Location = New Point(651, 91)
+        lblDiversReflexes.Location = New Point(570, 68)
         lblDiversReflexes.Name = "lblDiversReflexes"
-        lblDiversReflexes.Size = New Size(17, 20)
+        lblDiversReflexes.Size = New Size(13, 15)
         lblDiversReflexes.TabIndex = 245
         lblDiversReflexes.Text = "0"
         ' 
         ' lblModRacialReflexes
         ' 
         lblModRacialReflexes.AutoSize = True
-        lblModRacialReflexes.Location = New Point(569, 91)
+        lblModRacialReflexes.Location = New Point(498, 68)
         lblModRacialReflexes.Name = "lblModRacialReflexes"
-        lblModRacialReflexes.Size = New Size(17, 20)
+        lblModRacialReflexes.Size = New Size(13, 15)
         lblModRacialReflexes.TabIndex = 244
         lblModRacialReflexes.Text = "0"
         ' 
         ' lblPenArmureCA
         ' 
         lblPenArmureCA.AutoSize = True
-        lblPenArmureCA.Location = New Point(735, 54)
+        lblPenArmureCA.Location = New Point(643, 40)
         lblPenArmureCA.Name = "lblPenArmureCA"
-        lblPenArmureCA.Size = New Size(17, 20)
+        lblPenArmureCA.Size = New Size(13, 15)
         lblPenArmureCA.TabIndex = 243
         lblPenArmureCA.Text = "0"
         ' 
         ' lblDiversCA
         ' 
         lblDiversCA.AutoSize = True
-        lblDiversCA.Location = New Point(651, 54)
+        lblDiversCA.Location = New Point(570, 40)
         lblDiversCA.Name = "lblDiversCA"
-        lblDiversCA.Size = New Size(17, 20)
+        lblDiversCA.Size = New Size(13, 15)
         lblDiversCA.TabIndex = 242
         lblDiversCA.Text = "0"
         ' 
         ' lblModRacialCA
         ' 
         lblModRacialCA.AutoSize = True
-        lblModRacialCA.Location = New Point(569, 54)
+        lblModRacialCA.Location = New Point(498, 40)
         lblModRacialCA.Name = "lblModRacialCA"
-        lblModRacialCA.Size = New Size(17, 20)
+        lblModRacialCA.Size = New Size(13, 15)
         lblModRacialCA.TabIndex = 241
         lblModRacialCA.Text = "0"
         ' 
         ' lblPenArmureSauvegardes
         ' 
         lblPenArmureSauvegardes.AutoSize = True
-        lblPenArmureSauvegardes.Location = New Point(691, 17)
+        lblPenArmureSauvegardes.Location = New Point(605, 13)
         lblPenArmureSauvegardes.Name = "lblPenArmureSauvegardes"
-        lblPenArmureSauvegardes.Size = New Size(114, 20)
+        lblPenArmureSauvegardes.Size = New Size(92, 15)
         lblPenArmureSauvegardes.TabIndex = 240
         lblPenArmureSauvegardes.Text = "Pénalité Armure"
         ' 
         ' lblDiversSauvegardes
         ' 
         lblDiversSauvegardes.AutoSize = True
-        lblDiversSauvegardes.Location = New Point(634, 17)
+        lblDiversSauvegardes.Location = New Point(555, 13)
         lblDiversSauvegardes.Name = "lblDiversSauvegardes"
-        lblDiversSauvegardes.Size = New Size(50, 20)
+        lblDiversSauvegardes.Size = New Size(39, 15)
         lblDiversSauvegardes.TabIndex = 239
         lblDiversSauvegardes.Text = "Divers"
         ' 
         ' lblModRacialSauvegardes
         ' 
         lblModRacialSauvegardes.AutoSize = True
-        lblModRacialSauvegardes.Location = New Point(541, 17)
+        lblModRacialSauvegardes.Location = New Point(473, 13)
         lblModRacialSauvegardes.Name = "lblModRacialSauvegardes"
-        lblModRacialSauvegardes.Size = New Size(84, 20)
+        lblModRacialSauvegardes.Size = New Size(66, 15)
         lblModRacialSauvegardes.TabIndex = 238
         lblModRacialSauvegardes.Text = "Mod Racial"
         ' 
         ' lblModCaracVolonte
         ' 
         lblModCaracVolonte.AutoSize = True
-        lblModCaracVolonte.Location = New Point(393, 167)
+        lblModCaracVolonte.Location = New Point(344, 125)
         lblModCaracVolonte.Name = "lblModCaracVolonte"
-        lblModCaracVolonte.Size = New Size(17, 20)
+        lblModCaracVolonte.Size = New Size(13, 15)
         lblModCaracVolonte.TabIndex = 237
         lblModCaracVolonte.Text = "0"
         ' 
         ' lblModCaracVigueur
         ' 
         lblModCaracVigueur.AutoSize = True
-        lblModCaracVigueur.Location = New Point(393, 129)
+        lblModCaracVigueur.Location = New Point(344, 97)
         lblModCaracVigueur.Name = "lblModCaracVigueur"
-        lblModCaracVigueur.Size = New Size(17, 20)
+        lblModCaracVigueur.Size = New Size(13, 15)
         lblModCaracVigueur.TabIndex = 236
         lblModCaracVigueur.Text = "0"
         ' 
         ' lblModCaracCA
         ' 
         lblModCaracCA.AutoSize = True
-        lblModCaracCA.Location = New Point(393, 54)
+        lblModCaracCA.Location = New Point(344, 40)
         lblModCaracCA.Name = "lblModCaracCA"
-        lblModCaracCA.Size = New Size(17, 20)
+        lblModCaracCA.Size = New Size(13, 15)
         lblModCaracCA.TabIndex = 235
         lblModCaracCA.Text = "0"
         ' 
         ' lblModCaracReflexes
         ' 
         lblModCaracReflexes.AutoSize = True
-        lblModCaracReflexes.Location = New Point(393, 91)
+        lblModCaracReflexes.Location = New Point(344, 68)
         lblModCaracReflexes.Name = "lblModCaracReflexes"
-        lblModCaracReflexes.Size = New Size(17, 20)
+        lblModCaracReflexes.Size = New Size(13, 15)
         lblModCaracReflexes.TabIndex = 234
         lblModCaracReflexes.Text = "0"
         ' 
         ' lblDemiNiveauVolonte
         ' 
         lblDemiNiveauVolonte.AutoSize = True
-        lblDemiNiveauVolonte.Location = New Point(301, 167)
+        lblDemiNiveauVolonte.Location = New Point(263, 125)
         lblDemiNiveauVolonte.Name = "lblDemiNiveauVolonte"
-        lblDemiNiveauVolonte.Size = New Size(17, 20)
+        lblDemiNiveauVolonte.Size = New Size(13, 15)
         lblDemiNiveauVolonte.TabIndex = 233
         lblDemiNiveauVolonte.Text = "0"
         ' 
         ' lblDemiNiveauVigueur
         ' 
         lblDemiNiveauVigueur.AutoSize = True
-        lblDemiNiveauVigueur.Location = New Point(301, 129)
+        lblDemiNiveauVigueur.Location = New Point(263, 97)
         lblDemiNiveauVigueur.Name = "lblDemiNiveauVigueur"
-        lblDemiNiveauVigueur.Size = New Size(17, 20)
+        lblDemiNiveauVigueur.Size = New Size(13, 15)
         lblDemiNiveauVigueur.TabIndex = 232
         lblDemiNiveauVigueur.Text = "0"
         ' 
         ' lblDemiNiveauCA
         ' 
         lblDemiNiveauCA.AutoSize = True
-        lblDemiNiveauCA.Location = New Point(301, 54)
+        lblDemiNiveauCA.Location = New Point(263, 40)
         lblDemiNiveauCA.Name = "lblDemiNiveauCA"
-        lblDemiNiveauCA.Size = New Size(17, 20)
+        lblDemiNiveauCA.Size = New Size(13, 15)
         lblDemiNiveauCA.TabIndex = 231
         lblDemiNiveauCA.Text = "0"
         ' 
         ' lblDemiNiveauReflexes
         ' 
         lblDemiNiveauReflexes.AutoSize = True
-        lblDemiNiveauReflexes.Location = New Point(301, 91)
+        lblDemiNiveauReflexes.Location = New Point(263, 68)
         lblDemiNiveauReflexes.Name = "lblDemiNiveauReflexes"
-        lblDemiNiveauReflexes.Size = New Size(17, 20)
+        lblDemiNiveauReflexes.Size = New Size(13, 15)
         lblDemiNiveauReflexes.TabIndex = 230
         lblDemiNiveauReflexes.Text = "0"
         ' 
         ' lblModCaracSauvegardes
         ' 
         lblModCaracSauvegardes.AutoSize = True
-        lblModCaracSauvegardes.Location = New Point(363, 17)
+        lblModCaracSauvegardes.Location = New Point(318, 13)
         lblModCaracSauvegardes.Name = "lblModCaracSauvegardes"
-        lblModCaracSauvegardes.Size = New Size(81, 20)
+        lblModCaracSauvegardes.Size = New Size(65, 15)
         lblModCaracSauvegardes.TabIndex = 228
         lblModCaracSauvegardes.Text = "Mod Carac"
         ' 
         ' lblDemiNiveauSauvegardes
         ' 
         lblDemiNiveauSauvegardes.AutoSize = True
-        lblDemiNiveauSauvegardes.Location = New Point(275, 17)
+        lblDemiNiveauSauvegardes.Location = New Point(241, 13)
         lblDemiNiveauSauvegardes.Name = "lblDemiNiveauSauvegardes"
-        lblDemiNiveauSauvegardes.Size = New Size(81, 20)
+        lblDemiNiveauSauvegardes.Size = New Size(64, 15)
         lblDemiNiveauSauvegardes.TabIndex = 227
         lblDemiNiveauSauvegardes.Text = "1/2 Niveau"
         ' 
         ' lblVolonte
         ' 
         lblVolonte.AutoSize = True
-        lblVolonte.Location = New Point(19, 167)
+        lblVolonte.Location = New Point(17, 125)
         lblVolonte.Name = "lblVolonte"
-        lblVolonte.Size = New Size(60, 20)
+        lblVolonte.Size = New Size(47, 15)
         lblVolonte.TabIndex = 226
         lblVolonte.Text = "Volonté"
         ' 
         ' lblVigueur
         ' 
         lblVigueur.AutoSize = True
-        lblVigueur.Location = New Point(19, 129)
+        lblVigueur.Location = New Point(17, 97)
         lblVigueur.Name = "lblVigueur"
-        lblVigueur.Size = New Size(60, 20)
+        lblVigueur.Size = New Size(48, 15)
         lblVigueur.TabIndex = 225
         lblVigueur.Text = "Vigueur"
         ' 
         ' lblReflexes
         ' 
         lblReflexes.AutoSize = True
-        lblReflexes.Location = New Point(19, 91)
+        lblReflexes.Location = New Point(17, 68)
         lblReflexes.Name = "lblReflexes"
-        lblReflexes.Size = New Size(64, 20)
+        lblReflexes.Size = New Size(50, 15)
         lblReflexes.TabIndex = 224
         lblReflexes.Text = "Réflexes"
         ' 
         ' lblClasseArmure
         ' 
         lblClasseArmure.AutoSize = True
-        lblClasseArmure.Location = New Point(19, 54)
+        lblClasseArmure.Location = New Point(17, 40)
         lblClasseArmure.Name = "lblClasseArmure"
-        lblClasseArmure.Size = New Size(113, 20)
+        lblClasseArmure.Size = New Size(91, 15)
         lblClasseArmure.TabIndex = 223
         lblClasseArmure.Text = "Classe d'armure"
         ' 
         ' lblPointExperience
         ' 
         lblPointExperience.AutoSize = True
-        lblPointExperience.Location = New Point(409, 11)
+        lblPointExperience.Location = New Point(358, 8)
         lblPointExperience.Name = "lblPointExperience"
-        lblPointExperience.Size = New Size(130, 20)
+        lblPointExperience.Size = New Size(105, 15)
         lblPointExperience.TabIndex = 11
         lblPointExperience.Text = "Point d'expérience"
         ' 
         ' txtPointExperience
         ' 
-        txtPointExperience.Location = New Point(578, 15)
-        txtPointExperience.Margin = New Padding(3, 4, 3, 4)
+        txtPointExperience.Location = New Point(506, 11)
         txtPointExperience.Name = "txtPointExperience"
-        txtPointExperience.Size = New Size(100, 27)
+        txtPointExperience.Size = New Size(88, 23)
         txtPointExperience.TabIndex = 10
         ' 
         ' lblNiveau
         ' 
         lblNiveau.AutoSize = True
-        lblNiveau.Location = New Point(409, 58)
+        lblNiveau.Location = New Point(358, 44)
         lblNiveau.Name = "lblNiveau"
-        lblNiveau.Size = New Size(117, 20)
+        lblNiveau.Size = New Size(93, 15)
         lblNiveau.TabIndex = 12
         lblNiveau.Text = "Niveau du perso"
         ' 
         ' lblNiveauCalcul
         ' 
         lblNiveauCalcul.AutoSize = True
-        lblNiveauCalcul.Location = New Point(578, 58)
+        lblNiveauCalcul.Location = New Point(506, 44)
         lblNiveauCalcul.Name = "lblNiveauCalcul"
-        lblNiveauCalcul.Size = New Size(17, 20)
+        lblNiveauCalcul.Size = New Size(13, 15)
         lblNiveauCalcul.TabIndex = 13
         lblNiveauCalcul.Text = "1"
         ' 
-        ' lblTitre
+        ' Button1
         ' 
-        lblTitre.AutoSize = True
-        lblTitre.Font = New Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point)
-        lblTitre.Location = New Point(10, 10)
-        lblTitre.Name = "lblTitre"
-        lblTitre.Size = New Size(312, 32)
-        lblTitre.TabIndex = 0
-        lblTitre.Text = "Création d'un personnage"
+        Button1.Location = New Point(686, 26)
+        Button1.Margin = New Padding(3, 2, 3, 2)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(89, 24)
+        Button1.TabIndex = 14
+        Button1.Text = "Button1"
+        Button1.UseVisualStyleBackColor = True
         ' 
-        ' formFightManager
+        ' formCreatePerso
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(948, 943)
-        Controls.Add(lblTitre)
+        ClientSize = New Size(830, 707)
+        Controls.Add(Button1)
         Controls.Add(lblNiveauCalcul)
         Controls.Add(lblNiveau)
         Controls.Add(lblPointExperience)
@@ -2531,9 +2536,8 @@ Partial Class formFightManager
         Controls.Add(lblClassePersonnage)
         Controls.Add(lblNomPersonnage)
         Controls.Add(txtNomPersonnage)
-        Margin = New Padding(3, 4, 3, 4)
-        Name = "formFightManager"
-        Text = "Fight Manager"
+        Name = "formCreatePerso"
+        Text = "Création de personnage"
         tabGlobal.ResumeLayout(False)
         tabCaracteristique.ResumeLayout(False)
         tabCaracteristique.PerformLayout()
@@ -2782,5 +2786,5 @@ Partial Class formFightManager
     Friend WithEvents txtPointExperience As TextBox
     Friend WithEvents lblNiveau As Label
     Friend WithEvents lblNiveauCalcul As Label
-    Friend WithEvents lblTitre As Label
+    Friend WithEvents Button1 As Button
 End Class

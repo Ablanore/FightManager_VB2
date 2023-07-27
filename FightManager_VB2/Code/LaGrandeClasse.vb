@@ -18,7 +18,7 @@ Public Class ClasseDef
 	Public Property Recuperation As Int16
 	Public Property Sauvegardes As SauvegardeDef()
 	Public Property NombreCompetence As Int16
-	Public Property Competences As CompetenceDef()
+	Public Property Competences As CompetenceDefClasse()
 End Class
 
 Public Class LesRaces
@@ -44,7 +44,7 @@ Public Class SauvegardeDef
 	Public Property Valeur As Int16
 End Class
 
-Public Class CompetenceDef
+Public Class CompetenceDefClasse
 	Public Property Nom As String
 	Public Property Obligatoire As Boolean
 End Class
