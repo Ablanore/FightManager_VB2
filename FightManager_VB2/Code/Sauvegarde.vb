@@ -16,3 +16,13 @@
 		Valeur = valeurParam
 	End Sub
 End Class
+
+Public Class Sauvegardes
+	Public Property ClasseArmure
+	Public Property Réflexes
+	Public Property Vigueur
+	Public Property Volonté
+	Public Sub New()
+
+	End Sub
+End Class

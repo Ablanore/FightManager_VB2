@@ -6,7 +6,7 @@ Public Class Personnage
     Property Race As Race
     Property NbCompeChoisie As UInt16
     Property PointsExperience As UInt32
-    Property Caracteristiques As Caracteristique()
+    Property CaracteristiquesPerso As Caracteristiques
     Property CompetencesPersonnage As Competence()
     Property SauvegardesPersonnage As Sauvegarde()
     Property Niveau As UInt16
@@ -20,29 +20,21 @@ Public Class Personnage
     Property VoieParangonique As String
     Property DestinneEpique As String
 
-    Sub New(Nom As String, ClassePerso As String, RacePerso As String, CaracteristiquePerso() As Int16, PointExperiencePerso As UInt32)
+    Sub New(Nom As String, ClassePerso As String, RacePerso As String, CaracteristiqueParam() As Short, PointExperiencePerso As UInt32)
         Me.Nom = Nom
         Me.Classe = New Classe(ClassePerso)
         Me.Race = New Race(RacePerso)
         Me.PointsExperience = PointExperiencePerso
         Me.NbCompeChoisie = 0
         'Les caractéristiques
-        Dim NumCarac As Int16 = 0
-        Dim lesCarac(-1) As Caracteristique
-        For Each carac In CaracteristiquePerso
-            Dim LaListeCarac As New Caracteristique(NumCarac, carac, RacePerso)
-            Array.Resize(lesCarac, lesCarac.Length + 1)
-            lesCarac(lesCarac.Length - 1) = LaListeCarac
-            NumCarac += 1
-        Next
-        Me.Caracteristiques = lesCarac
+        Me.CaracteristiquesPerso = New Caracteristiques(CaracteristiqueParam, "")
 
         Me.Niveau = Calculniveau(Me.PointsExperience)
         Me.DemiNiveau = Math.Floor(Niveau / 2)
-        Me.PV = Me.Classe.PointVieBase + Me.Caracteristiques(1).Valeur + (Me.Niveau * Me.Classe.PointVieNiveau)
+        Me.PV = Me.Classe.PointVieBase + Me.CaracteristiquesPerso.Constitution.Valeur + (Me.Niveau * Me.Classe.PointVieNiveau)
         Me.Peril = Math.Floor(Me.PV / 2)
         Me.RecuperationValeur = Math.Floor(Me.PV / 4)
-        Me.RecuparationParJour = Me.Classe.Recuperation + Me.Caracteristiques(1).Modificateur
+        Me.RecuparationParJour = Me.Classe.Recuperation + Me.CaracteristiquesPerso.Constitution.Modificateur
         Me.Initiative = 0
         Me.Vitesse = 0
         Me.VoieParangonique = ""

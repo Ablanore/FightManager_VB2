@@ -14,6 +14,7 @@
     Public Property Nom As String
     Public Property Valeur As Int16
     Public Property Modificateur As Int16
+    Public Property ModificateurRacial As Int16
     Public Sub New(nomParam As EnumCaracteristique, valeurParam As Int16, laRaceParam As String)
         'Détermination du nom de la caractéristique
         Dim names = [Enum].GetNames(GetType(EnumCaracteristique))
@@ -24,5 +25,26 @@
         Valeur = valeurParam + laRace.Caracteristiques(nomParam).Valeur
         'Détermination du modificateur avec le calcul basique à partir de la valeur modifiée par la race.
         Modificateur = Math.Floor((Valeur - 10) / 2)
+        ModificateurRacial = laRace.Caracteristiques(nomParam).Valeur
+    End Sub
+End Class
+
+Public Class Caracteristiques
+    Public Property Force As Caracteristique
+    Public Property Constitution As Caracteristique
+    Public Property Dexterite As Caracteristique
+    Public Property Intelligence As Caracteristique
+    Public Property Sagesse As Caracteristique
+    Public Property Charisme As Caracteristique
+
+    Public Sub New(ValeursParam() As Int16, laRaceParam As String)
+
+        Force = New Caracteristique(Caracteristique.EnumCaracteristique.Force, ValeursParam(0), laRaceParam)
+        Constitution = New Caracteristique(Caracteristique.EnumCaracteristique.Force, ValeursParam(1), laRaceParam)
+        Dexterite = New Caracteristique(Caracteristique.EnumCaracteristique.Force, ValeursParam(2), laRaceParam)
+        Intelligence = New Caracteristique(Caracteristique.EnumCaracteristique.Force, ValeursParam(3), laRaceParam)
+        Sagesse = New Caracteristique(Caracteristique.EnumCaracteristique.Force, ValeursParam(4), laRaceParam)
+        Charisme = New Caracteristique(Caracteristique.EnumCaracteristique.Force, ValeursParam(5), laRaceParam)
+
     End Sub
 End Class
