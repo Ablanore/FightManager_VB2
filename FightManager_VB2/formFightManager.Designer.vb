@@ -256,7 +256,7 @@ Partial Class formCreatePerso
         ' 
         ' txtNomPersonnage
         ' 
-        txtNomPersonnage.Location = New Point(163, 51)
+        txtNomPersonnage.Location = New Point(150, 30)
         txtNomPersonnage.Name = "txtNomPersonnage"
         txtNomPersonnage.Size = New Size(156, 23)
         txtNomPersonnage.TabIndex = 0
@@ -264,7 +264,7 @@ Partial Class formCreatePerso
         ' lblNomPersonnage
         ' 
         lblNomPersonnage.AutoSize = True
-        lblNomPersonnage.Location = New Point(15, 56)
+        lblNomPersonnage.Location = New Point(15, 30)
         lblNomPersonnage.Name = "lblNomPersonnage"
         lblNomPersonnage.Size = New Size(116, 15)
         lblNomPersonnage.TabIndex = 1
@@ -273,7 +273,7 @@ Partial Class formCreatePerso
         ' lblClassePersonnage
         ' 
         lblClassePersonnage.AutoSize = True
-        lblClassePersonnage.Location = New Point(15, 82)
+        lblClassePersonnage.Location = New Point(15, 70)
         lblClassePersonnage.Name = "lblClassePersonnage"
         lblClassePersonnage.Size = New Size(122, 15)
         lblClassePersonnage.TabIndex = 2
@@ -282,7 +282,7 @@ Partial Class formCreatePerso
         ' lblRacePersonnage
         ' 
         lblRacePersonnage.AutoSize = True
-        lblRacePersonnage.Location = New Point(349, 82)
+        lblRacePersonnage.Location = New Point(349, 70)
         lblRacePersonnage.Name = "lblRacePersonnage"
         lblRacePersonnage.Size = New Size(114, 15)
         lblRacePersonnage.TabIndex = 3
@@ -292,7 +292,7 @@ Partial Class formCreatePerso
         ' 
         ddlClassePersonnage.DropDownStyle = ComboBoxStyle.DropDownList
         ddlClassePersonnage.FormattingEnabled = True
-        ddlClassePersonnage.Location = New Point(163, 77)
+        ddlClassePersonnage.Location = New Point(150, 70)
         ddlClassePersonnage.Name = "ddlClassePersonnage"
         ddlClassePersonnage.Size = New Size(156, 23)
         ddlClassePersonnage.TabIndex = 6
@@ -301,7 +301,7 @@ Partial Class formCreatePerso
         ' 
         ddlRacePersonnage.DropDownStyle = ComboBoxStyle.DropDownList
         ddlRacePersonnage.FormattingEnabled = True
-        ddlRacePersonnage.Location = New Point(506, 76)
+        ddlRacePersonnage.Location = New Point(506, 70)
         ddlRacePersonnage.Name = "ddlRacePersonnage"
         ddlRacePersonnage.Size = New Size(152, 23)
         ddlRacePersonnage.TabIndex = 7
@@ -355,7 +355,7 @@ Partial Class formCreatePerso
         tabCaracteristique.Controls.Add(lblForce)
         tabCaracteristique.Location = New Point(4, 24)
         tabCaracteristique.Name = "tabCaracteristique"
-        tabCaracteristique.Padding = New Padding(3, 3, 3, 3)
+        tabCaracteristique.Padding = New Padding(3)
         tabCaracteristique.Size = New Size(798, 496)
         tabCaracteristique.TabIndex = 0
         tabCaracteristique.Text = "Caratéristiques"
@@ -472,7 +472,7 @@ Partial Class formCreatePerso
         ' lblModRaceCharisme
         ' 
         lblModRaceCharisme.AutoSize = True
-        lblModRaceCharisme.Location = New Point(198, 182)
+        lblModRaceCharisme.Location = New Point(457, 182)
         lblModRaceCharisme.Name = "lblModRaceCharisme"
         lblModRaceCharisme.Size = New Size(13, 15)
         lblModRaceCharisme.TabIndex = 56
@@ -481,7 +481,7 @@ Partial Class formCreatePerso
         ' lblModRaceSagesse
         ' 
         lblModRaceSagesse.AutoSize = True
-        lblModRaceSagesse.Location = New Point(198, 154)
+        lblModRaceSagesse.Location = New Point(457, 154)
         lblModRaceSagesse.Name = "lblModRaceSagesse"
         lblModRaceSagesse.Size = New Size(13, 15)
         lblModRaceSagesse.TabIndex = 55
@@ -490,7 +490,7 @@ Partial Class formCreatePerso
         ' lblModRaceIntelligence
         ' 
         lblModRaceIntelligence.AutoSize = True
-        lblModRaceIntelligence.Location = New Point(198, 126)
+        lblModRaceIntelligence.Location = New Point(457, 126)
         lblModRaceIntelligence.Name = "lblModRaceIntelligence"
         lblModRaceIntelligence.Size = New Size(13, 15)
         lblModRaceIntelligence.TabIndex = 54
@@ -499,7 +499,7 @@ Partial Class formCreatePerso
         ' lblModRaceDexterite
         ' 
         lblModRaceDexterite.AutoSize = True
-        lblModRaceDexterite.Location = New Point(198, 98)
+        lblModRaceDexterite.Location = New Point(457, 98)
         lblModRaceDexterite.Name = "lblModRaceDexterite"
         lblModRaceDexterite.Size = New Size(13, 15)
         lblModRaceDexterite.TabIndex = 53
@@ -508,7 +508,7 @@ Partial Class formCreatePerso
         ' lblModRaceForce
         ' 
         lblModRaceForce.AutoSize = True
-        lblModRaceForce.Location = New Point(198, 41)
+        lblModRaceForce.Location = New Point(457, 41)
         lblModRaceForce.Name = "lblModRaceForce"
         lblModRaceForce.Size = New Size(13, 15)
         lblModRaceForce.TabIndex = 52
@@ -517,7 +517,7 @@ Partial Class formCreatePerso
         ' lblModRaceConstitution
         ' 
         lblModRaceConstitution.AutoSize = True
-        lblModRaceConstitution.Location = New Point(198, 69)
+        lblModRaceConstitution.Location = New Point(457, 69)
         lblModRaceConstitution.Name = "lblModRaceConstitution"
         lblModRaceConstitution.Size = New Size(13, 15)
         lblModRaceConstitution.TabIndex = 51
@@ -582,23 +582,23 @@ Partial Class formCreatePerso
         Label1.AutoSize = True
         Label1.Location = New Point(332, 14)
         Label1.Name = "Label1"
-        Label1.Size = New Size(68, 15)
+        Label1.Size = New Size(74, 15)
         Label1.TabIndex = 44
-        Label1.Text = "Mod Calcul"
+        Label1.Text = "Mod Calculé"
         ' 
         ' lblValeurCalcul
         ' 
         lblValeurCalcul.AutoSize = True
         lblValeurCalcul.Location = New Point(245, 14)
         lblValeurCalcul.Name = "lblValeurCalcul"
-        lblValeurCalcul.Size = New Size(75, 15)
+        lblValeurCalcul.Size = New Size(87, 15)
         lblValeurCalcul.TabIndex = 43
-        lblValeurCalcul.Text = "Valeur Calcul"
+        lblValeurCalcul.Text = "Valeur Calculée"
         ' 
         ' lblModRace
         ' 
         lblModRace.AutoSize = True
-        lblModRace.Location = New Point(175, 14)
+        lblModRace.Location = New Point(434, 14)
         lblModRace.Name = "lblModRace"
         lblModRace.Size = New Size(60, 15)
         lblModRace.TabIndex = 42
@@ -814,7 +814,7 @@ Partial Class formCreatePerso
         tabCompetences.Controls.Add(lblAcrobaties)
         tabCompetences.Location = New Point(4, 24)
         tabCompetences.Name = "tabCompetences"
-        tabCompetences.Padding = New Padding(3, 3, 3, 3)
+        tabCompetences.Padding = New Padding(3)
         tabCompetences.Size = New Size(798, 496)
         tabCompetences.TabIndex = 1
         tabCompetences.Text = "Compétences"
@@ -2478,7 +2478,7 @@ Partial Class formCreatePerso
         ' lblPointExperience
         ' 
         lblPointExperience.AutoSize = True
-        lblPointExperience.Location = New Point(358, 8)
+        lblPointExperience.Location = New Point(489, 30)
         lblPointExperience.Name = "lblPointExperience"
         lblPointExperience.Size = New Size(105, 15)
         lblPointExperience.TabIndex = 11
@@ -2486,7 +2486,7 @@ Partial Class formCreatePerso
         ' 
         ' txtPointExperience
         ' 
-        txtPointExperience.Location = New Point(506, 11)
+        txtPointExperience.Location = New Point(616, 27)
         txtPointExperience.Name = "txtPointExperience"
         txtPointExperience.Size = New Size(88, 23)
         txtPointExperience.TabIndex = 10
@@ -2494,7 +2494,7 @@ Partial Class formCreatePerso
         ' lblNiveau
         ' 
         lblNiveau.AutoSize = True
-        lblNiveau.Location = New Point(358, 44)
+        lblNiveau.Location = New Point(358, 30)
         lblNiveau.Name = "lblNiveau"
         lblNiveau.Size = New Size(93, 15)
         lblNiveau.TabIndex = 12
@@ -2503,7 +2503,7 @@ Partial Class formCreatePerso
         ' lblNiveauCalcul
         ' 
         lblNiveauCalcul.AutoSize = True
-        lblNiveauCalcul.Location = New Point(506, 44)
+        lblNiveauCalcul.Location = New Point(450, 30)
         lblNiveauCalcul.Name = "lblNiveauCalcul"
         lblNiveauCalcul.Size = New Size(13, 15)
         lblNiveauCalcul.TabIndex = 13
@@ -2511,7 +2511,7 @@ Partial Class formCreatePerso
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(686, 26)
+        Button1.Location = New Point(704, 70)
         Button1.Margin = New Padding(3, 2, 3, 2)
         Button1.Name = "Button1"
         Button1.Size = New Size(89, 24)
@@ -2523,7 +2523,7 @@ Partial Class formCreatePerso
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(830, 707)
+        ClientSize = New Size(830, 650)
         Controls.Add(Button1)
         Controls.Add(lblNiveauCalcul)
         Controls.Add(lblNiveau)
@@ -2536,6 +2536,7 @@ Partial Class formCreatePerso
         Controls.Add(lblClassePersonnage)
         Controls.Add(lblNomPersonnage)
         Controls.Add(txtNomPersonnage)
+        FormBorderStyle = FormBorderStyle.None
         Name = "formCreatePerso"
         Text = "Création de personnage"
         tabGlobal.ResumeLayout(False)

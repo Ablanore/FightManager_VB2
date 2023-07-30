@@ -7,8 +7,8 @@ Public Class Personnage
     Property NbCompeChoisie As UInt16
     Property PointsExperience As UInt32
     Property CaracteristiquesPerso As Caracteristiques
-    Property CompetencesPersonnage As Competence()
-    Property SauvegardesPersonnage As Sauvegarde()
+    Property CompetencesPersonnage As Competences
+    Property SauvegardesPersonnage As Sauvegardes
     Property Niveau As UInt16
     Property DemiNiveau As UInt16
     Property PV As UInt16
@@ -17,6 +17,7 @@ Public Class Personnage
     Property RecuparationParJour As UInt16
     Property Initiative As UInt16
     Property Vitesse As UInt16
+    Property Vision As String
     Property VoieParangonique As String
     Property DestinneEpique As String
 
@@ -27,7 +28,7 @@ Public Class Personnage
         Me.PointsExperience = PointExperiencePerso
         Me.NbCompeChoisie = 0
         'Les caractéristiques
-        Me.CaracteristiquesPerso = New Caracteristiques(CaracteristiqueParam, "")
+        Me.CaracteristiquesPerso = New Caracteristiques(CaracteristiqueParam, RacePerso)
 
         Me.Niveau = Calculniveau(Me.PointsExperience)
         Me.DemiNiveau = Math.Floor(Niveau / 2)
@@ -35,28 +36,18 @@ Public Class Personnage
         Me.Peril = Math.Floor(Me.PV / 2)
         Me.RecuperationValeur = Math.Floor(Me.PV / 4)
         Me.RecuparationParJour = Me.Classe.Recuperation + Me.CaracteristiquesPerso.Constitution.Modificateur
-        Me.Initiative = 0
-        Me.Vitesse = 0
+        Me.Initiative = Me.DemiNiveau + Me.CaracteristiquesPerso.Dexterite.Modificateur
+        Me.Vitesse = Me.Race.Vitesse
+        Me.Vision = Me.Race.Vision
         Me.VoieParangonique = ""
         Me.DestinneEpique = ""
 
         'Les compétences
-        Dim lesCompe(-1) As Competence
-        For i = 0 To 16
-            Dim LaListeCompe As New Competence(i, 0, Me.DemiNiveau, RacePerso, Me.Caracteristiques)
-            Array.Resize(lesCompe, lesCompe.Length + 1)
-            lesCompe(lesCompe.Length - 1) = LaListeCompe
-        Next
-        Me.CompetencesPersonnage = lesCompe
+        Dim TabFormation As Boolean() = {False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False}
+        Me.CompetencesPersonnage = New Competences(TabFormation, Me.DemiNiveau, RacePerso, Me.CaracteristiquesPerso)
 
         'Les sauvegardes
-        Dim lesSauve(-1) As Sauvegarde
-        For i = 0 To 3
-            Dim LaListeSauve As New Sauvegarde(i, 0)
-            Array.Resize(lesSauve, lesSauve.Length + 1)
-            lesSauve(lesSauve.Length - 1) = LaListeSauve
-        Next
-        Me.SauvegardesPersonnage = lesSauve
+        Me.SauvegardesPersonnage = New Sauvegardes(Me.CaracteristiquesPerso, Me.DemiNiveau, ClassePerso)
     End Sub
 
 

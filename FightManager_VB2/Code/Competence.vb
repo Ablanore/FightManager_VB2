@@ -33,7 +33,7 @@ Public Class Competence
     Public Sub New(nomParam As EnumCompetence, FormationParam As Boolean, DemiNiveauParam As Short, laRaceParam As String, CaracParam As Short)
         'Détermination du nom de la compétence
         Dim names = [Enum].GetNames(GetType(EnumCompetence))
-        Nom = names(nomParam)
+        Me.Nom = names(nomParam)
         'Détermination de la valeur de la compétence
         'Rappel de la formule : 1/2 niveau + mod carac + formation + Mod racial + divers - pénalité armure
         Dim laRace As New Race(laRaceParam)
@@ -44,6 +44,12 @@ Public Class Competence
             ValueFormation = 0
         End If
         Valeur = DemiNiveauParam + ValueFormation + laRace.Competences(nomParam).Valeur + CaracParam
+        Me.ModRacial = laRace.Competences(nomParam).Valeur
+        Me.ModCarac = CaracParam
+        Me.PenArmure = 0
+        Me.Divers = 0
+        Me.Formation = ValueFormation
+
 
         'Dim CompetenceCaracteristique = {{"Acrobaties", "2"}, {"Arcanes", " 3"}, {"Athletisme", " 0"}, {"Bluff", " 5"}, {"ConnDeLaRue", " 5"}, {"Diplomatie", " 5"}, {"Discretion", " 2"}, {"Endurance", " 1"}, {"Exploration", " 4"}, {"Histoire", " 3"}, {"Intimidation", " 5"}, {"Intuition", " 4"}, {"Larcin", " 2"}, {"Nature", " 4"}, {"Perception", " 4"}, {"Religion", " 3"}, {"Soins", " 4"}}
         'Dim laCarac As Short
