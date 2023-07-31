@@ -8,6 +8,7 @@ Public Class formCreatePerso
     Private ClasseData As LesClasses = JsonSerializer.Deserialize(Of LesClasses)(File.ReadAllText(LaGrandeClasse.ClasseDataAdresse))
     Private jaifini As Boolean = False
     Private unPersonnage As Personnage
+    Private tabCarac As Short()
     Private Sub formFightManager_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         txtNomPersonnage.Text = "Ablanore"
         txtPointExperience.Text = 18523
@@ -15,12 +16,23 @@ Public Class formCreatePerso
         jaifini = True
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnVoirPerso.Click
         If jaifini Then
             ChargeLabel()
         End If
     End Sub
 
+    Private Sub btnSavePerso_Click(sender As Object, e As EventArgs) Handles btnSavePerso.Click
+        tabCarac = {txtBaseForce.Text, txtBaseConstitution.Text, txtBaseDexterite.Text, txtBaseIntelligence.Text, txtBaseSagesse.Text, txtBaseCharisme.Text}
+        Dim unRecordPerso As New RecordPerso()
+        unRecordPerso.NomPerso = txtNomPersonnage.Text
+        unRecordPerso.ClassePerso = ddlClassePersonnage.SelectedValue
+        unRecordPerso.RacePerso = ddlRacePersonnage.SelectedValue
+        unRecordPerso.PointExperiencePerso = txtPointExperience.Text
+        unRecordPerso.TabCarac = tabCarac
+
+        File.WriteAllText(LaGrandeClasse.DossierDesPerso & txtNomPersonnage.Text & ".json", JsonSerializer.Serialize(unRecordPerso))
+    End Sub
     Sub lesTrucsDeDepart()
         'Chargement de la DDL des Classes
         Dim lstClasses = (From lstClasse In ClasseData.Classes
@@ -40,7 +52,7 @@ Public Class formCreatePerso
     End Sub
 
     Sub ChargeLabel()
-        Dim tabCarac As Short() = {txtBaseForce.Text, txtBaseConstitution.Text, txtBaseDexterite.Text, txtBaseIntelligence.Text, txtBaseSagesse.Text, txtBaseCharisme.Text}
+        tabCarac = {txtBaseForce.Text, txtBaseConstitution.Text, txtBaseDexterite.Text, txtBaseIntelligence.Text, txtBaseSagesse.Text, txtBaseCharisme.Text}
         unPersonnage = New Personnage(txtNomPersonnage.Text, ddlClassePersonnage.SelectedValue, ddlRacePersonnage.SelectedValue, tabCarac, txtPointExperience.Text)
 
         'Le niveau
@@ -170,6 +182,7 @@ Public Class formCreatePerso
         lblModRacialVigueur.Text = unPersonnage.SauvegardesPersonnage.Vigueur.ModRacial
         lblModRacialVolonte.Text = unPersonnage.SauvegardesPersonnage.Volonté.ModRacial
     End Sub
+
 
     'Function ModRacial(IndexCarac As Int16)
     '    If ddlRacePersonnage.SelectedIndex = -1 Then

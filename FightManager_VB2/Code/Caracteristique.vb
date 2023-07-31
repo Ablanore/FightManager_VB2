@@ -40,11 +40,11 @@ Public Class Caracteristiques
     Public Sub New(ValeursParam() As Int16, laRaceParam As String)
 
         Force = New Caracteristique(Caracteristique.EnumCaracteristique.Force, ValeursParam(0), laRaceParam)
-        Constitution = New Caracteristique(Caracteristique.EnumCaracteristique.Force, ValeursParam(1), laRaceParam)
-        Dexterite = New Caracteristique(Caracteristique.EnumCaracteristique.Force, ValeursParam(2), laRaceParam)
-        Intelligence = New Caracteristique(Caracteristique.EnumCaracteristique.Force, ValeursParam(3), laRaceParam)
-        Sagesse = New Caracteristique(Caracteristique.EnumCaracteristique.Force, ValeursParam(4), laRaceParam)
-        Charisme = New Caracteristique(Caracteristique.EnumCaracteristique.Force, ValeursParam(5), laRaceParam)
+        Constitution = New Caracteristique(Caracteristique.EnumCaracteristique.Constitution, ValeursParam(1), laRaceParam)
+        Dexterite = New Caracteristique(Caracteristique.EnumCaracteristique.Dexterite, ValeursParam(2), laRaceParam)
+        Intelligence = New Caracteristique(Caracteristique.EnumCaracteristique.Intelligence, ValeursParam(3), laRaceParam)
+        Sagesse = New Caracteristique(Caracteristique.EnumCaracteristique.Sagesse, ValeursParam(4), laRaceParam)
+        Charisme = New Caracteristique(Caracteristique.EnumCaracteristique.Charisme, ValeursParam(5), laRaceParam)
 
     End Sub
 End Class

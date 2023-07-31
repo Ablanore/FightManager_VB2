@@ -2,13 +2,23 @@
 	Shared configurationAppSettings As System.Configuration.AppSettingsReader = New System.Configuration.AppSettingsReader
 	Public Shared RaceDataAdresse As String = configurationAppSettings.GetValue("RaceDataAdresse", GetType(System.String))
 	Public Shared ClasseDataAdresse As String = configurationAppSettings.GetValue("ClasseDataAdresse", GetType(System.String))
+	Public Shared DossierDesPerso As String = configurationAppSettings.GetValue("DossierDesPersos", GetType(System.String))
+	Public Shared Function Jetdes(nbFace As Short) As Short
+		Randomize()
+		Return CInt(Int((nbFace * Rnd()) + 1))
+	End Function
 End Class
 
-
+Public Class RecordPerso
+	Public Property NomPerso As String
+	Public Property ClassePerso As String
+	Public Property RacePerso As String
+	Public Property TabCarac As Short()
+	Public Property PointExperiencePerso As UInt32
+End Class
 Public Class LesClasses
 	Public Property Classes As ClasseDef()
 End Class
-
 Public Class ClasseDef
 
 	Public Property IdClasse As String
@@ -20,7 +30,6 @@ Public Class ClasseDef
 	Public Property NombreCompetence As Int16
 	Public Property Competences As CompetenceDefClasse()
 End Class
-
 Public Class LesRaces
 	Public Property Races As RaceDef()
 End Class
@@ -38,12 +47,10 @@ Public Class RaceDef
 	Public Property Competences As CompetenceDefRace()
 	Public Property Sauvegardes As SauvegardeDef()
 End Class
-
 Public Class SauvegardeDef
 	Public Property Nom As String
 	Public Property Valeur As Int16
 End Class
-
 Public Class CompetenceDefClasse
 	Public Property Nom As String
 	Public Property Obligatoire As Boolean
@@ -52,7 +59,6 @@ Public Class CompetenceDefRace
 	Public Property Nom As String
 	Public Property Valeur As Int16
 End Class
-
 Public Class CaracteristiqueDef
 	Public Property Nom As String
 	Public Property Valeur As Int16
