@@ -17,7 +17,7 @@ Public Class BaseLogiciel
 
         ' Définissez le formulaire formCreatePerso comme enfant du formulaire BaseLogiciel
         formPerso.TopLevel = False
-        formPerso.FormBorderStyle = FormBorderStyle.None
+        formPerso.FormBorderStyle = FormBorderStyle.FixedDialog
         formPerso.Dock = DockStyle.Fill
 
         ' Ajoutez le formulaire formCreatePerso au contrôle Panel (ou autre contrôle de votre choix) du formulaire BaseLogiciel
