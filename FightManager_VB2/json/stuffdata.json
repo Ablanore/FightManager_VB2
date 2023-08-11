@@ -1,0 +1,126 @@
+{
+	"Stuff": [
+		{
+			"IdStuff": "StuffBase",
+			"NomStuff": "StuffBase",
+			"NbDesDegat": 0,
+			"NbFaceDesDegat": 0,
+			"BonusDegat": 0,
+			"PointVieBase": 0,
+			"Caracteristiques": [
+				{
+					"Nom": "Force",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Constitution",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Dexterite",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intelligence",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Sagesse",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Charisme",
+					"Valeur": 0
+				}
+			],
+			"Competences": [
+				{
+					"Nom": "Acrobaties",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Arcanes",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Athletisme",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Bluff",
+					"Valeur": 0
+				},
+				{
+					"Nom": "ConnDeLaRue",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Diplomatie",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Discretion",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Endurance",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Exploration",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Histoire",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intuition",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intimidation",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Larcin",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Nature",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Perception",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Religion",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Soins",
+					"Valeur": 0
+				}
+			],
+			"Sauvegardes": [
+				{
+					"Nom": "ClasseArmure",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Vigueur",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Reflexe",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Volonte",
+					"Valeur": 0
+				}
+			]
+		}
+	]
+}

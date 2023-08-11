@@ -26,12 +26,13 @@ Partial Class formInitiative
         lblTest = New Label()
         flpPersonnage = New FlowLayoutPanel()
         btnLancerInititiative = New Button()
+        flpResultat = New FlowLayoutPanel()
         SuspendLayout()
         ' 
         ' ddlPersonnage
         ' 
         ddlPersonnage.FormattingEnabled = True
-        ddlPersonnage.Location = New Point(12, 12)
+        ddlPersonnage.Location = New Point(568, 12)
         ddlPersonnage.Name = "ddlPersonnage"
         ddlPersonnage.Size = New Size(221, 28)
         ddlPersonnage.TabIndex = 0
@@ -50,7 +51,7 @@ Partial Class formInitiative
         ' 
         flpPersonnage.BorderStyle = BorderStyle.FixedSingle
         flpPersonnage.FlowDirection = FlowDirection.TopDown
-        flpPersonnage.Location = New Point(116, 73)
+        flpPersonnage.Location = New Point(12, 51)
         flpPersonnage.Name = "flpPersonnage"
         flpPersonnage.Size = New Size(469, 392)
         flpPersonnage.TabIndex = 3
@@ -64,11 +65,21 @@ Partial Class formInitiative
         btnLancerInititiative.Text = "Lancer"
         btnLancerInititiative.UseVisualStyleBackColor = True
         ' 
+        ' flpResultat
+        ' 
+        flpResultat.BorderStyle = BorderStyle.FixedSingle
+        flpResultat.FlowDirection = FlowDirection.TopDown
+        flpResultat.Location = New Point(620, 51)
+        flpResultat.Name = "flpResultat"
+        flpResultat.Size = New Size(469, 392)
+        flpResultat.TabIndex = 4
+        ' 
         ' formInitiative
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 569)
+        ClientSize = New Size(1253, 569)
+        Controls.Add(flpResultat)
         Controls.Add(btnLancerInititiative)
         Controls.Add(flpPersonnage)
         Controls.Add(lblTest)
@@ -83,4 +94,5 @@ Partial Class formInitiative
     Friend WithEvents lblTest As Label
     Friend WithEvents flpPersonnage As FlowLayoutPanel
     Friend WithEvents btnLancerInititiative As Button
+    Friend WithEvents flpResultat As FlowLayoutPanel
 End Class

@@ -63,3 +63,14 @@ Public Class CaracteristiqueDef
 	Public Property Nom As String
 	Public Property Valeur As Int16
 End Class
+Public Class StuffDef
+	Public Property IdStuff As String
+	Public Property NomStuff As String
+	Public Property NbDesDegat As Short
+	Public Property NbFaceDesDegat As Short
+	Public Property BonusDegat As Short
+	Public Property PointVieBase As Short
+	Public Property Caracteristiques As CaracteristiqueDef()
+	Public Property Competences As CompetenceDefRace()
+	Public Property Sauvegardes As SauvegardeDef()
+End Class

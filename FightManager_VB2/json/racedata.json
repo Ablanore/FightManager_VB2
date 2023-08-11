@@ -1,926 +1,2629 @@
-{"Races": [	
-	{
-	"IdRace": "Drakeide",
-	"NomRace": "Drakéide",
-	"Vitesse": 6,
-	"TailleMini": 185,
-	"TailelMaxi": 200,
-	"PoidsMini": 110,
-	"PoidsMaxi": 160,
-	"Taille": "M",
-	"Vision": "Normale",
-	"Caracteristiques": [
-		{"Nom": "Force", "Valeur": 2},
-		{"Nom": "Constitution", "Valeur": 0},
-		{"Nom": "Dexterite", "Valeur": 0},
-		{"Nom": "Intelligence", "Valeur": 0},
-		{"Nom": "Sagesse", "Valeur": 0},
-		{"Nom": "Charisme", "Valeur": 2}
-		],
-	"Competences": [
-		{"Nom": "Acrobaties", "Valeur": 0 },
-		{"Nom": "Arcanes", "Valeur": 0 },
-		{"Nom": "Athletisme", "Valeur": 0 },
-		{"Nom": "Bluff", "Valeur": 0 },
-		{"Nom": "ConnDeLaRue", "Valeur": 0 },
-		{"Nom": "Diplomatie", "Valeur": 0 },
-		{"Nom": "Discretion", "Valeur": 0 },
-		{"Nom": "Endurance", "Valeur": 0 },
-		{"Nom": "Exploration", "Valeur": 0 },
-		{"Nom": "Histoire", "Valeur": 2 },
-		{"Nom": "Intuition", "Valeur": 0 },
-		{"Nom": "Intimidation", "Valeur": 2 },
-		{"Nom": "Larcin", "Valeur": 0 },
-		{"Nom": "Nature", "Valeur": 0 },
-		{"Nom": "Perception", "Valeur": 0 },
-		{"Nom": "Religion", "Valeur": 0 },
-		{"Nom": "Soins", "Valeur": 0 }
-		],
-	"Sauvegardes": [
-		{"Nom": "ClasseArmure", "Valeur": 0},
-		{"Nom": "Vigueur", "Valeur": 0},
-		{"Nom": "Reflexe", "Valeur": 0},
-		{"Nom": "Volonte", "Valeur": 0}
-		]
-	},
-	{
-	"IdRace": "Tieffelin",
-	"NomRace": "Tieffelin",
-	"Vitesse": 6,
-	"TailleMini": 165,
-	"TailelMaxi": 185,
-	"PoidsMini": 70,
-	"PoidsMaxi": 115,
-	"Taille": "M",
-	"Vision": "Nocturne",
-	"Caracteristiques": [
-		{"Nom": "Force", "Valeur": 0},
-		{"Nom": "Constitution", "Valeur": 0},
-		{"Nom": "Dexterite", "Valeur": 0},
-		{"Nom": "Intelligence", "Valeur": 2},
-		{"Nom": "Sagesse", "Valeur": 0},
-		{"Nom": "Charisme", "Valeur": 2}
-		],
-	"Competences": [
-		{"Nom": "Acrobaties", "Valeur": 0 },
-		{"Nom": "Arcanes", "Valeur": 0 },
-		{"Nom": "Athletisme", "Valeur": 0 },
-		{"Nom": "Bluff", "Valeur": 2 },
-		{"Nom": "ConnDeLaRue", "Valeur": 0 },
-		{"Nom": "Diplomatie", "Valeur": 0 },
-		{"Nom": "Discretion", "Valeur": 2 },
-		{"Nom": "Endurance", "Valeur": 0 },
-		{"Nom": "Exploration", "Valeur": 0 },
-		{"Nom": "Histoire", "Valeur": 0 },
-		{"Nom": "Intuition", "Valeur": 0 },
-		{"Nom": "Intimidation", "Valeur": 0 },
-		{"Nom": "Larcin", "Valeur": 0 },
-		{"Nom": "Nature", "Valeur": 0 },
-		{"Nom": "Perception", "Valeur": 0 },
-		{"Nom": "Religion", "Valeur": 0 },
-		{"Nom": "Soins", "Valeur": 0 }
-		],
-	"Sauvegardes": [
-		{"Nom": "ClasseArmure", "Valeur": 0},
-		{"Nom": "Vigueur", "Valeur": 0},
-		{"Nom": "Reflexe", "Valeur": 0},
-		{"Nom": "Volonte", "Valeur": 0}
-		]
-	},
-	{
-	"IdRace": "Elfe",
-	"NomRace": "Elfe",
-	"Vitesse": 7,
-	"TailleMini": 160,
-	"TailelMaxi": 180,
-	"PoidsMini": 65,
-	"PoidsMaxi": 85,
-	"Taille": "M",
-	"Vision": "Nocturne",
-	"Caracteristiques": [
-		{"Nom": "Force", "Valeur": 0},
-		{"Nom": "Constitution", "Valeur": 0},
-		{"Nom": "Dexterite", "Valeur": 2},
-		{"Nom": "Intelligence", "Valeur": 0},
-		{"Nom": "Sagesse", "Valeur": 2},
-		{"Nom": "Charisme", "Valeur": 0}
-		],
-	"Competences": [
-		{"Nom": "Acrobaties", "Valeur": 0 },
-		{"Nom": "Arcanes", "Valeur": 0 },
-		{"Nom": "Athletisme", "Valeur": 0 },
-		{"Nom": "Bluff", "Valeur": 0 },
-		{"Nom": "ConnDeLaRue", "Valeur": 0 },
-		{"Nom": "Diplomatie", "Valeur": 0 },
-		{"Nom": "Discretion", "Valeur": 0 },
-		{"Nom": "Endurance", "Valeur": 0 },
-		{"Nom": "Exploration", "Valeur": 0 },
-		{"Nom": "Histoire", "Valeur": 0 },
-		{"Nom": "Intuition", "Valeur": 0 },
-		{"Nom": "Intimidation", "Valeur": 0 },
-		{"Nom": "Larcin", "Valeur": 0 },
-		{"Nom": "Nature", "Valeur": 2 },
-		{"Nom": "Perception", "Valeur": 2 },
-		{"Nom": "Religion", "Valeur": 0 },
-		{"Nom": "Soins", "Valeur": 0 }
-		],
-	"Sauvegardes": [
-		{"Nom": "ClasseArmure", "Valeur": 0},
-		{"Nom": "Vigueur", "Valeur": 0},
-		{"Nom": "Reflexe", "Valeur": 0},
-		{"Nom": "Volonte", "Valeur": 0}
-		]
-	},
-	{
-	"IdRace": "Eladrin",
-	"NomRace": "Eladrin",
-	"Vitesse": 6,
-	"TailleMini": 165,
-	"TailelMaxi": 185,
-	"PoidsMini": 65,
-	"PoidsMaxi": 90,
-	"Taille": "M",
-	"Vision": "Nocturne",
-	"Caracteristiques": [
-		{"Nom": "Force", "Valeur": 0},
-		{"Nom": "Constitution", "Valeur": 0},
-		{"Nom": "Dexterite", "Valeur": 2},
-		{"Nom": "Intelligence", "Valeur": 2},
-		{"Nom": "Sagesse", "Valeur": 0},
-		{"Nom": "Charisme", "Valeur": 0}
-		],
-	"Competences": [
-		{"Nom": "Acrobaties", "Valeur": 0 },
-		{"Nom": "Arcanes", "Valeur": 2 },
-		{"Nom": "Athletisme", "Valeur": 0 },
-		{"Nom": "Bluff", "Valeur": 0 },
-		{"Nom": "ConnDeLaRue", "Valeur": 0 },
-		{"Nom": "Diplomatie", "Valeur": 0 },
-		{"Nom": "Discretion", "Valeur": 0 },
-		{"Nom": "Endurance", "Valeur": 0 },
-		{"Nom": "Exploration", "Valeur": 0 },
-		{"Nom": "Histoire", "Valeur": 2 },
-		{"Nom": "Intuition", "Valeur": 0 },
-		{"Nom": "Intimidation", "Valeur": 0 },
-		{"Nom": "Larcin", "Valeur": 0 },
-		{"Nom": "Nature", "Valeur": 0 },
-		{"Nom": "Perception", "Valeur": 0 },
-		{"Nom": "Religion", "Valeur": 0 },
-		{"Nom": "Soins", "Valeur": 0 }
-		],
-	"Sauvegardes": [
-		{"Nom": "ClasseArmure", "Valeur": 0},
-		{"Nom": "Vigueur", "Valeur": 0},
-		{"Nom": "Reflexe", "Valeur": 0},
-		{"Nom": "Volonte", "Valeur": 1}
-		]
-	},
-	{
-	"IdRace": "Drow",
-	"NomRace": "Drow",
-	"Vitesse": 6,
-	"TailleMini": 0,
-	"TailelMaxi": 0,
-	"PoidsMini": 0,
-	"PoidsMaxi": 0,
-	"Taille": "",
-	"Vision": "",
-	"Caracteristiques": [
-		{"Nom": "Force", "Valeur": 0},
-		{"Nom": "Constitution", "Valeur": 0},
-		{"Nom": "Dexterite", "Valeur": 2},
-		{"Nom": "Intelligence", "Valeur": 0},
-		{"Nom": "Sagesse", "Valeur": 2},
-		{"Nom": "Charisme", "Valeur": 0}
-		],
-	"Competences": [
-		{"Nom": "Acrobaties", "Valeur": 0 },
-		{"Nom": "Arcanes", "Valeur": 0 },
-		{"Nom": "Athletisme", "Valeur": 0 },
-		{"Nom": "Bluff", "Valeur": 0 },
-		{"Nom": "ConnDeLaRue", "Valeur": 0 },
-		{"Nom": "Diplomatie", "Valeur": 0 },
-		{"Nom": "Discretion", "Valeur": 0 },
-		{"Nom": "Endurance", "Valeur": 0 },
-		{"Nom": "Exploration", "Valeur": 0 },
-		{"Nom": "Histoire", "Valeur": 0 },
-		{"Nom": "Intuition", "Valeur": 0 },
-		{"Nom": "Intimidation", "Valeur": 0 },
-		{"Nom": "Larcin", "Valeur": 0 },
-		{"Nom": "Nature", "Valeur": 0 },
-		{"Nom": "Perception", "Valeur": 0 },
-		{"Nom": "Religion", "Valeur": 0 },
-		{"Nom": "Soins", "Valeur": 0 }
-		],
-	"Sauvegardes": [
-		{"Nom": "ClasseArmure", "Valeur": 0},
-		{"Nom": "Vigueur", "Valeur": 0},
-		{"Nom": "Reflexe", "Valeur": 0},
-		{"Nom": "Volonte", "Valeur": 0}
-		]
-	},
-	{
-	"IdRace": "Nain",
-	"NomRace": "Nain",
-	"Vitesse": 5,
-	"TailleMini": 125,
-	"TailelMaxi": 145,
-	"PoidsMini": 80,
-	"PoidsMaxi": 110,
-	"Taille": "M",
-	"Vision": "Nocturne",
-	"Caracteristiques": [
-		{"Nom": "Force", "Valeur": 0},
-		{"Nom": "Constitution", "Valeur": 2},
-		{"Nom": "Dexterite", "Valeur": 0},
-		{"Nom": "Intelligence", "Valeur": 0},
-		{"Nom": "Sagesse", "Valeur": 2},
-		{"Nom": "Charisme", "Valeur": 0}
-		],
-	"Competences": [
-		{"Nom": "Acrobaties", "Valeur": 0 },
-		{"Nom": "Arcanes", "Valeur": 0 },
-		{"Nom": "Athletisme", "Valeur": 0 },
-		{"Nom": "Bluff", "Valeur": 0 },
-		{"Nom": "ConnDeLaRue", "Valeur": 0 },
-		{"Nom": "Diplomatie", "Valeur": 0 },
-		{"Nom": "Discretion", "Valeur": 0 },
-		{"Nom": "Endurance", "Valeur": 2 },
-		{"Nom": "Exploration", "Valeur": 2 },
-		{"Nom": "Histoire", "Valeur": 0 },
-		{"Nom": "Intuition", "Valeur": 0 },
-		{"Nom": "Intimidation", "Valeur": 0 },
-		{"Nom": "Larcin", "Valeur": 0 },
-		{"Nom": "Nature", "Valeur": 0 },
-		{"Nom": "Perception", "Valeur": 0 },
-		{"Nom": "Religion", "Valeur": 0 },
-		{"Nom": "Soins", "Valeur": 0 }
-		],
-	"Sauvegardes": [
-		{"Nom": "ClasseArmure", "Valeur": 0},
-		{"Nom": "Vigueur", "Valeur": 0},
-		{"Nom": "Reflexe", "Valeur": 0},
-		{"Nom": "Volonte", "Valeur": 0}
-		]
-	},
-	{
-	"IdRace": "Duergar",
-	"NomRace": "Duergar",
-	"Vitesse": 5,
-	"TailleMini": 0,
-	"TailelMaxi": 0,
-	"PoidsMini": 0,
-	"PoidsMaxi": 0,
-	"Taille": "",
-	"Vision": "",
-	"Caracteristiques": [
-		{"Nom": "Force", "Valeur": 0},
-		{"Nom": "Constitution", "Valeur": 2},
-		{"Nom": "Dexterite", "Valeur": 0},
-		{"Nom": "Intelligence", "Valeur": 0},
-		{"Nom": "Sagesse", "Valeur": 2},
-		{"Nom": "Charisme", "Valeur": 0}
-		],
-	"Competences": [
-		{"Nom": "Acrobaties", "Valeur": 0 },
-		{"Nom": "Arcanes", "Valeur": 0 },
-		{"Nom": "Athletisme", "Valeur": 0 },
-		{"Nom": "Bluff", "Valeur": 0 },
-		{"Nom": "ConnDeLaRue", "Valeur": 0 },
-		{"Nom": "Diplomatie", "Valeur": 0 },
-		{"Nom": "Discretion", "Valeur": 0 },
-		{"Nom": "Endurance", "Valeur": 0 },
-		{"Nom": "Exploration", "Valeur": 0 },
-		{"Nom": "Histoire", "Valeur": 0 },
-		{"Nom": "Intuition", "Valeur": 0 },
-		{"Nom": "Intimidation", "Valeur": 0 },
-		{"Nom": "Larcin", "Valeur": 0 },
-		{"Nom": "Nature", "Valeur": 0 },
-		{"Nom": "Perception", "Valeur": 0 },
-		{"Nom": "Religion", "Valeur": 0 },
-		{"Nom": "Soins", "Valeur": 0 }
-		],
-	"Sauvegardes": [
-		{"Nom": "ClasseArmure", "Valeur": 0},
-		{"Nom": "Vigueur", "Valeur": 0},
-		{"Nom": "Reflexe", "Valeur": 0},
-		{"Nom": "Volonte", "Valeur": 0}
-		]
-	},
-	{
-	"IdRace": "Orc",
-	"NomRace": "Orc",
-	"Vitesse": 6,
-	"TailleMini": 195,
-	"TailelMaxi": 230,
-	"PoidsMini": 85,
-	"PoidsMaxi": 125,
-	"Taille": "M",
-	"Vision": "Nocturne",
-	"Caracteristiques": [
-		{"Nom": "Force", "Valeur": 2},
-		{"Nom": "Constitution", "Valeur": 0},
-		{"Nom": "Dexterite", "Valeur": 2},
-		{"Nom": "Intelligence", "Valeur": 0},
-		{"Nom": "Sagesse", "Valeur": 0},
-		{"Nom": "Charisme", "Valeur": 0}
-		],
-	"Competences": [
-		{"Nom": "Acrobaties", "Valeur": 0 },
-		{"Nom": "Arcanes", "Valeur": 0 },
-		{"Nom": "Athletisme", "Valeur": 0 },
-		{"Nom": "Bluff", "Valeur": 0 },
-		{"Nom": "ConnDeLaRue", "Valeur": 0 },
-		{"Nom": "Diplomatie", "Valeur": 0 },
-		{"Nom": "Discretion", "Valeur": 0 },
-		{"Nom": "Endurance", "Valeur": 2 },
-		{"Nom": "Exploration", "Valeur": 0 },
-		{"Nom": "Histoire", "Valeur": 0 },
-		{"Nom": "Intuition", "Valeur": 0 },
-		{"Nom": "Intimidation", "Valeur": 2 },
-		{"Nom": "Larcin", "Valeur": 0 },
-		{"Nom": "Nature", "Valeur": 0 },
-		{"Nom": "Perception", "Valeur": 0 },
-		{"Nom": "Religion", "Valeur": 0 },
-		{"Nom": "Soins", "Valeur": 0 }
-		],
-	"Sauvegardes": [
-		{"Nom": "ClasseArmure", "Valeur": 0},
-		{"Nom": "Vigueur", "Valeur": 0},
-		{"Nom": "Reflexe", "Valeur": 0},
-		{"Nom": "Volonte", "Valeur": 0}
-		]
-	},
-	{
-	"IdRace": "GNome",
-	"NomRace": "GNome",
-	"Vitesse": 5,
-	"TailleMini": 0,
-	"TailelMaxi": 0,
-	"PoidsMini": 0,
-	"PoidsMaxi": 0,
-	"Taille": "",
-	"Vision": "",
-	"Caracteristiques": [
-		{"Nom": "Force", "Valeur": 0},
-		{"Nom": "Constitution", "Valeur": 0},
-		{"Nom": "Dexterite", "Valeur": 0},
-		{"Nom": "Intelligence", "Valeur": 2},
-		{"Nom": "Sagesse", "Valeur": 0},
-		{"Nom": "Charisme", "Valeur": 2}
-		],
-	"Competences": [
-		{"Nom": "Acrobaties", "Valeur": 0 },
-		{"Nom": "Arcanes", "Valeur": 2 },
-		{"Nom": "Athletisme", "Valeur": 0 },
-		{"Nom": "Bluff", "Valeur": 0 },
-		{"Nom": "ConnDeLaRue", "Valeur": 0 },
-		{"Nom": "Diplomatie", "Valeur": 0 },
-		{"Nom": "Discretion", "Valeur": 2 },
-		{"Nom": "Endurance", "Valeur": 0 },
-		{"Nom": "Exploration", "Valeur": 0 },
-		{"Nom": "Histoire", "Valeur": 0 },
-		{"Nom": "Intuition", "Valeur": 0 },
-		{"Nom": "Intimidation", "Valeur": 0 },
-		{"Nom": "Larcin", "Valeur": 0 },
-		{"Nom": "Nature", "Valeur": 0 },
-		{"Nom": "Perception", "Valeur": 0 },
-		{"Nom": "Religion", "Valeur": 0 },
-		{"Nom": "Soins", "Valeur": 0 }
-		],
-	"Sauvegardes": [
-		{"Nom": "ClasseArmure", "Valeur": 0},
-		{"Nom": "Vigueur", "Valeur": 0},
-		{"Nom": "Reflexe", "Valeur": 0},
-		{"Nom": "Volonte", "Valeur": 0}
-		]
-	},
-	{
-	"IdRace": "Gobelin",
-	"NomRace": "Gobelin",
-	"Vitesse": 5,
-	"TailleMini": 0,
-	"TailelMaxi": 0,
-	"PoidsMini": 0,
-	"PoidsMaxi": 0,
-	"Taille": "",
-	"Vision": "",
-	"Caracteristiques": [
-		{"Nom": "Force", "Valeur": 0},
-		{"Nom": "Constitution", "Valeur": 0},
-		{"Nom": "Dexterite", "Valeur": 0},
-		{"Nom": "Intelligence", "Valeur": 0},
-		{"Nom": "Sagesse", "Valeur": 0},
-		{"Nom": "Charisme", "Valeur": 0}
-		],
-	"Competences": [
-		{"Nom": "Acrobaties", "Valeur": 0 },
-		{"Nom": "Arcanes", "Valeur": 0 },
-		{"Nom": "Athletisme", "Valeur": 0 },
-		{"Nom": "Bluff", "Valeur": 0 },
-		{"Nom": "ConnDeLaRue", "Valeur": 0 },
-		{"Nom": "Diplomatie", "Valeur": 0 },
-		{"Nom": "Discretion", "Valeur": 0 },
-		{"Nom": "Endurance", "Valeur": 0 },
-		{"Nom": "Exploration", "Valeur": 0 },
-		{"Nom": "Histoire", "Valeur": 0 },
-		{"Nom": "Intuition", "Valeur": 0 },
-		{"Nom": "Intimidation", "Valeur": 0 },
-		{"Nom": "Larcin", "Valeur": 0 },
-		{"Nom": "Nature", "Valeur": 0 },
-		{"Nom": "Perception", "Valeur": 0 },
-		{"Nom": "Religion", "Valeur": 0 },
-		{"Nom": "Soins", "Valeur": 0 }
-		],
-	"Sauvegardes": [
-		{"Nom": "ClasseArmure", "Valeur": 0},
-		{"Nom": "Vigueur", "Valeur": 0},
-		{"Nom": "Reflexe", "Valeur": 0},
-		{"Nom": "Volonte", "Valeur": 0}
-		]
-	},
-	{
-	"IdRace": "Deva",
-	"NomRace": "Déva",
-	"Vitesse": 6,
-	"TailleMini": 0,
-	"TailelMaxi": 0,
-	"PoidsMini": 0,
-	"PoidsMaxi": 0,
-	"Taille": "",
-	"Vision": "",
-	"Caracteristiques": [
-		{"Nom": "Force", "Valeur": 0},
-		{"Nom": "Constitution", "Valeur": 0},
-		{"Nom": "Dexterite", "Valeur": 0},
-		{"Nom": "Intelligence", "Valeur": 2},
-		{"Nom": "Sagesse", "Valeur": 2},
-		{"Nom": "Charisme", "Valeur": 0}
-		],
-	"Competences": [
-		{"Nom": "Acrobaties", "Valeur": 0 },
-		{"Nom": "Arcanes", "Valeur": 0 },
-		{"Nom": "Athletisme", "Valeur": 0 },
-		{"Nom": "Bluff", "Valeur": 0 },
-		{"Nom": "ConnDeLaRue", "Valeur": 0 },
-		{"Nom": "Diplomatie", "Valeur": 0 },
-		{"Nom": "Discretion", "Valeur": 0 },
-		{"Nom": "Endurance", "Valeur": 0 },
-		{"Nom": "Exploration", "Valeur": 0 },
-		{"Nom": "Histoire", "Valeur": 2 },
-		{"Nom": "Intuition", "Valeur": 0 },
-		{"Nom": "Intimidation", "Valeur": 0 },
-		{"Nom": "Larcin", "Valeur": 0 },
-		{"Nom": "Nature", "Valeur": 0 },
-		{"Nom": "Perception", "Valeur": 0 },
-		{"Nom": "Religion", "Valeur": 2 },
-		{"Nom": "Soins", "Valeur": 0 }
-		],
-	"Sauvegardes": [
-		{"Nom": "ClasseArmure", "Valeur": 0},
-		{"Nom": "Vigueur", "Valeur": 0},
-		{"Nom": "Reflexe", "Valeur": 0},
-		{"Nom": "Volonte", "Valeur": 0}
-		]
-	},
-	{
-	"IdRace": "Humain",
-	"NomRace": "Humain",
-	"Vitesse": 6,
-	"TailleMini": 165,
-	"TailelMaxi": 185,
-	"PoidsMini": 65,
-	"PoidsMaxi": 110,
-	"Taille": "M",
-	"Vision": "Normale",
-	"Caracteristiques": [
-		{"Nom": "Force", "Valeur": 0},
-		{"Nom": "Constitution", "Valeur": 0},
-		{"Nom": "Dexterite", "Valeur": 0},
-		{"Nom": "Intelligence", "Valeur": 0},
-		{"Nom": "Sagesse", "Valeur": 0},
-		{"Nom": "Charisme", "Valeur": 0}
-		],
-	"Competences": [
-		{"Nom": "Acrobaties", "Valeur": 0 },
-		{"Nom": "Arcanes", "Valeur": 0 },
-		{"Nom": "Athletisme", "Valeur": 0 },
-		{"Nom": "Bluff", "Valeur": 0 },
-		{"Nom": "ConnDeLaRue", "Valeur": 0 },
-		{"Nom": "Diplomatie", "Valeur": 0 },
-		{"Nom": "Discretion", "Valeur": 0 },
-		{"Nom": "Endurance", "Valeur": 0 },
-		{"Nom": "Exploration", "Valeur": 0 },
-		{"Nom": "Histoire", "Valeur": 0 },
-		{"Nom": "Intuition", "Valeur": 0 },
-		{"Nom": "Intimidation", "Valeur": 0 },
-		{"Nom": "Larcin", "Valeur": 0 },
-		{"Nom": "Nature", "Valeur": 0 },
-		{"Nom": "Perception", "Valeur": 0 },
-		{"Nom": "Religion", "Valeur": 0 },
-		{"Nom": "Soins", "Valeur": 0 }
-		],
-	"Sauvegardes": [
-		{"Nom": "ClasseArmure", "Valeur": 0},
-		{"Nom": "Vigueur", "Valeur": 1},
-		{"Nom": "Reflexe", "Valeur": 1},
-		{"Nom": "Volonte", "Valeur": 1}
-		]
-	},
-	{
-	"IdRace": "DemiElfe",
-	"NomRace": "Demi-elfe",
-	"Vitesse": 6,
-	"TailleMini": 165,
-	"TailelMaxi": 185,
-	"PoidsMini": 65,
-	"PoidsMaxi": 85,
-	"Taille": "M",
-	"Vision": "Nocturne",
-	"Caracteristiques": [
-		{"Nom": "Force", "Valeur": 0},
-		{"Nom": "Constitution", "Valeur": 2},
-		{"Nom": "Dexterite", "Valeur": 0},
-		{"Nom": "Intelligence", "Valeur": 0},
-		{"Nom": "Sagesse", "Valeur": 0},
-		{"Nom": "Charisme", "Valeur": 2}
-		],
-	"Competences": [
-		{"Nom": "Acrobaties", "Valeur": 0 },
-		{"Nom": "Arcanes", "Valeur": 0 },
-		{"Nom": "Athletisme", "Valeur": 0 },
-		{"Nom": "Bluff", "Valeur": 0 },
-		{"Nom": "ConnDeLaRue", "Valeur": 0 },
-		{"Nom": "Diplomatie", "Valeur": 2 },
-		{"Nom": "Discretion", "Valeur": 0 },
-		{"Nom": "Endurance", "Valeur": 0 },
-		{"Nom": "Exploration", "Valeur": 0 },
-		{"Nom": "Histoire", "Valeur": 0 },
-		{"Nom": "Intuition", "Valeur": 2 },
-		{"Nom": "Intimidation", "Valeur": 0 },
-		{"Nom": "Larcin", "Valeur": 0 },
-		{"Nom": "Nature", "Valeur": 0 },
-		{"Nom": "Perception", "Valeur": 0 },
-		{"Nom": "Religion", "Valeur": 0 },
-		{"Nom": "Soins", "Valeur": 0 }
-		],
-	"Sauvegardes": [
-		{"Nom": "ClasseArmure", "Valeur": 0},
-		{"Nom": "Vigueur", "Valeur": 0},
-		{"Nom": "Reflexe", "Valeur": 0},
-		{"Nom": "Volonte", "Valeur": 0}
-		]
-	},
-	{
-	"IdRace": "Halfelin",
-	"NomRace": "Halfelin",
-	"Vitesse": 6,
-	"TailleMini": 115,
-	"TailelMaxi": 125,
-	"PoidsMini": 37,
-	"PoidsMaxi": 42,
-	"Taille": "P",
-	"Vision": "Normale",
-	"Caracteristiques": [
-		{"Nom": "Force", "Valeur": 0},
-		{"Nom": "Constitution", "Valeur": 0},
-		{"Nom": "Dexterite", "Valeur": 2},
-		{"Nom": "Intelligence", "Valeur": 0},
-		{"Nom": "Sagesse", "Valeur": 0},
-		{"Nom": "Charisme", "Valeur": 2}
-		],
-	"Competences": [
-		{"Nom": "Acrobaties", "Valeur": 2 },
-		{"Nom": "Arcanes", "Valeur": 0 },
-		{"Nom": "Athletisme", "Valeur": 0 },
-		{"Nom": "Bluff", "Valeur": 0 },
-		{"Nom": "ConnDeLaRue", "Valeur": 0 },
-		{"Nom": "Diplomatie", "Valeur": 0 },
-		{"Nom": "Discretion", "Valeur": 0 },
-		{"Nom": "Endurance", "Valeur": 0 },
-		{"Nom": "Exploration", "Valeur": 0 },
-		{"Nom": "Histoire", "Valeur": 0 },
-		{"Nom": "Intuition", "Valeur": 0 },
-		{"Nom": "Intimidation", "Valeur": 0 },
-		{"Nom": "Larcin", "Valeur": 2 },
-		{"Nom": "Nature", "Valeur": 0 },
-		{"Nom": "Perception", "Valeur": 0 },
-		{"Nom": "Religion", "Valeur": 0 },
-		{"Nom": "Soins", "Valeur": 0 }
-		],
-	"Sauvegardes": [
-		{"Nom": "ClasseArmure", "Valeur": 0},
-		{"Nom": "Vigueur", "Valeur": 0},
-		{"Nom": "Reflexe", "Valeur": 0},
-		{"Nom": "Volonte", "Valeur": 0}
-		]
-	},
-	{
-	"IdRace": "Deva",
-	"NomRace": "Deva",
-	"Vitesse": 6,
-	"TailleMini": 200,
-	"TailelMaxi": 215,
-	"PoidsMini": 87,
-	"PoidsMaxi": 140,
-	"Taille": "M",
-	"Vision": "Normale",
-	"Caracteristiques": [
-		{"Nom": "Force", "Valeur": 0},
-		{"Nom": "Constitution", "Valeur": 0},
-		{"Nom": "Dexterite", "Valeur": 0},
-		{"Nom": "Intelligence", "Valeur": 2},
-		{"Nom": "Sagesse", "Valeur": 2},
-		{"Nom": "Charisme", "Valeur": 0}
-		],
-	"Competences": [
-		{"Nom": "Acrobaties", "Valeur": 0 },
-		{"Nom": "Arcanes", "Valeur": 0 },
-		{"Nom": "Athletisme", "Valeur": 0 },
-		{"Nom": "Bluff", "Valeur": 0 },
-		{"Nom": "ConnDeLaRue", "Valeur": 0 },
-		{"Nom": "Diplomatie", "Valeur": 0 },
-		{"Nom": "Discretion", "Valeur": 0 },
-		{"Nom": "Endurance", "Valeur": 0 },
-		{"Nom": "Exploration", "Valeur": 0 },
-		{"Nom": "Histoire", "Valeur": 2 },
-		{"Nom": "Intuition", "Valeur": 0 },
-		{"Nom": "Intimidation", "Valeur": 0 },
-		{"Nom": "Larcin", "Valeur": 0 },
-		{"Nom": "Nature", "Valeur": 0 },
-		{"Nom": "Perception", "Valeur": 0 },
-		{"Nom": "Religion", "Valeur": 2 },
-		{"Nom": "Soins", "Valeur": 0 }
-		],
-	"Sauvegardes": [
-		{"Nom": "ClasseArmure", "Valeur": 0},
-		{"Nom": "Vigueur", "Valeur": 1},
-		{"Nom": "Reflexe", "Valeur": 1},
-		{"Nom": "Volonte", "Valeur": 1}
-		]
-	},
-	{
-	"IdRace": "GNome",
-	"NomRace": "GNome",
-	"Vitesse": 5,
-	"TailleMini": 110,
-	"TailelMaxi": 120,
-	"PoidsMini": 25,
-	"PoidsMaxi": 37,
-	"Taille": "P",
-	"Vision": "Nocturne",
-	"Caracteristiques": [
-		{"Nom": "Force", "Valeur": 0},
-		{"Nom": "Constitution", "Valeur": 0},
-		{"Nom": "Dexterite", "Valeur": 0},
-		{"Nom": "Intelligence", "Valeur": 2},
-		{"Nom": "Sagesse", "Valeur": 0},
-		{"Nom": "Charisme", "Valeur": 2}
-		],
-	"Competences": [
-		{"Nom": "Acrobaties", "Valeur": 0 },
-		{"Nom": "Arcanes", "Valeur": 2 },
-		{"Nom": "Athletisme", "Valeur": 0 },
-		{"Nom": "Bluff", "Valeur": 0 },
-		{"Nom": "ConnDeLaRue", "Valeur": 0 },
-		{"Nom": "Diplomatie", "Valeur": 0 },
-		{"Nom": "Discretion", "Valeur": 2 },
-		{"Nom": "Endurance", "Valeur": 0 },
-		{"Nom": "Exploration", "Valeur": 0 },
-		{"Nom": "Histoire", "Valeur": 0 },
-		{"Nom": "Intuition", "Valeur": 0 },
-		{"Nom": "Intimidation", "Valeur": 0 },
-		{"Nom": "Larcin", "Valeur": 0 },
-		{"Nom": "Nature", "Valeur": 0 },
-		{"Nom": "Perception", "Valeur": 0 },
-		{"Nom": "Religion", "Valeur": 0 },
-		{"Nom": "Soins", "Valeur": 0 }
-		],
-	"Sauvegardes": [
-		{"Nom": "ClasseArmure", "Valeur": 0},
-		{"Nom": "Vigueur", "Valeur": 0},
-		{"Nom": "Reflexe", "Valeur": 0},
-		{"Nom": "Volonte", "Valeur": 0}
-		]
-	},
-	{
-	"IdRace": "Goliath",
-	"NomRace": "Goliath",
-	"Vitesse": 6,
-	"TailleMini": 240,
-	"TailelMaxi": 250,
-	"PoidsMini": 140,
-	"PoidsMaxi": 170,
-	"Taille": "M",
-	"Vision": "Normale",
-	"Caracteristiques": [
-		{"Nom": "Force", "Valeur": 2},
-		{"Nom": "Constitution", "Valeur": 2},
-		{"Nom": "Dexterite", "Valeur": 0},
-		{"Nom": "Intelligence", "Valeur": 0},
-		{"Nom": "Sagesse", "Valeur": 0},
-		{"Nom": "Charisme", "Valeur": 0}
-		],
-	"Competences": [
-		{"Nom": "Acrobaties", "Valeur": 0 },
-		{"Nom": "Arcanes", "Valeur": 0 },
-		{"Nom": "Athletisme", "Valeur": 2 },
-		{"Nom": "Bluff", "Valeur": 0 },
-		{"Nom": "ConnDeLaRue", "Valeur": 0 },
-		{"Nom": "Diplomatie", "Valeur": 0 },
-		{"Nom": "Discretion", "Valeur": 0 },
-		{"Nom": "Endurance", "Valeur": 0 },
-		{"Nom": "Exploration", "Valeur": 0 },
-		{"Nom": "Histoire", "Valeur": 0 },
-		{"Nom": "Intuition", "Valeur": 0 },
-		{"Nom": "Intimidation", "Valeur": 0 },
-		{"Nom": "Larcin", "Valeur": 0 },
-		{"Nom": "Nature", "Valeur": 2 },
-		{"Nom": "Perception", "Valeur": 0 },
-		{"Nom": "Religion", "Valeur": 0 },
-		{"Nom": "Soins", "Valeur": 0 }
-		],
-	"Sauvegardes": [
-		{"Nom": "ClasseArmure", "Valeur": 0},
-		{"Nom": "Vigueur", "Valeur": 0},
-		{"Nom": "Reflexe", "Valeur": 0},
-		{"Nom": "Volonte", "Valeur": 1}
-		]
-	},
-	{
-	"IdRace": "DemiOrc",
-	"NomRace": "Demi-Orc",
-	"Vitesse": 6,
-	"TailleMini": 190,
-	"TailelMaxi": 210,
-	"PoidsMini": 77,
-	"PoidsMaxi": 112,
-	"Taille": "M",
-	"Vision": "Nocturne",
-	"Caracteristiques": [
-		{"Nom": "Force", "Valeur": 2},
-		{"Nom": "Constitution", "Valeur": 0},
-		{"Nom": "Dexterite", "Valeur": 2},
-		{"Nom": "Intelligence", "Valeur": 0},
-		{"Nom": "Sagesse", "Valeur": 0},
-		{"Nom": "Charisme", "Valeur": 0}
-		],
-	"Competences": [
-		{"Nom": "Acrobaties", "Valeur": 0 },
-		{"Nom": "Arcanes", "Valeur": 0 },
-		{"Nom": "Athletisme", "Valeur": 0 },
-		{"Nom": "Bluff", "Valeur": 0 },
-		{"Nom": "ConnDeLaRue", "Valeur": 0 },
-		{"Nom": "Diplomatie", "Valeur": 0 },
-		{"Nom": "Discretion", "Valeur": 0 },
-		{"Nom": "Endurance", "Valeur": 2 },
-		{"Nom": "Exploration", "Valeur": 0 },
-		{"Nom": "Histoire", "Valeur": 0 },
-		{"Nom": "Intuition", "Valeur": 0 },
-		{"Nom": "Intimidation", "Valeur": 2 },
-		{"Nom": "Larcin", "Valeur": 0 },
-		{"Nom": "Nature", "Valeur": 0 },
-		{"Nom": "Perception", "Valeur": 0 },
-		{"Nom": "Religion", "Valeur": 0 },
-		{"Nom": "Soins", "Valeur": 0 }
-		],
-	"Sauvegardes": [
-		{"Nom": "ClasseArmure", "Valeur": 0},
-		{"Nom": "Vigueur", "Valeur": 0},
-		{"Nom": "Reflexe", "Valeur": 0},
-		{"Nom": "Volonte", "Valeur": 0}
-		]
-	},
-	{
-	"IdRace": "FeralLongueDent",
-	"NomRace": "Féral Longue-Dent",
-	"Vitesse": 6,
-	"TailleMini": 180,
-	"TailelMaxi": 200,
-	"PoidsMini": 65,
-	"PoidsMaxi": 90,
-	"Taille": "M",
-	"Vision": "Nocturne",
-	"Caracteristiques": [
-		{"Nom": "Force", "Valeur": 2},
-		{"Nom": "Constitution", "Valeur": 0},
-		{"Nom": "Dexterite", "Valeur": 0},
-		{"Nom": "Intelligence", "Valeur": 0},
-		{"Nom": "Sagesse", "Valeur": 2},
-		{"Nom": "Charisme", "Valeur": 0}
-		],
-	"Competences": [
-		{"Nom": "Acrobaties", "Valeur": 0 },
-		{"Nom": "Arcanes", "Valeur": 0 },
-		{"Nom": "Athletisme", "Valeur": 2 },
-		{"Nom": "Bluff", "Valeur": 0 },
-		{"Nom": "ConnDeLaRue", "Valeur": 0 },
-		{"Nom": "Diplomatie", "Valeur": 0 },
-		{"Nom": "Discretion", "Valeur": 0 },
-		{"Nom": "Endurance", "Valeur": 2 },
-		{"Nom": "Exploration", "Valeur": 0 },
-		{"Nom": "Histoire", "Valeur": 0 },
-		{"Nom": "Intuition", "Valeur": 0 },
-		{"Nom": "Intimidation", "Valeur": 0 },
-		{"Nom": "Larcin", "Valeur": 0 },
-		{"Nom": "Nature", "Valeur": 0 },
-		{"Nom": "Perception", "Valeur": 0 },
-		{"Nom": "Religion", "Valeur": 0 },
-		{"Nom": "Soins", "Valeur": 0 }
-		],
-	"Sauvegardes": [
-		{"Nom": "ClasseArmure", "Valeur": 0},
-		{"Nom": "Vigueur", "Valeur": 0},
-		{"Nom": "Reflexe", "Valeur": 0},
-		{"Nom": "Volonte", "Valeur": 0}
-		]
-	},
-	{
-		"IdRace": "FeralGriffeEfillee",
-		"NomRace": "Féral Griffe-Efillée",
-		"Vitesse": 6,
-		"TailleMini": 180,
-		"TailelMaxi": 200,
-		"PoidsMini": 65,
-		"PoidsMaxi": 90,
-		"Taille": "M",
-		"Vision": "Nocturne",
-		"Caracteristiques": [
-			{"Nom": "Force", "Valeur": 0},
-			{"Nom": "Constitution", "Valeur": 0},
-			{"Nom": "Dexterite", "Valeur": 2},
-			{"Nom": "Intelligence", "Valeur": 0},
-			{"Nom": "Sagesse", "Valeur": 2},
-			{"Nom": "Charisme", "Valeur": 0}
+{
+	"Races": [
+		{
+			"IdRace": "Frondeurkobold",
+			"NomRace": "Frondeur kobold",
+			"Vitesse": 6,
+			"TailleMini": 0,
+			"TailelMaxi": 0,
+			"PoidsMini": 0,
+			"PoidsMaxi": 0,
+			"Taille": "P",
+			"Vision": "Dans le noir",
+			"Caracteristiques": [
+				{
+					"Nom": "Force",
+					"Valeur": -1
+				},
+				{
+					"Nom": "Constitution",
+					"Valeur": 1
+				},
+				{
+					"Nom": "Dexterite",
+					"Valeur": 3
+				},
+				{
+					"Nom": "Intelligence",
+					"Valeur": -1
+				},
+				{
+					"Nom": "Sagesse",
+					"Valeur": 1
+				},
+				{
+					"Nom": "Charisme",
+					"Valeur": 0
+				}
 			],
-		"Competences": [
-			{"Nom": "Acrobaties", "Valeur": 2 },
-			{"Nom": "Arcanes", "Valeur": 0 },
-			{"Nom": "Athletisme", "Valeur": 0 },
-			{"Nom": "Bluff", "Valeur": 0 },
-			{"Nom": "ConnDeLaRue", "Valeur": 0 },
-			{"Nom": "Diplomatie", "Valeur": 0 },
-			{"Nom": "Discretion", "Valeur": 2 },
-			{"Nom": "Endurance", "Valeur": 0 },
-			{"Nom": "Exploration", "Valeur": 0 },
-			{"Nom": "Histoire", "Valeur": 0 },
-			{"Nom": "Intuition", "Valeur": 0 },
-			{"Nom": "Intimidation", "Valeur": 0 },
-			{"Nom": "Larcin", "Valeur": 0 },
-			{"Nom": "Nature", "Valeur": 0 },
-			{"Nom": "Perception", "Valeur": 0 },
-			{"Nom": "Religion", "Valeur": 0 },
-			{"Nom": "Soins", "Valeur": 0 }
+			"Competences": [
+				{
+					"Nom": "Acrobaties",
+					"Valeur": 8
+				},
+				{
+					"Nom": "Arcanes",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Athletisme",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Bluff",
+					"Valeur": 0
+				},
+				{
+					"Nom": "ConnDeLaRue",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Diplomatie",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Discretion",
+					"Valeur": 10
+				},
+				{
+					"Nom": "Endurance",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Exploration",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Histoire",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intuition",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intimidation",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Larcin",
+					"Valeur": 10
+				},
+				{
+					"Nom": "Nature",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Perception",
+					"Valeur": 1
+				},
+				{
+					"Nom": "Religion",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Soins",
+					"Valeur": 0
+				}
 			],
-		"Sauvegardes": [
-			{"Nom": "ClasseArmure", "Valeur": 0},
-			{"Nom": "Vigueur", "Valeur": 0},
-			{"Nom": "Reflexe", "Valeur": 0},
-			{"Nom": "Volonte", "Valeur": 0}
+			"Sauvegardes": [
+				{
+					"Nom": "ClasseArmure",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Vigueur",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Reflexe",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Volonte",
+					"Valeur": 0
+				}
 			]
 		},
 		{
-		"IdRace": "Minotaure",
-		"NomRace": "Minotaure",
-		"Vitesse": 6,
-		"TailleMini": 215,
-		"TailelMaxi": 230,
-		"PoidsMini": 160,
-		"PoidsMaxi": 175,
-		"Taille": "M",
-		"Vision": "Normale",
-		"Caracteristiques": [
-			{"Nom": "Force", "Valeur": 2},
-			{"Nom": "Constitution", "Valeur": 1},
-			{"Nom": "Dexterite", "Valeur": 0},
-			{"Nom": "Intelligence", "Valeur": 0},
-			{"Nom": "Sagesse", "Valeur": 1},
-			{"Nom": "Charisme", "Valeur": 0}
+			"IdRace": "JeuneDragonBlanc",
+			"NomRace": "Jeune Dragon Blanc",
+			"Vitesse": 6,
+			"TailleMini": 0,
+			"TailelMaxi": 0,
+			"PoidsMini": 0,
+			"PoidsMaxi": 0,
+			"Taille": "G",
+			"Vision": "Dans le noir",
+			"Caracteristiques": [
+				{
+					"Nom": "Force",
+					"Valeur": 5
+				},
+				{
+					"Nom": "Constitution",
+					"Valeur": 5
+				},
+				{
+					"Nom": "Dexterite",
+					"Valeur": 1
+				},
+				{
+					"Nom": "Intelligence",
+					"Valeur": 1
+				},
+				{
+					"Nom": "Sagesse",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Charisme",
+					"Valeur": 0
+				}
 			],
-		"Competences": [
-			{"Nom": "Acrobaties", "Valeur": 0 },
-			{"Nom": "Arcanes", "Valeur": 0 },
-			{"Nom": "Athletisme", "Valeur": 0 },
-			{"Nom": "Bluff", "Valeur": 0 },
-			{"Nom": "ConnDeLaRue", "Valeur": 0 },
-			{"Nom": "Diplomatie", "Valeur": 0 },
-			{"Nom": "Discretion", "Valeur": 0 },
-			{"Nom": "Endurance", "Valeur": 0 },
-			{"Nom": "Exploration", "Valeur": 0 },
-			{"Nom": "Histoire", "Valeur": 0 },
-			{"Nom": "Intuition", "Valeur": 0 },
-			{"Nom": "Intimidation", "Valeur": 0 },
-			{"Nom": "Larcin", "Valeur": 0 },
-			{"Nom": "Nature", "Valeur": 2 },
-			{"Nom": "Perception", "Valeur": 2 },
-			{"Nom": "Religion", "Valeur": 0 },
-			{"Nom": "Soins", "Valeur": 0 }
+			"Competences": [
+				{
+					"Nom": "Acrobaties",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Arcanes",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Athletisme",
+					"Valeur": 15
+				},
+				{
+					"Nom": "Bluff",
+					"Valeur": 0
+				},
+				{
+					"Nom": "ConnDeLaRue",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Diplomatie",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Discretion",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Endurance",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Exploration",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Histoire",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intuition",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intimidation",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Larcin",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Nature",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Perception",
+					"Valeur": 7
+				},
+				{
+					"Nom": "Religion",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Soins",
+					"Valeur": 0
+				}
 			],
-		"Sauvegardes": [
-			{"Nom": "ClasseArmure", "Valeur": 0},
-			{"Nom": "Vigueur", "Valeur": 0},
-			{"Nom": "Reflexe", "Valeur": 0},
-			{"Nom": "Volonte", "Valeur": 0}
+			"Sauvegardes": [
+				{
+					"Nom": "ClasseArmure",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Vigueur",
+					"Valeur": 5
+				},
+				{
+					"Nom": "Reflexe",
+					"Valeur": 5
+				},
+				{
+					"Nom": "Volonte",
+					"Valeur": 5
+				}
+			]
+		},
+		{
+			"IdRace": "Drakeide",
+			"NomRace": "Drakéide",
+			"Vitesse": 6,
+			"TailleMini": 185,
+			"TailelMaxi": 200,
+			"PoidsMini": 110,
+			"PoidsMaxi": 160,
+			"Taille": "M",
+			"Vision": "Normale",
+			"Caracteristiques": [
+				{
+					"Nom": "Force",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Constitution",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Dexterite",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intelligence",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Sagesse",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Charisme",
+					"Valeur": 2
+				}
+			],
+			"Competences": [
+				{
+					"Nom": "Acrobaties",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Arcanes",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Athletisme",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Bluff",
+					"Valeur": 0
+				},
+				{
+					"Nom": "ConnDeLaRue",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Diplomatie",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Discretion",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Endurance",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Exploration",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Histoire",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Intuition",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intimidation",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Larcin",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Nature",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Perception",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Religion",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Soins",
+					"Valeur": 0
+				}
+			],
+			"Sauvegardes": [
+				{
+					"Nom": "ClasseArmure",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Vigueur",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Reflexe",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Volonte",
+					"Valeur": 0
+				}
+			]
+		},
+		{
+			"IdRace": "Tieffelin",
+			"NomRace": "Tieffelin",
+			"Vitesse": 6,
+			"TailleMini": 165,
+			"TailelMaxi": 185,
+			"PoidsMini": 70,
+			"PoidsMaxi": 115,
+			"Taille": "M",
+			"Vision": "Nocturne",
+			"Caracteristiques": [
+				{
+					"Nom": "Force",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Constitution",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Dexterite",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intelligence",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Sagesse",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Charisme",
+					"Valeur": 2
+				}
+			],
+			"Competences": [
+				{
+					"Nom": "Acrobaties",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Arcanes",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Athletisme",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Bluff",
+					"Valeur": 2
+				},
+				{
+					"Nom": "ConnDeLaRue",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Diplomatie",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Discretion",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Endurance",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Exploration",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Histoire",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intuition",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intimidation",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Larcin",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Nature",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Perception",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Religion",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Soins",
+					"Valeur": 0
+				}
+			],
+			"Sauvegardes": [
+				{
+					"Nom": "ClasseArmure",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Vigueur",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Reflexe",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Volonte",
+					"Valeur": 0
+				}
+			]
+		},
+		{
+			"IdRace": "Elfe",
+			"NomRace": "Elfe",
+			"Vitesse": 7,
+			"TailleMini": 160,
+			"TailelMaxi": 180,
+			"PoidsMini": 65,
+			"PoidsMaxi": 85,
+			"Taille": "M",
+			"Vision": "Nocturne",
+			"Caracteristiques": [
+				{
+					"Nom": "Force",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Constitution",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Dexterite",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Intelligence",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Sagesse",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Charisme",
+					"Valeur": 0
+				}
+			],
+			"Competences": [
+				{
+					"Nom": "Acrobaties",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Arcanes",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Athletisme",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Bluff",
+					"Valeur": 0
+				},
+				{
+					"Nom": "ConnDeLaRue",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Diplomatie",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Discretion",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Endurance",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Exploration",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Histoire",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intuition",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intimidation",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Larcin",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Nature",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Perception",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Religion",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Soins",
+					"Valeur": 0
+				}
+			],
+			"Sauvegardes": [
+				{
+					"Nom": "ClasseArmure",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Vigueur",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Reflexe",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Volonte",
+					"Valeur": 0
+				}
+			]
+		},
+		{
+			"IdRace": "Eladrin",
+			"NomRace": "Eladrin",
+			"Vitesse": 6,
+			"TailleMini": 165,
+			"TailelMaxi": 185,
+			"PoidsMini": 65,
+			"PoidsMaxi": 90,
+			"Taille": "M",
+			"Vision": "Nocturne",
+			"Caracteristiques": [
+				{
+					"Nom": "Force",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Constitution",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Dexterite",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Intelligence",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Sagesse",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Charisme",
+					"Valeur": 0
+				}
+			],
+			"Competences": [
+				{
+					"Nom": "Acrobaties",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Arcanes",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Athletisme",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Bluff",
+					"Valeur": 0
+				},
+				{
+					"Nom": "ConnDeLaRue",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Diplomatie",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Discretion",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Endurance",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Exploration",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Histoire",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Intuition",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intimidation",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Larcin",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Nature",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Perception",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Religion",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Soins",
+					"Valeur": 0
+				}
+			],
+			"Sauvegardes": [
+				{
+					"Nom": "ClasseArmure",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Vigueur",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Reflexe",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Volonte",
+					"Valeur": 1
+				}
+			]
+		},
+		{
+			"IdRace": "Drow",
+			"NomRace": "Drow",
+			"Vitesse": 6,
+			"TailleMini": 0,
+			"TailelMaxi": 0,
+			"PoidsMini": 0,
+			"PoidsMaxi": 0,
+			"Taille": "",
+			"Vision": "",
+			"Caracteristiques": [
+				{
+					"Nom": "Force",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Constitution",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Dexterite",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Intelligence",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Sagesse",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Charisme",
+					"Valeur": 0
+				}
+			],
+			"Competences": [
+				{
+					"Nom": "Acrobaties",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Arcanes",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Athletisme",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Bluff",
+					"Valeur": 0
+				},
+				{
+					"Nom": "ConnDeLaRue",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Diplomatie",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Discretion",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Endurance",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Exploration",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Histoire",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intuition",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intimidation",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Larcin",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Nature",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Perception",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Religion",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Soins",
+					"Valeur": 0
+				}
+			],
+			"Sauvegardes": [
+				{
+					"Nom": "ClasseArmure",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Vigueur",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Reflexe",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Volonte",
+					"Valeur": 0
+				}
+			]
+		},
+		{
+			"IdRace": "Nain",
+			"NomRace": "Nain",
+			"Vitesse": 5,
+			"TailleMini": 125,
+			"TailelMaxi": 145,
+			"PoidsMini": 80,
+			"PoidsMaxi": 110,
+			"Taille": "M",
+			"Vision": "Nocturne",
+			"Caracteristiques": [
+				{
+					"Nom": "Force",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Constitution",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Dexterite",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intelligence",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Sagesse",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Charisme",
+					"Valeur": 0
+				}
+			],
+			"Competences": [
+				{
+					"Nom": "Acrobaties",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Arcanes",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Athletisme",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Bluff",
+					"Valeur": 0
+				},
+				{
+					"Nom": "ConnDeLaRue",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Diplomatie",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Discretion",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Endurance",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Exploration",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Histoire",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intuition",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intimidation",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Larcin",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Nature",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Perception",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Religion",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Soins",
+					"Valeur": 0
+				}
+			],
+			"Sauvegardes": [
+				{
+					"Nom": "ClasseArmure",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Vigueur",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Reflexe",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Volonte",
+					"Valeur": 0
+				}
+			]
+		},
+		{
+			"IdRace": "Duergar",
+			"NomRace": "Duergar",
+			"Vitesse": 5,
+			"TailleMini": 0,
+			"TailelMaxi": 0,
+			"PoidsMini": 0,
+			"PoidsMaxi": 0,
+			"Taille": "",
+			"Vision": "",
+			"Caracteristiques": [
+				{
+					"Nom": "Force",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Constitution",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Dexterite",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intelligence",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Sagesse",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Charisme",
+					"Valeur": 0
+				}
+			],
+			"Competences": [
+				{
+					"Nom": "Acrobaties",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Arcanes",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Athletisme",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Bluff",
+					"Valeur": 0
+				},
+				{
+					"Nom": "ConnDeLaRue",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Diplomatie",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Discretion",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Endurance",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Exploration",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Histoire",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intuition",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intimidation",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Larcin",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Nature",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Perception",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Religion",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Soins",
+					"Valeur": 0
+				}
+			],
+			"Sauvegardes": [
+				{
+					"Nom": "ClasseArmure",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Vigueur",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Reflexe",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Volonte",
+					"Valeur": 0
+				}
+			]
+		},
+		{
+			"IdRace": "Orc",
+			"NomRace": "Orc",
+			"Vitesse": 6,
+			"TailleMini": 195,
+			"TailelMaxi": 230,
+			"PoidsMini": 85,
+			"PoidsMaxi": 125,
+			"Taille": "M",
+			"Vision": "Nocturne",
+			"Caracteristiques": [
+				{
+					"Nom": "Force",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Constitution",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Dexterite",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Intelligence",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Sagesse",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Charisme",
+					"Valeur": 0
+				}
+			],
+			"Competences": [
+				{
+					"Nom": "Acrobaties",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Arcanes",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Athletisme",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Bluff",
+					"Valeur": 0
+				},
+				{
+					"Nom": "ConnDeLaRue",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Diplomatie",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Discretion",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Endurance",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Exploration",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Histoire",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intuition",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intimidation",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Larcin",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Nature",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Perception",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Religion",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Soins",
+					"Valeur": 0
+				}
+			],
+			"Sauvegardes": [
+				{
+					"Nom": "ClasseArmure",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Vigueur",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Reflexe",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Volonte",
+					"Valeur": 0
+				}
+			]
+		},
+		{
+			"IdRace": "Gnome",
+			"NomRace": "Gnome",
+			"Vitesse": 5,
+			"TailleMini": 0,
+			"TailelMaxi": 0,
+			"PoidsMini": 0,
+			"PoidsMaxi": 0,
+			"Taille": "",
+			"Vision": "",
+			"Caracteristiques": [
+				{
+					"Nom": "Force",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Constitution",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Dexterite",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intelligence",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Sagesse",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Charisme",
+					"Valeur": 2
+				}
+			],
+			"Competences": [
+				{
+					"Nom": "Acrobaties",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Arcanes",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Athletisme",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Bluff",
+					"Valeur": 0
+				},
+				{
+					"Nom": "ConnDeLaRue",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Diplomatie",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Discretion",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Endurance",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Exploration",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Histoire",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intuition",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intimidation",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Larcin",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Nature",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Perception",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Religion",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Soins",
+					"Valeur": 0
+				}
+			],
+			"Sauvegardes": [
+				{
+					"Nom": "ClasseArmure",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Vigueur",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Reflexe",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Volonte",
+					"Valeur": 0
+				}
+			]
+		},
+		{
+			"IdRace": "Gobelin",
+			"NomRace": "Gobelin",
+			"Vitesse": 5,
+			"TailleMini": 0,
+			"TailelMaxi": 0,
+			"PoidsMini": 0,
+			"PoidsMaxi": 0,
+			"Taille": "",
+			"Vision": "",
+			"Caracteristiques": [
+				{
+					"Nom": "Force",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Constitution",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Dexterite",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intelligence",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Sagesse",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Charisme",
+					"Valeur": 0
+				}
+			],
+			"Competences": [
+				{
+					"Nom": "Acrobaties",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Arcanes",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Athletisme",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Bluff",
+					"Valeur": 0
+				},
+				{
+					"Nom": "ConnDeLaRue",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Diplomatie",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Discretion",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Endurance",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Exploration",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Histoire",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intuition",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intimidation",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Larcin",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Nature",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Perception",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Religion",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Soins",
+					"Valeur": 0
+				}
+			],
+			"Sauvegardes": [
+				{
+					"Nom": "ClasseArmure",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Vigueur",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Reflexe",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Volonte",
+					"Valeur": 0
+				}
+			]
+		},
+		{
+			"IdRace": "Deva",
+			"NomRace": "Déva",
+			"Vitesse": 6,
+			"TailleMini": 0,
+			"TailelMaxi": 0,
+			"PoidsMini": 0,
+			"PoidsMaxi": 0,
+			"Taille": "",
+			"Vision": "",
+			"Caracteristiques": [
+				{
+					"Nom": "Force",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Constitution",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Dexterite",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intelligence",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Sagesse",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Charisme",
+					"Valeur": 0
+				}
+			],
+			"Competences": [
+				{
+					"Nom": "Acrobaties",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Arcanes",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Athletisme",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Bluff",
+					"Valeur": 0
+				},
+				{
+					"Nom": "ConnDeLaRue",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Diplomatie",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Discretion",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Endurance",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Exploration",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Histoire",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Intuition",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intimidation",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Larcin",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Nature",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Perception",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Religion",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Soins",
+					"Valeur": 0
+				}
+			],
+			"Sauvegardes": [
+				{
+					"Nom": "ClasseArmure",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Vigueur",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Reflexe",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Volonte",
+					"Valeur": 0
+				}
+			]
+		},
+		{
+			"IdRace": "Humain",
+			"NomRace": "Humain",
+			"Vitesse": 6,
+			"TailleMini": 165,
+			"TailelMaxi": 185,
+			"PoidsMini": 65,
+			"PoidsMaxi": 110,
+			"Taille": "M",
+			"Vision": "Normale",
+			"Caracteristiques": [
+				{
+					"Nom": "Force",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Constitution",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Dexterite",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intelligence",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Sagesse",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Charisme",
+					"Valeur": 0
+				}
+			],
+			"Competences": [
+				{
+					"Nom": "Acrobaties",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Arcanes",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Athletisme",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Bluff",
+					"Valeur": 0
+				},
+				{
+					"Nom": "ConnDeLaRue",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Diplomatie",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Discretion",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Endurance",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Exploration",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Histoire",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intuition",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intimidation",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Larcin",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Nature",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Perception",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Religion",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Soins",
+					"Valeur": 0
+				}
+			],
+			"Sauvegardes": [
+				{
+					"Nom": "ClasseArmure",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Vigueur",
+					"Valeur": 1
+				},
+				{
+					"Nom": "Reflexe",
+					"Valeur": 1
+				},
+				{
+					"Nom": "Volonte",
+					"Valeur": 1
+				}
+			]
+		},
+		{
+			"IdRace": "DemiElfe",
+			"NomRace": "Demi-elfe",
+			"Vitesse": 6,
+			"TailleMini": 165,
+			"TailelMaxi": 185,
+			"PoidsMini": 65,
+			"PoidsMaxi": 85,
+			"Taille": "M",
+			"Vision": "Nocturne",
+			"Caracteristiques": [
+				{
+					"Nom": "Force",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Constitution",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Dexterite",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intelligence",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Sagesse",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Charisme",
+					"Valeur": 2
+				}
+			],
+			"Competences": [
+				{
+					"Nom": "Acrobaties",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Arcanes",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Athletisme",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Bluff",
+					"Valeur": 0
+				},
+				{
+					"Nom": "ConnDeLaRue",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Diplomatie",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Discretion",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Endurance",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Exploration",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Histoire",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intuition",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Intimidation",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Larcin",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Nature",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Perception",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Religion",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Soins",
+					"Valeur": 0
+				}
+			],
+			"Sauvegardes": [
+				{
+					"Nom": "ClasseArmure",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Vigueur",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Reflexe",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Volonte",
+					"Valeur": 0
+				}
+			]
+		},
+		{
+			"IdRace": "Halfelin",
+			"NomRace": "Halfelin",
+			"Vitesse": 6,
+			"TailleMini": 115,
+			"TailelMaxi": 125,
+			"PoidsMini": 37,
+			"PoidsMaxi": 42,
+			"Taille": "P",
+			"Vision": "Normale",
+			"Caracteristiques": [
+				{
+					"Nom": "Force",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Constitution",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Dexterite",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Intelligence",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Sagesse",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Charisme",
+					"Valeur": 2
+				}
+			],
+			"Competences": [
+				{
+					"Nom": "Acrobaties",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Arcanes",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Athletisme",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Bluff",
+					"Valeur": 0
+				},
+				{
+					"Nom": "ConnDeLaRue",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Diplomatie",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Discretion",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Endurance",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Exploration",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Histoire",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intuition",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intimidation",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Larcin",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Nature",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Perception",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Religion",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Soins",
+					"Valeur": 0
+				}
+			],
+			"Sauvegardes": [
+				{
+					"Nom": "ClasseArmure",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Vigueur",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Reflexe",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Volonte",
+					"Valeur": 0
+				}
+			]
+		},
+		{
+			"IdRace": "Goliath",
+			"NomRace": "Goliath",
+			"Vitesse": 6,
+			"TailleMini": 240,
+			"TailelMaxi": 250,
+			"PoidsMini": 140,
+			"PoidsMaxi": 170,
+			"Taille": "M",
+			"Vision": "Normale",
+			"Caracteristiques": [
+				{
+					"Nom": "Force",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Constitution",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Dexterite",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intelligence",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Sagesse",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Charisme",
+					"Valeur": 0
+				}
+			],
+			"Competences": [
+				{
+					"Nom": "Acrobaties",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Arcanes",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Athletisme",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Bluff",
+					"Valeur": 0
+				},
+				{
+					"Nom": "ConnDeLaRue",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Diplomatie",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Discretion",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Endurance",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Exploration",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Histoire",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intuition",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intimidation",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Larcin",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Nature",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Perception",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Religion",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Soins",
+					"Valeur": 0
+				}
+			],
+			"Sauvegardes": [
+				{
+					"Nom": "ClasseArmure",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Vigueur",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Reflexe",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Volonte",
+					"Valeur": 1
+				}
+			]
+		},
+		{
+			"IdRace": "DemiOrc",
+			"NomRace": "Demi-Orc",
+			"Vitesse": 6,
+			"TailleMini": 190,
+			"TailelMaxi": 210,
+			"PoidsMini": 77,
+			"PoidsMaxi": 112,
+			"Taille": "M",
+			"Vision": "Nocturne",
+			"Caracteristiques": [
+				{
+					"Nom": "Force",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Constitution",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Dexterite",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Intelligence",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Sagesse",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Charisme",
+					"Valeur": 0
+				}
+			],
+			"Competences": [
+				{
+					"Nom": "Acrobaties",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Arcanes",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Athletisme",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Bluff",
+					"Valeur": 0
+				},
+				{
+					"Nom": "ConnDeLaRue",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Diplomatie",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Discretion",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Endurance",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Exploration",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Histoire",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intuition",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intimidation",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Larcin",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Nature",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Perception",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Religion",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Soins",
+					"Valeur": 0
+				}
+			],
+			"Sauvegardes": [
+				{
+					"Nom": "ClasseArmure",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Vigueur",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Reflexe",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Volonte",
+					"Valeur": 0
+				}
+			]
+		},
+		{
+			"IdRace": "FeralLongueDent",
+			"NomRace": "Féral Longue-Dent",
+			"Vitesse": 6,
+			"TailleMini": 180,
+			"TailelMaxi": 200,
+			"PoidsMini": 65,
+			"PoidsMaxi": 90,
+			"Taille": "M",
+			"Vision": "Nocturne",
+			"Caracteristiques": [
+				{
+					"Nom": "Force",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Constitution",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Dexterite",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intelligence",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Sagesse",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Charisme",
+					"Valeur": 0
+				}
+			],
+			"Competences": [
+				{
+					"Nom": "Acrobaties",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Arcanes",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Athletisme",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Bluff",
+					"Valeur": 0
+				},
+				{
+					"Nom": "ConnDeLaRue",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Diplomatie",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Discretion",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Endurance",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Exploration",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Histoire",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intuition",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intimidation",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Larcin",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Nature",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Perception",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Religion",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Soins",
+					"Valeur": 0
+				}
+			],
+			"Sauvegardes": [
+				{
+					"Nom": "ClasseArmure",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Vigueur",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Reflexe",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Volonte",
+					"Valeur": 0
+				}
+			]
+		},
+		{
+			"IdRace": "FeralGriffeEfillee",
+			"NomRace": "Féral Griffe-Efillée",
+			"Vitesse": 6,
+			"TailleMini": 180,
+			"TailelMaxi": 200,
+			"PoidsMini": 65,
+			"PoidsMaxi": 90,
+			"Taille": "M",
+			"Vision": "Nocturne",
+			"Caracteristiques": [
+				{
+					"Nom": "Force",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Constitution",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Dexterite",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Intelligence",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Sagesse",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Charisme",
+					"Valeur": 0
+				}
+			],
+			"Competences": [
+				{
+					"Nom": "Acrobaties",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Arcanes",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Athletisme",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Bluff",
+					"Valeur": 0
+				},
+				{
+					"Nom": "ConnDeLaRue",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Diplomatie",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Discretion",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Endurance",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Exploration",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Histoire",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intuition",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intimidation",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Larcin",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Nature",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Perception",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Religion",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Soins",
+					"Valeur": 0
+				}
+			],
+			"Sauvegardes": [
+				{
+					"Nom": "ClasseArmure",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Vigueur",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Reflexe",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Volonte",
+					"Valeur": 0
+				}
+			]
+		},
+		{
+			"IdRace": "Minotaure",
+			"NomRace": "Minotaure",
+			"Vitesse": 6,
+			"TailleMini": 215,
+			"TailelMaxi": 230,
+			"PoidsMini": 160,
+			"PoidsMaxi": 175,
+			"Taille": "M",
+			"Vision": "Normale",
+			"Caracteristiques": [
+				{
+					"Nom": "Force",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Constitution",
+					"Valeur": 1
+				},
+				{
+					"Nom": "Dexterite",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intelligence",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Sagesse",
+					"Valeur": 1
+				},
+				{
+					"Nom": "Charisme",
+					"Valeur": 0
+				}
+			],
+			"Competences": [
+				{
+					"Nom": "Acrobaties",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Arcanes",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Athletisme",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Bluff",
+					"Valeur": 0
+				},
+				{
+					"Nom": "ConnDeLaRue",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Diplomatie",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Discretion",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Endurance",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Exploration",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Histoire",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intuition",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Intimidation",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Larcin",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Nature",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Perception",
+					"Valeur": 2
+				},
+				{
+					"Nom": "Religion",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Soins",
+					"Valeur": 0
+				}
+			],
+			"Sauvegardes": [
+				{
+					"Nom": "ClasseArmure",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Vigueur",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Reflexe",
+					"Valeur": 0
+				},
+				{
+					"Nom": "Volonte",
+					"Valeur": 0
+				}
 			]
 		}
-	]	}
+	]
+}

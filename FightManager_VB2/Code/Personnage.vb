@@ -20,6 +20,7 @@ Public Class Personnage
     Property Vision As String
     Property VoieParangonique As String
     Property DestinneEpique As String
+    Property StuffPersonnage As KeyValuePair(Of String, Integer)
 
     Sub New(Nom As String, ClassePerso As String, RacePerso As String, CaracteristiqueParam() As Short, PointExperiencePerso As UInt32)
         Me.Nom = Nom
@@ -47,7 +48,11 @@ Public Class Personnage
         Me.CompetencesPersonnage = New Competences(TabFormation, Me.DemiNiveau, RacePerso, Me.CaracteristiquesPerso)
 
         'Les sauvegardes
-        Me.SauvegardesPersonnage = New Sauvegardes(Me.CaracteristiquesPerso, Me.DemiNiveau, ClassePerso)
+        Me.SauvegardesPersonnage = New Sauvegardes(Me.CaracteristiquesPerso, Me.DemiNiveau, ClassePerso, RacePerso)
+
+        'Le stuff
+        'trouver le moyen de faire une itération sur le tableau pour remonter les valeurs et les ajouter aux valeurs du personnage
+        'Je pense qu'il faut queje fasse une sub pour être plus lisible.
     End Sub
 
 

@@ -209,6 +209,11 @@ Partial Class formCreatePerso
         lblArcanes = New Label()
         lblAcrobaties = New Label()
         tabSauvegardes = New TabPage()
+        lblModClasseVolonte = New Label()
+        lblModClasseVigueur = New Label()
+        lblModClasseReflexes = New Label()
+        lblModClasseCA = New Label()
+        lblModClasseSauvegardes = New Label()
         lblTotalVolonte = New Label()
         lblTotalVigueur = New Label()
         lblTotalCA = New Label()
@@ -249,6 +254,10 @@ Partial Class formCreatePerso
         lblNiveauCalcul = New Label()
         btnVoirPerso = New Button()
         btnSavePerso = New Button()
+        lblInitiative = New Label()
+        lblInitiativeValeur = New Label()
+        lblPVValeur = New Label()
+        lblPV = New Label()
         tabGlobal.SuspendLayout()
         tabCaracteristique.SuspendLayout()
         tabCompetences.SuspendLayout()
@@ -536,7 +545,7 @@ Partial Class formCreatePerso
         txtBaseCharisme.Name = "txtBaseCharisme"
         txtBaseCharisme.Size = New Size(41, 27)
         txtBaseCharisme.TabIndex = 50
-        txtBaseCharisme.Text = "10"
+        txtBaseCharisme.Text = "8"
         txtBaseCharisme.TextAlign = HorizontalAlignment.Center
         ' 
         ' txtBaseSagesse
@@ -556,7 +565,7 @@ Partial Class formCreatePerso
         txtBaseIntelligence.Name = "txtBaseIntelligence"
         txtBaseIntelligence.Size = New Size(41, 27)
         txtBaseIntelligence.TabIndex = 48
-        txtBaseIntelligence.Text = "10"
+        txtBaseIntelligence.Text = "9"
         txtBaseIntelligence.TextAlign = HorizontalAlignment.Center
         ' 
         ' txtBaseDexterite
@@ -566,7 +575,7 @@ Partial Class formCreatePerso
         txtBaseDexterite.Name = "txtBaseDexterite"
         txtBaseDexterite.Size = New Size(41, 27)
         txtBaseDexterite.TabIndex = 47
-        txtBaseDexterite.Text = "10"
+        txtBaseDexterite.Text = "9"
         txtBaseDexterite.TextAlign = HorizontalAlignment.Center
         ' 
         ' txtBaseConstitution
@@ -576,7 +585,7 @@ Partial Class formCreatePerso
         txtBaseConstitution.Name = "txtBaseConstitution"
         txtBaseConstitution.Size = New Size(41, 27)
         txtBaseConstitution.TabIndex = 46
-        txtBaseConstitution.Text = "10"
+        txtBaseConstitution.Text = "13"
         txtBaseConstitution.TextAlign = HorizontalAlignment.Center
         ' 
         ' txtBaseForce
@@ -586,7 +595,7 @@ Partial Class formCreatePerso
         txtBaseForce.Name = "txtBaseForce"
         txtBaseForce.Size = New Size(41, 27)
         txtBaseForce.TabIndex = 45
-        txtBaseForce.Text = "10"
+        txtBaseForce.Text = "13"
         txtBaseForce.TextAlign = HorizontalAlignment.Center
         ' 
         ' Label1
@@ -2122,6 +2131,11 @@ Partial Class formCreatePerso
         ' 
         ' tabSauvegardes
         ' 
+        tabSauvegardes.Controls.Add(lblModClasseVolonte)
+        tabSauvegardes.Controls.Add(lblModClasseVigueur)
+        tabSauvegardes.Controls.Add(lblModClasseReflexes)
+        tabSauvegardes.Controls.Add(lblModClasseCA)
+        tabSauvegardes.Controls.Add(lblModClasseSauvegardes)
         tabSauvegardes.Controls.Add(lblTotalVolonte)
         tabSauvegardes.Controls.Add(lblTotalVigueur)
         tabSauvegardes.Controls.Add(lblTotalCA)
@@ -2163,6 +2177,51 @@ Partial Class formCreatePerso
         tabSauvegardes.TabIndex = 2
         tabSauvegardes.Text = "Sauvegardes"
         tabSauvegardes.UseVisualStyleBackColor = True
+        ' 
+        ' lblModClasseVolonte
+        ' 
+        lblModClasseVolonte.AutoSize = True
+        lblModClasseVolonte.Location = New Point(479, 167)
+        lblModClasseVolonte.Name = "lblModClasseVolonte"
+        lblModClasseVolonte.Size = New Size(17, 20)
+        lblModClasseVolonte.TabIndex = 262
+        lblModClasseVolonte.Text = "0"
+        ' 
+        ' lblModClasseVigueur
+        ' 
+        lblModClasseVigueur.AutoSize = True
+        lblModClasseVigueur.Location = New Point(479, 129)
+        lblModClasseVigueur.Name = "lblModClasseVigueur"
+        lblModClasseVigueur.Size = New Size(17, 20)
+        lblModClasseVigueur.TabIndex = 261
+        lblModClasseVigueur.Text = "0"
+        ' 
+        ' lblModClasseReflexes
+        ' 
+        lblModClasseReflexes.AutoSize = True
+        lblModClasseReflexes.Location = New Point(479, 91)
+        lblModClasseReflexes.Name = "lblModClasseReflexes"
+        lblModClasseReflexes.Size = New Size(17, 20)
+        lblModClasseReflexes.TabIndex = 260
+        lblModClasseReflexes.Text = "0"
+        ' 
+        ' lblModClasseCA
+        ' 
+        lblModClasseCA.AutoSize = True
+        lblModClasseCA.Location = New Point(479, 53)
+        lblModClasseCA.Name = "lblModClasseCA"
+        lblModClasseCA.Size = New Size(17, 20)
+        lblModClasseCA.TabIndex = 259
+        lblModClasseCA.Text = "0"
+        ' 
+        ' lblModClasseSauvegardes
+        ' 
+        lblModClasseSauvegardes.AutoSize = True
+        lblModClasseSauvegardes.Location = New Point(451, 17)
+        lblModClasseSauvegardes.Name = "lblModClasseSauvegardes"
+        lblModClasseSauvegardes.Size = New Size(85, 20)
+        lblModClasseSauvegardes.TabIndex = 258
+        lblModClasseSauvegardes.Text = "Mod Classe"
         ' 
         ' lblTotalVolonte
         ' 
@@ -2490,7 +2549,7 @@ Partial Class formCreatePerso
         ' lblNiveau
         ' 
         lblNiveau.AutoSize = True
-        lblNiveau.Location = New Point(409, 40)
+        lblNiveau.Location = New Point(400, 40)
         lblNiveau.Name = "lblNiveau"
         lblNiveau.Size = New Size(117, 20)
         lblNiveau.TabIndex = 12
@@ -2523,11 +2582,51 @@ Partial Class formCreatePerso
         btnSavePerso.Text = "Enregistrer le personnage"
         btnSavePerso.UseVisualStyleBackColor = True
         ' 
+        ' lblInitiative
+        ' 
+        lblInitiative.AutoSize = True
+        lblInitiative.Location = New Point(1008, 38)
+        lblInitiative.Name = "lblInitiative"
+        lblInitiative.Size = New Size(66, 20)
+        lblInitiative.TabIndex = 16
+        lblInitiative.Text = "Initiative"
+        ' 
+        ' lblInitiativeValeur
+        ' 
+        lblInitiativeValeur.AutoSize = True
+        lblInitiativeValeur.Location = New Point(1149, 39)
+        lblInitiativeValeur.Name = "lblInitiativeValeur"
+        lblInitiativeValeur.Size = New Size(17, 20)
+        lblInitiativeValeur.TabIndex = 16
+        lblInitiativeValeur.Text = "0"
+        ' 
+        ' lblPVValeur
+        ' 
+        lblPVValeur.AutoSize = True
+        lblPVValeur.Location = New Point(1149, 80)
+        lblPVValeur.Name = "lblPVValeur"
+        lblPVValeur.Size = New Size(17, 20)
+        lblPVValeur.TabIndex = 17
+        lblPVValeur.Text = "0"
+        ' 
+        ' lblPV
+        ' 
+        lblPV.AutoSize = True
+        lblPV.Location = New Point(1008, 79)
+        lblPV.Name = "lblPV"
+        lblPV.Size = New Size(86, 20)
+        lblPV.TabIndex = 18
+        lblPV.Text = "Point de vie"
+        ' 
         ' formCreatePerso
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(950, 900)
+        ClientSize = New Size(1388, 900)
+        Controls.Add(lblPVValeur)
+        Controls.Add(lblPV)
+        Controls.Add(lblInitiativeValeur)
+        Controls.Add(lblInitiative)
         Controls.Add(btnSavePerso)
         Controls.Add(btnVoirPerso)
         Controls.Add(lblNiveauCalcul)
@@ -2796,4 +2895,13 @@ Partial Class formCreatePerso
     Friend WithEvents lblNiveauCalcul As Label
     Friend WithEvents btnVoirPerso As Button
     Friend WithEvents btnSavePerso As Button
+    Friend WithEvents lblModClasseVolonte As Label
+    Friend WithEvents lblModClasseVigueur As Label
+    Friend WithEvents lblModClasseReflexes As Label
+    Friend WithEvents lblModClasseCA As Label
+    Friend WithEvents lblModClasseSauvegardes As Label
+    Friend WithEvents lblInitiative As Label
+    Friend WithEvents lblInitiativeValeur As Label
+    Friend WithEvents lblPVValeur As Label
+    Friend WithEvents lblPV As Label
 End Class

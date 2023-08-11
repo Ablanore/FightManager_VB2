@@ -10,8 +10,8 @@ Public Class formCreatePerso
     Private unPersonnage As Personnage
     Private tabCarac As Short()
     Private Sub formFightManager_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        txtNomPersonnage.Text = "Ablanore"
-        txtPointExperience.Text = 18523
+        txtNomPersonnage.Text = "JeuneDragonBlanc"
+        txtPointExperience.Text = 2300
         lesTrucsDeDepart()
         jaifini = True
     End Sub
@@ -57,6 +57,12 @@ Public Class formCreatePerso
 
         'Le niveau
         lblNiveauCalcul.Text = unPersonnage.Niveau
+
+        'L'initiative
+        lblInitiativeValeur.Text = unPersonnage.Initiative
+
+        'Les Points de vie
+        lblPVValeur.Text = unPersonnage.PV
 
         'Remontée de mod Raciaux pour les caractéristiques
         lblModRaceForce.Text = unPersonnage.CaracteristiquesPerso.Force.ModificateurRacial
@@ -158,29 +164,36 @@ Public Class formCreatePerso
         lblModRacialReligion.Text = unPersonnage.CompetencesPersonnage.Religion.ModRacial
         lblModRacialSoins.Text = unPersonnage.CompetencesPersonnage.Soins.ModRacial
 
-        'lblTotalCA
+        'Les sauvegardes
+        'Total sauvegardes
         lblTotalCA.Text = unPersonnage.SauvegardesPersonnage.ClasseArmure.Valeur
         lblTotalReflexes.Text = unPersonnage.SauvegardesPersonnage.Reflexes.Valeur
         lblTotalVigueur.Text = unPersonnage.SauvegardesPersonnage.Vigueur.Valeur
         lblTotalVolonte.Text = unPersonnage.SauvegardesPersonnage.Volonté.Valeur
 
-        'lblDemiNiveauCA
+        'Demi niveau de la sauvegarde
         lblDemiNiveauCA.Text = unPersonnage.DemiNiveau
         lblDemiNiveauReflexes.Text = unPersonnage.DemiNiveau
         lblDemiNiveauVigueur.Text = unPersonnage.DemiNiveau
         lblDemiNiveauVolonte.Text = unPersonnage.DemiNiveau
 
-        'lblModCaracCA
+        'Mod carac de la sauvegarde
         lblModCaracCA.Text = unPersonnage.SauvegardesPersonnage.ClasseArmure.ModCarac
         lblModCaracReflexes.Text = unPersonnage.SauvegardesPersonnage.Reflexes.ModCarac
         lblModCaracVigueur.Text = unPersonnage.SauvegardesPersonnage.Vigueur.ModCarac
         lblModCaracVolonte.Text = unPersonnage.SauvegardesPersonnage.Volonté.ModCarac
 
-        'lblModRacialCA
+        'Mod racial de la sauvegarde
         lblModRacialCA.Text = unPersonnage.SauvegardesPersonnage.ClasseArmure.ModRacial
         lblModRacialReflexes.Text = unPersonnage.SauvegardesPersonnage.Reflexes.ModRacial
         lblModRacialVigueur.Text = unPersonnage.SauvegardesPersonnage.Vigueur.ModRacial
         lblModRacialVolonte.Text = unPersonnage.SauvegardesPersonnage.Volonté.ModRacial
+
+        'Mod classe de la sauvegarde
+        lblModClasseCA.Text = unPersonnage.SauvegardesPersonnage.ClasseArmure.ModClasse
+        lblModClasseReflexes.Text = unPersonnage.SauvegardesPersonnage.Reflexes.ModClasse
+        lblModClasseVigueur.Text = unPersonnage.SauvegardesPersonnage.Vigueur.ModClasse
+        lblModClasseVolonte.Text = unPersonnage.SauvegardesPersonnage.Volonté.ModClasse
     End Sub
 
 
