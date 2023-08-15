@@ -30,7 +30,7 @@ Public Class Competence
     Public Property Divers As Short
     Public Property Formation As Short
 
-    Public Sub New(nomParam As EnumCompetence, FormationParam As Boolean, DemiNiveauParam As Short, laRaceParam As String, CaracParam As Short)
+    Public Sub New(nomParam As EnumCompetence, FormationParam As Boolean, DemiNiveauParam As Short, laRaceParam As String, CaracParam As Short, leStuff As String())
         'Détermination du nom de la compétence
         Dim names = [Enum].GetNames(GetType(EnumCompetence))
         Me.Nom = names(nomParam)
@@ -43,7 +43,13 @@ Public Class Competence
         Else
             ValueFormation = 0
         End If
-        Valeur = DemiNiveauParam + ValueFormation + laRace.Competences(nomParam).Valeur + CaracParam
+        'Itération des stuf du personnage reçu sous forme de tableau de string, comme sa Property de base StuffPersonnage
+        Dim laCompetence As Short = 0
+        For Each stuf In leStuff
+            Dim leStuf As New Stuff(stuf)
+            laCompetence += leStuf.CompetencesStuff(nomParam).Valeur
+        Next
+        Valeur = DemiNiveauParam + ValueFormation + laRace.Competences(nomParam).Valeur + CaracParam + laCompetence
         Me.ModRacial = laRace.Competences(nomParam).Valeur
         Me.ModCarac = CaracParam
         Me.PenArmure = 0
@@ -81,23 +87,23 @@ Public Class Competences
     Public Property Religion As Competence
     Public Property Soins As Competence
 
-    Public Sub New(FormationParam As Boolean(), DemiNiveauParam As Short, laRaceParam As String, CaracParam As Caracteristiques)
-        Acrobaties = New Competence(Competence.EnumCompetence.Acrobaties, FormationParam(0), DemiNiveauParam, laRaceParam, CaracParam.Dexterite.Modificateur)
-        Arcanes = New Competence(Competence.EnumCompetence.Arcanes, FormationParam(1), DemiNiveauParam, laRaceParam, CaracParam.Intelligence.Modificateur)
-        Athletisme = New Competence(Competence.EnumCompetence.Athletisme, FormationParam(2), DemiNiveauParam, laRaceParam, CaracParam.Force.Modificateur)
-        Bluff = New Competence(Competence.EnumCompetence.Bluff, FormationParam(3), DemiNiveauParam, laRaceParam, CaracParam.Charisme.Modificateur)
-        ConnDeLaRue = New Competence(Competence.EnumCompetence.ConnDeLaRue, FormationParam(4), DemiNiveauParam, laRaceParam, CaracParam.Charisme.Modificateur)
-        Diplomatie = New Competence(Competence.EnumCompetence.Diplomatie, FormationParam(5), DemiNiveauParam, laRaceParam, CaracParam.Charisme.Modificateur)
-        Discretion = New Competence(Competence.EnumCompetence.Discretion, FormationParam(6), DemiNiveauParam, laRaceParam, CaracParam.Dexterite.Modificateur)
-        Endurance = New Competence(Competence.EnumCompetence.Endurance, FormationParam(7), DemiNiveauParam, laRaceParam, CaracParam.Constitution.Modificateur)
-        Exploration = New Competence(Competence.EnumCompetence.Exploration, FormationParam(8), DemiNiveauParam, laRaceParam, CaracParam.Sagesse.Modificateur)
-        Histoire = New Competence(Competence.EnumCompetence.Histoire, FormationParam(9), DemiNiveauParam, laRaceParam, CaracParam.Intelligence.Modificateur)
-        Intimidation = New Competence(Competence.EnumCompetence.Intimidation, FormationParam(10), DemiNiveauParam, laRaceParam, CaracParam.Charisme.Modificateur)
-        Intuition = New Competence(Competence.EnumCompetence.Intuition, FormationParam(11), DemiNiveauParam, laRaceParam, CaracParam.Sagesse.Modificateur)
-        Larcin = New Competence(Competence.EnumCompetence.Larcin, FormationParam(12), DemiNiveauParam, laRaceParam, CaracParam.Dexterite.Modificateur)
-        Nature = New Competence(Competence.EnumCompetence.Nature, FormationParam(13), DemiNiveauParam, laRaceParam, CaracParam.Sagesse.Modificateur)
-        Perception = New Competence(Competence.EnumCompetence.Perception, FormationParam(14), DemiNiveauParam, laRaceParam, CaracParam.Sagesse.Modificateur)
-        Religion = New Competence(Competence.EnumCompetence.Religion, FormationParam(15), DemiNiveauParam, laRaceParam, CaracParam.Intelligence.Modificateur)
-        Soins = New Competence(Competence.EnumCompetence.Soins, FormationParam(16), DemiNiveauParam, laRaceParam, CaracParam.Sagesse.Modificateur)
+    Public Sub New(FormationParam As Boolean(), DemiNiveauParam As Short, laRaceParam As String, CaracParam As Caracteristiques, leStuff As String())
+        Acrobaties = New Competence(Competence.EnumCompetence.Acrobaties, FormationParam(0), DemiNiveauParam, laRaceParam, CaracParam.Dexterite.Modificateur, leStuff)
+        Arcanes = New Competence(Competence.EnumCompetence.Arcanes, FormationParam(1), DemiNiveauParam, laRaceParam, CaracParam.Intelligence.Modificateur, leStuff)
+        Athletisme = New Competence(Competence.EnumCompetence.Athletisme, FormationParam(2), DemiNiveauParam, laRaceParam, CaracParam.Force.Modificateur, leStuff)
+        Bluff = New Competence(Competence.EnumCompetence.Bluff, FormationParam(3), DemiNiveauParam, laRaceParam, CaracParam.Charisme.Modificateur, leStuff)
+        ConnDeLaRue = New Competence(Competence.EnumCompetence.ConnDeLaRue, FormationParam(4), DemiNiveauParam, laRaceParam, CaracParam.Charisme.Modificateur, leStuff)
+        Diplomatie = New Competence(Competence.EnumCompetence.Diplomatie, FormationParam(5), DemiNiveauParam, laRaceParam, CaracParam.Charisme.Modificateur, leStuff)
+        Discretion = New Competence(Competence.EnumCompetence.Discretion, FormationParam(6), DemiNiveauParam, laRaceParam, CaracParam.Dexterite.Modificateur, leStuff)
+        Endurance = New Competence(Competence.EnumCompetence.Endurance, FormationParam(7), DemiNiveauParam, laRaceParam, CaracParam.Constitution.Modificateur, leStuff)
+        Exploration = New Competence(Competence.EnumCompetence.Exploration, FormationParam(8), DemiNiveauParam, laRaceParam, CaracParam.Sagesse.Modificateur, leStuff)
+        Histoire = New Competence(Competence.EnumCompetence.Histoire, FormationParam(9), DemiNiveauParam, laRaceParam, CaracParam.Intelligence.Modificateur, leStuff)
+        Intimidation = New Competence(Competence.EnumCompetence.Intimidation, FormationParam(10), DemiNiveauParam, laRaceParam, CaracParam.Charisme.Modificateur, leStuff)
+        Intuition = New Competence(Competence.EnumCompetence.Intuition, FormationParam(11), DemiNiveauParam, laRaceParam, CaracParam.Sagesse.Modificateur, leStuff)
+        Larcin = New Competence(Competence.EnumCompetence.Larcin, FormationParam(12), DemiNiveauParam, laRaceParam, CaracParam.Dexterite.Modificateur, leStuff)
+        Nature = New Competence(Competence.EnumCompetence.Nature, FormationParam(13), DemiNiveauParam, laRaceParam, CaracParam.Sagesse.Modificateur, leStuff)
+        Perception = New Competence(Competence.EnumCompetence.Perception, FormationParam(14), DemiNiveauParam, laRaceParam, CaracParam.Sagesse.Modificateur, leStuff)
+        Religion = New Competence(Competence.EnumCompetence.Religion, FormationParam(15), DemiNiveauParam, laRaceParam, CaracParam.Intelligence.Modificateur, leStuff)
+        Soins = New Competence(Competence.EnumCompetence.Soins, FormationParam(16), DemiNiveauParam, laRaceParam, CaracParam.Sagesse.Modificateur, leStuff)
     End Sub
 End Class

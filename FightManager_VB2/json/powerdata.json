@@ -1,8 +1,8 @@
 {
-	"Stuffs": [
+	"Powers": [
 		{
-			"IdStuff": "StuffBase",
-			"NomStuff": "StuffBase",
+			"IdStuff": "PowerBase",
+			"NomStuff": "PowerBase",
 			"NbDesDegat": 0,
 			"NbFaceDesDegat": 0,
 			"BonusDegat": 0,
@@ -123,8 +123,8 @@
 			]
 		},
 		{
-			"IdStuff": "StuffTest",
-			"NomStuff": "StuffTest",
+			"IdStuff": "PowerTest",
+			"NomStuff": "PowerTest",
 			"NbDesDegat": 0,
 			"NbFaceDesDegat": 0,
 			"BonusDegat": 0,

@@ -2,6 +2,8 @@
 	Shared configurationAppSettings As System.Configuration.AppSettingsReader = New System.Configuration.AppSettingsReader
 	Public Shared RaceDataAdresse As String = configurationAppSettings.GetValue("RaceDataAdresse", GetType(System.String))
 	Public Shared ClasseDataAdresse As String = configurationAppSettings.GetValue("ClasseDataAdresse", GetType(System.String))
+	Public Shared StuffDataAdresse As String = configurationAppSettings.GetValue("StuffDataAdresse", GetType(System.String))
+	Public Shared PowerDataAdresse As String = configurationAppSettings.GetValue("powerDataAdresse", GetType(System.String))
 	Public Shared DossierDesPerso As String = configurationAppSettings.GetValue("DossierDesPersos", GetType(System.String))
 	Public Shared Function Jetdes(nbFace As Short) As Short
 		Randomize()
@@ -14,6 +16,8 @@ Public Class RecordPerso
 	Public Property ClassePerso As String
 	Public Property RacePerso As String
 	Public Property TabCarac As Short()
+	Public Property LesStuff As String()
+	Public Property LesPower As String()
 	Public Property PointExperiencePerso As UInt32
 End Class
 Public Class LesClasses
@@ -63,6 +67,9 @@ Public Class CaracteristiqueDef
 	Public Property Nom As String
 	Public Property Valeur As Int16
 End Class
+Public Class LesStuffs
+	Public Property Stuffs As StuffDef()
+End Class
 Public Class StuffDef
 	Public Property IdStuff As String
 	Public Property NomStuff As String
@@ -73,4 +80,18 @@ Public Class StuffDef
 	Public Property Caracteristiques As CaracteristiqueDef()
 	Public Property Competences As CompetenceDefRace()
 	Public Property Sauvegardes As SauvegardeDef()
+End Class
+Public Class LesPowers
+	Public Property Powers As PowerDef()
+End Class
+Public Class PowerDef
+	Public Property Idpower As String
+	Public Property NomPower As String
+	'Public Property NbDesDegat As Short
+	'Public Property NbFaceDesDegat As Short
+	'Public Property BonusDegat As Short
+	'Public Property PointVieBase As Short
+	'Public Property Caracteristiques As CaracteristiqueDef()
+	'Public Property Competences As CompetenceDefRace()
+	'Public Property Sauvegardes As SauvegardeDef()
 End Class

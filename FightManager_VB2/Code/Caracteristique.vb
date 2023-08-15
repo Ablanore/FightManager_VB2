@@ -15,14 +15,20 @@
     Public Property Valeur As Int16
     Public Property Modificateur As Int16
     Public Property ModificateurRacial As Int16
-    Public Sub New(nomParam As EnumCaracteristique, valeurParam As Int16, laRaceParam As String)
+    Public Sub New(nomParam As EnumCaracteristique, valeurParam As Int16, laRaceParam As String, leStuff As String())
         'Détermination du nom de la caractéristique
         Dim names = [Enum].GetNames(GetType(EnumCaracteristique))
         Nom = names(nomParam)
         'Détermination de la valeur de la caractéristique
         'Il faut remonter le bonus racial
         Dim laRace As New Race(laRaceParam)
-        Valeur = valeurParam + laRace.Caracteristiques(nomParam).Valeur
+        'Itération des stuf du personnage reçu sous forme de tableau de string, comme sa Property de base StuffPersonnage
+        Dim laCaracteristique As Short = 0
+        For Each stuf In leStuff
+            Dim leStuf As New Stuff(stuf)
+            laCaracteristique += leStuf.CaracteristiquesStuff(nomParam).Valeur
+        Next
+        Valeur = valeurParam + laRace.Caracteristiques(nomParam).Valeur + laCaracteristique
         'Détermination du modificateur avec le calcul basique à partir de la valeur modifiée par la race.
         Modificateur = Math.Floor((Valeur - 10) / 2)
         ModificateurRacial = laRace.Caracteristiques(nomParam).Valeur
@@ -37,14 +43,14 @@ Public Class Caracteristiques
     Public Property Sagesse As Caracteristique
     Public Property Charisme As Caracteristique
 
-    Public Sub New(ValeursParam() As Int16, laRaceParam As String)
+    Public Sub New(ValeursParam() As Int16, laRaceParam As String, leStuff As String())
 
-        Force = New Caracteristique(Caracteristique.EnumCaracteristique.Force, ValeursParam(0), laRaceParam)
-        Constitution = New Caracteristique(Caracteristique.EnumCaracteristique.Constitution, ValeursParam(1), laRaceParam)
-        Dexterite = New Caracteristique(Caracteristique.EnumCaracteristique.Dexterite, ValeursParam(2), laRaceParam)
-        Intelligence = New Caracteristique(Caracteristique.EnumCaracteristique.Intelligence, ValeursParam(3), laRaceParam)
-        Sagesse = New Caracteristique(Caracteristique.EnumCaracteristique.Sagesse, ValeursParam(4), laRaceParam)
-        Charisme = New Caracteristique(Caracteristique.EnumCaracteristique.Charisme, ValeursParam(5), laRaceParam)
+        Force = New Caracteristique(Caracteristique.EnumCaracteristique.Force, ValeursParam(0), laRaceParam, leStuff)
+        Constitution = New Caracteristique(Caracteristique.EnumCaracteristique.Constitution, ValeursParam(1), laRaceParam, leStuff)
+        Dexterite = New Caracteristique(Caracteristique.EnumCaracteristique.Dexterite, ValeursParam(2), laRaceParam, leStuff)
+        Intelligence = New Caracteristique(Caracteristique.EnumCaracteristique.Intelligence, ValeursParam(3), laRaceParam, leStuff)
+        Sagesse = New Caracteristique(Caracteristique.EnumCaracteristique.Sagesse, ValeursParam(4), laRaceParam, leStuff)
+        Charisme = New Caracteristique(Caracteristique.EnumCaracteristique.Charisme, ValeursParam(5), laRaceParam, leStuff)
 
     End Sub
 End Class

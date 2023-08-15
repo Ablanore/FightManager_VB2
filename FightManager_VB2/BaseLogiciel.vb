@@ -14,6 +14,10 @@ Public Class BaseLogiciel
         Dim formCon As New TestAlaCon()
         OuvrirUnForm(formCon)
     End Sub
+    Private Sub LesCombatsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LesCombatsToolStripMenuItem.Click
+        Dim formCombat As New formCombat()
+        OuvrirUnForm(formCombat)
+    End Sub
     Private Sub OuvrirUnForm(leForm As Object)
         ' Définissez le formulaire comme enfant du formulaire BaseLogiciel
         leForm.TopLevel = False

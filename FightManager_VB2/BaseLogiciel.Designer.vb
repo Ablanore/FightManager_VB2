@@ -29,6 +29,7 @@ Partial Class BaseLogiciel
         CréerUnPersonnageToolStripMenuItem = New ToolStripMenuItem()
         FaireDesTestsÀLaConToolStripMenuItem = New ToolStripMenuItem()
         InitiativeToolStripMenuItem = New ToolStripMenuItem()
+        LesCombatsToolStripMenuItem = New ToolStripMenuItem()
         MenuStrip1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -38,57 +39,61 @@ Partial Class BaseLogiciel
         MenuStrip1.Items.AddRange(New ToolStripItem() {FichierToolStripMenuItem, MenuGeneral, ActionsToolStripMenuItem})
         MenuStrip1.Location = New Point(0, 0)
         MenuStrip1.Name = "MenuStrip1"
-        MenuStrip1.Padding = New Padding(7, 3, 0, 3)
-        MenuStrip1.Size = New Size(1782, 30)
+        MenuStrip1.Size = New Size(1559, 24)
         MenuStrip1.TabIndex = 0
         MenuStrip1.Text = "MenuStrip1"
         ' 
         ' FichierToolStripMenuItem
         ' 
         FichierToolStripMenuItem.Name = "FichierToolStripMenuItem"
-        FichierToolStripMenuItem.Size = New Size(66, 24)
+        FichierToolStripMenuItem.Size = New Size(54, 20)
         FichierToolStripMenuItem.Text = "Fichier"
         ' 
         ' MenuGeneral
         ' 
         MenuGeneral.Name = "MenuGeneral"
-        MenuGeneral.Size = New Size(70, 24)
+        MenuGeneral.Size = New Size(56, 20)
         MenuGeneral.Text = "Edition"
         ' 
         ' ActionsToolStripMenuItem
         ' 
-        ActionsToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {CréerUnPersonnageToolStripMenuItem, FaireDesTestsÀLaConToolStripMenuItem, InitiativeToolStripMenuItem})
+        ActionsToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {CréerUnPersonnageToolStripMenuItem, FaireDesTestsÀLaConToolStripMenuItem, InitiativeToolStripMenuItem, LesCombatsToolStripMenuItem})
         ActionsToolStripMenuItem.Name = "ActionsToolStripMenuItem"
-        ActionsToolStripMenuItem.Size = New Size(72, 24)
+        ActionsToolStripMenuItem.Size = New Size(59, 20)
         ActionsToolStripMenuItem.Text = "Actions"
         ' 
         ' CréerUnPersonnageToolStripMenuItem
         ' 
         CréerUnPersonnageToolStripMenuItem.Name = "CréerUnPersonnageToolStripMenuItem"
-        CréerUnPersonnageToolStripMenuItem.Size = New Size(240, 26)
+        CréerUnPersonnageToolStripMenuItem.Size = New Size(191, 22)
         CréerUnPersonnageToolStripMenuItem.Text = "Créer un personnage"
         ' 
         ' FaireDesTestsÀLaConToolStripMenuItem
         ' 
         FaireDesTestsÀLaConToolStripMenuItem.Name = "FaireDesTestsÀLaConToolStripMenuItem"
-        FaireDesTestsÀLaConToolStripMenuItem.Size = New Size(240, 26)
+        FaireDesTestsÀLaConToolStripMenuItem.Size = New Size(191, 22)
         FaireDesTestsÀLaConToolStripMenuItem.Text = "Faire des tests à la con"
         ' 
         ' InitiativeToolStripMenuItem
         ' 
         InitiativeToolStripMenuItem.Name = "InitiativeToolStripMenuItem"
-        InitiativeToolStripMenuItem.Size = New Size(240, 26)
+        InitiativeToolStripMenuItem.Size = New Size(191, 22)
         InitiativeToolStripMenuItem.Text = "Initiative"
+        ' 
+        ' LesCombatsToolStripMenuItem
+        ' 
+        LesCombatsToolStripMenuItem.Name = "LesCombatsToolStripMenuItem"
+        LesCombatsToolStripMenuItem.Size = New Size(191, 22)
+        LesCombatsToolStripMenuItem.Text = "Les combats"
         ' 
         ' BaseLogiciel
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1782, 953)
+        ClientSize = New Size(1559, 715)
         Controls.Add(MenuStrip1)
         IsMdiContainer = True
         MainMenuStrip = MenuStrip1
-        Margin = New Padding(3, 4, 3, 4)
         Name = "BaseLogiciel"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Fight Manager"
@@ -105,4 +110,5 @@ Partial Class BaseLogiciel
     Friend WithEvents CréerUnPersonnageToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents FaireDesTestsÀLaConToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents InitiativeToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents LesCombatsToolStripMenuItem As ToolStripMenuItem
 End Class

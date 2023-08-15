@@ -20,7 +20,8 @@ Public Class Personnage
     Property Vision As String
     Property VoieParangonique As String
     Property DestinneEpique As String
-    Property StuffPersonnage As KeyValuePair(Of String, Integer)
+    Property StuffPersonnage As String()
+    Property PowerPersonnage As String()
 
     Sub New(Nom As String, ClassePerso As String, RacePerso As String, CaracteristiqueParam() As Short, PointExperiencePerso As UInt32)
         Me.Nom = Nom
@@ -28,8 +29,14 @@ Public Class Personnage
         Me.Race = New Race(RacePerso)
         Me.PointsExperience = PointExperiencePerso
         Me.NbCompeChoisie = 0
+        'Le stuff
+        'Finalement lme moyen est plus simple en envoyant le tableau de String du Stuf là où il faut réellemnt boulcer dessus.
+        'Donc le personnage ne conserve QUE la liste des identifiants de stuf qu'il possède, le reste se fait pas calcul.
+        'En parler à Franck pour valider l'idée.
+        Me.StuffPersonnage = {"StuffBase", "StuffTest"}
+
         'Les caractéristiques
-        Me.CaracteristiquesPerso = New Caracteristiques(CaracteristiqueParam, RacePerso)
+        Me.CaracteristiquesPerso = New Caracteristiques(CaracteristiqueParam, RacePerso, Me.StuffPersonnage)
 
         Me.Niveau = Calculniveau(Me.PointsExperience)
         Me.DemiNiveau = Math.Floor(Niveau / 2)
@@ -45,16 +52,15 @@ Public Class Personnage
 
         'Les compétences
         Dim TabFormation As Boolean() = {False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False}
-        Me.CompetencesPersonnage = New Competences(TabFormation, Me.DemiNiveau, RacePerso, Me.CaracteristiquesPerso)
+        Me.CompetencesPersonnage = New Competences(TabFormation, Me.DemiNiveau, RacePerso, Me.CaracteristiquesPerso, Me.StuffPersonnage)
 
         'Les sauvegardes
-        Me.SauvegardesPersonnage = New Sauvegardes(Me.CaracteristiquesPerso, Me.DemiNiveau, ClassePerso, RacePerso)
+        Me.SauvegardesPersonnage = New Sauvegardes(Me.CaracteristiquesPerso, Me.DemiNiveau, ClassePerso, RacePerso, Me.StuffPersonnage)
 
-        'Le stuff
-        'trouver le moyen de faire une itération sur le tableau pour remonter les valeurs et les ajouter aux valeurs du personnage
-        'Je pense qu'il faut queje fasse une sub pour être plus lisible.
+        'Les pouvoirs
+        'on va faire comme pour le stuff en fait., un tableau de string qui contient de ID et on fait une classe avec les définitions, tout pareil.
+        Me.PowerPersonnage = {"PowerBase", "PowerTest"}
     End Sub
-
 
     Private Function Calculniveau(nbpx As Int32)
         Dim TabNiveau = New Int32(,) {
@@ -97,5 +103,4 @@ Public Class Personnage
         Next
         Return ValeurRetour
     End Function
-
 End Class
