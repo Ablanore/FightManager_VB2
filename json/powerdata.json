@@ -1,0 +1,121 @@
+{
+	"Powers": [
+		{
+			"IdPower": "PowerBase",
+			"NomPower": "PowerBase",
+			"Classe": "",
+			"Attaque": "",
+			"Defense": "",
+			"NbDesDegat": 0,
+			"NbFaceDesDegat": 0,
+			"TypeBonusDegat": "",
+			"CaracBonusDegat": "",
+			"MontantBonusDegat": 0,
+			"NombreArme": 0
+		},
+		{
+			"IdPower": "ProjectileMagique",
+			"NomPower": "Projectile Magique",
+			"Classe": "Magicien",
+			"Attaque": "Intelligence",
+			"Defense": "Reflexes",
+			"NbDesDegat": 2,
+			"NbFaceDesDegat": 4,
+			"TypeBonusDegat": "Modificateur",
+			"CaracBonusDegat": "Intelligence",
+			"MontantBonusDegat": 0,
+			"NombreArme": 0
+		},
+		{
+			"IdPower": "RayonDeGivre",
+			"NomPower": "Rayon De Givre",
+			"Classe": "Magicien",
+			"Attaque": "Intelligence",
+			"Defense": "Vigueur",
+			"NbDesDegat": 1,
+			"NbFaceDesDegat": 6,
+			"TypeBonusDegat": "Modificateur",
+			"CaracBonusDegat": "Intelligence",
+			"MontantBonusDegat": 0,
+			"NombreArme": 0
+		},
+		{
+			"IdPower": "NuageDeDagues",
+			"NomPower": "Nuage De Dagues",
+			"Classe": "Magicien",
+			"Attaque": "Intelligence",
+			"Defense": "Reflexes",
+			"NbDesDegat": 1,
+			"NbFaceDesDegat": 6,
+			"TypeBonusDegat": "Modificateur",
+			"CaracBonusDegat": "Intelligence",
+			"MontantBonusDegat": 0,
+			"NombreArme": 0
+		},
+		{
+			"IdPower": "ChargeDevastatrice",
+			"NomPower": "Charge Dévastatrice",
+			"Classe": "Barbare",
+			"Attaque": "Force",
+			"Defense": "ClasseArmure",
+			"NbDesDegat": 1,
+			"NbFaceDesDegat": 8,
+			"TypeBonusDegat": "Modificateur",
+			"CaracBonusDegat": "Force",
+			"MontantBonusDegat": 0,
+			"NombreArme": 1
+		},
+		{
+			"IdPower": "ChargePoussante",
+			"NomPower": "Charge Poussante",
+			"Classe": "Barbare",
+			"Attaque": "Force",
+			"Defense": "ClasseArmure",
+			"NbDesDegat": 0,
+			"NbFaceDesDegat": 0,
+			"TypeBonusDegat": "Modificateur",
+			"CaracBonusDegat": "Force",
+			"MontantBonusDegat": 0,
+			"NombreArme": 1
+		},
+		{
+			"IdPower": "GuidingStrike",
+			"NomPower": "Guiding Strike",
+			"Classe": "Barbare",
+			"Attaque": "Charisme",
+			"Defense": "ClasseArmure",
+			"NbDesDegat": 0,
+			"NbFaceDesDegat": 0,
+			"TypeBonusDegat": "Modificateur",
+			"CaracBonusDegat": "Charisme",
+			"MontantBonusDegat": 0,
+			"NombreArme": 1
+		},
+		{
+			"IdPower": "MisdirectedMark",
+			"NomPower": "Misdirected Mark",
+			"Classe": "Barde",
+			"Attaque": "Charisme",
+			"Defense": "Reflexe",
+			"NbDesDegat": 1,
+			"NbFaceDesDegat": 8,
+			"TypeBonusDegat": "Modificateur",
+			"CaracBonusDegat": "Charisme",
+			"MontantBonusDegat": 0,
+			"NombreArme": 0
+		},
+		{
+			"IdPower": "DechargeOcculte",
+			"NomPower": "Décharge Occulte",
+			"Classe": "Sorcier",
+			"Attaque": "Charisme,Constitution",
+			"Defense": "Reflexes",
+			"NbDesDegat": 1,
+			"NbFaceDesDegat": 10,
+			"TypeBonusDegat": "Modificateur",
+			"CaracBonusDegat": "Charisme,Constitution",
+			"MontantBonusDegat": 0,
+			"NombreArme": 0
+		}
+	]
+}

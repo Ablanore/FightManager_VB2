@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "FightManager_VB2/1.0.0": {
+        "runtime": {
+          "FightManager_VB2.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FightManager_VB2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

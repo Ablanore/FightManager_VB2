@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="BaseLogiciel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="formCombat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="formCreationMob.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="formFeuillePerso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="formFightManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="formInitiative.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TestAlaCon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
